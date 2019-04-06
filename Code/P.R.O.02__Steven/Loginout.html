@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log in/out</title>
+</head>
+
+<body>
+	<div align="center">
+		    <input type="text" placeholder="User name"/><br/>
+		    <input type="password" placeholder="Password"/><br/>
+      <input type="submit" onClick="submit()">
+	</div>
+	<!--<div id="message" style="height: 100px; border-color:(255,0,4,1.00); border-style: solid; font-size:100px;" >
+	</div>-->
+	<script>
+		function submit(){
+			//document.getElementById("message").innerHTML="Success";
+			var t=setTimeout("goback()",0000);
+		}
+		function goback(){
+			alert("Success");
+			location.href="javascript:history.go(-1)";
+		}
+	</script>
+</body>
+</html>

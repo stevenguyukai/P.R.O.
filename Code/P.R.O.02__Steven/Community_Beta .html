@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<link rel="shortcut icon" href="Image/ico.ico">
+<title>P.R.O.Beta</title>
+</head>
+	
+	<style>
+		.backgroundpicture{
+			background-image: url(Image/Background.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			padding: 0px;
+			margin: -18px;
+		}
+		#navigationbuttonleft{
+			width: 150px;
+			height: 30px;
+			background-color: aliceblue;
+			background-color: rgba(255,255,255,0.59);
+			border-bottom-right-radius: 20px;
+			border-bottom-left-radius: 50px;
+		}
+		#navigationbuttoncenter{
+			width: 180px;
+			height: 30px;
+			background-color: aliceblue;
+			background-color: rgba(255,255,255,0.59);
+			border-bottom-right-radius: 20px;
+			border-bottom-left-radius: 20px;
+			font-size: 13px;
+		}
+		#navigationbuttonright{
+			width: 150px;
+			height: 30px;
+			background-color: aliceblue;
+			background-color: rgba(255,255,255,0.59);
+			border-bottom-right-radius: 50px;
+			border-bottom-left-radius: 20px;
+		}
+		#Log{
+			width: 120px;
+			height: 30px;
+			background-color: rgba(255,255,255,0.59);
+			border-radius: 28px;
+		}
+		.nav>li{
+			position: relative;
+			display: block;
+			float: left;
+			list-style: none;
+		}
+		li{
+			text-align: -webkit-match-parent;
+		}
+		ul {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+			list-style: none;
+		}
+	</style>
+
+<body class="backgroundpicture">
+	<header>
+        <nav align="center">
+			<ul style="list-style=none; padding-left=0">
+			<li><input type="button" value="Imformation of P.R.O." id="navigationbuttonleft"></li>
+		    <li><input type="button" value="Get in to the game" id="navigationbuttoncenter" onClick="getintogame()"></li>
+			<li><input type="button" value="F&Q" id="navigationbuttonright"></li>
+			<li><input type="button" value="Log in/Log out" id="Log" style="float:right;" onclick="window.location.href='Loginout.html'"></li>
+			</ul>
+		</nav>
+    </header>
+	<script>
+		function getintogame(){
+			window.open("http://www.baidu.com");
+		}
+	</script>
+</body>
+	
+</html>
