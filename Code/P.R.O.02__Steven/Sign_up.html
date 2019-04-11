@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<h1 align="center" style="color: dodgerblue">Sign up</h1>
+	<div align="center">
+		    User name&ensp;<input type="text" placeholder="User name"/><br/>
+		    Password&emsp;<input type="password" placeholder="Password"/><br/>
+		    Password&emsp;<input type="password" placeholder="Check Password"/><br/><br/><br/>
+      <input type="submit" onClick="submit()">
+</div>
+	<script>
+		function submit(){
+			//document.getElementById("message").innerHTML="Success";
+			var t=setTimeout("goback()",0000);
+		}
+		function goback(){
+			alert("Success");
+			location.href="javascript:history.go(-1)";
+		}
+	</script>
+</body>
+</html>
