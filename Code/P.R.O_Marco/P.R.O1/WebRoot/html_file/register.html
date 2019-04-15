@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../css/register.css">
+</head>
+<body>
+	<form action="servlet/Register" method="post" onsubmit="return check()">
+		用户名:<input type="text" name="username" id="username" /><span class="warning"></span><br />
+		<span></span>
+		密码:<input type="password" name="password" id="password" /><span class="warning"></span><br />
+		确认密码:<input type="password" name="rppassword" id="rppassword" /><span class="warning"></span><br />
+		<input type="submit" name="submit" value="立即注册" />
+	</form>
+	<div id="x"></div>
+</body>
+<script type="text/javascript" src="../js/register.js"></script>
+</html>

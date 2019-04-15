@@ -1,0 +1,740 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../css/gomoku.css" />
+</head>
+<body>
+	<div class="big" align="center">
+		<table class="table1" cellspacing="0">
+			<tbody>
+				<tr class="row">
+					<td class="line1 row1"></td>
+					<td class="line2 row1"></td>
+					<td class="line3 row1"></td>
+					<td class="line4 row1"></td>
+					<td class="line5 row1"></td>
+					<td class="line6 row1"></td>
+					<td class="line7 row1"></td>
+					<td class="line8 row1"></td>
+					<td class="line9 row1"></td>
+					<td class="line10 row1"></td>
+					<td class="line11 row1"></td>
+					<td class="line12 row1"></td>
+					<td class="line13 row1"></td>
+					<td class="line14 row1"></td>
+					<td class="line15 row1"></td>
+					<td class="line16 row1"></td>
+					<td class="line17 row1"></td>
+				</tr>
+
+				<tr class="row">
+					<td class="line1 row2"></td>
+					<td class="line2 row2"></td>
+					<td class="line3 row2"></td>
+					<td class="line4 row2"></td>
+					<td class="line5 row2"></td>
+					<td class="line6 row2"></td>
+					<td class="line7 row2"></td>
+					<td class="line8 row2"></td>
+					<td class="line9 row2"></td>
+					<td class="line10 row2"></td>
+					<td class="line11 row2"></td>
+					<td class="line12 row2"></td>
+					<td class="line13 row2"></td>
+					<td class="line14 row2"></td>
+					<td class="line15 row2"></td>
+					<td class="line16 row2"></td>
+					<td class="line17 row2"></td>
+				</tr>
+
+				<tr class="row">
+					<td class="line1 row3"></td>
+					<td class="line2 row3"></td>
+					<td class="line3 row3"></td>
+					<td class="line4 row3"></td>
+					<td class="line5 row3"></td>
+					<td class="line6 row3"></td>
+					<td class="line7 row3"></td>
+					<td class="line8 row3"></td>
+					<td class="line9 row3"></td>
+					<td class="line10 row3"></td>
+					<td class="line11 row3"></td>
+					<td class="line12 row3"></td>
+					<td class="line13 row3"></td>
+					<td class="line14 row3"></td>
+					<td class="line15 row3"></td>
+					<td class="line16 row3"></td>
+					<td class="line17 row3"></td>
+				</tr>
+
+				<tr class="row">
+					<td class="line1 row4"></td>
+					<td class="line2 row4"></td>
+					<td class="line3 row4"></td>
+					<td class="line4 row4"></td>
+					<td class="line5 row4"></td>
+					<td class="line6 row4"></td>
+					<td class="line7 row4"></td>
+					<td class="line8 row4"></td>
+					<td class="line9 row4"></td>
+					<td class="line10 row4"></td>
+					<td class="line11 row4"></td>
+					<td class="line12 row4"></td>
+					<td class="line13 row4"></td>
+					<td class="line14 row4"></td>
+					<td class="line15 row4"></td>
+					<td class="line16 row4"></td>
+					<td class="line17 row4"></td>
+				</tr>
+
+				<tr class="row">
+					<td class="line1 row5"></td>
+					<td class="line2 row5"></td>
+					<td class="line3 row5"></td>
+					<td class="line4 row5"></td>
+					<td class="line5 row5"></td>
+					<td class="line6 row5"></td>
+					<td class="line7 row5"></td>
+					<td class="line8 row5"></td>
+					<td class="line9 row5"></td>
+					<td class="line10 row5"></td>
+					<td class="line11 row5"></td>
+					<td class="line12 row5"></td>
+					<td class="line13 row5"></td>
+					<td class="line14 row5"></td>
+					<td class="line15 row5"></td>
+					<td class="line16 row5"></td>
+					<td class="line17 row5"></td>
+				</tr>
+
+				<tr class="row">
+					<td class="line1 row6"></td>
+					<td class="line2 row6"></td>
+					<td class="line3 row6"></td>
+					<td class="line4 row6"></td>
+					<td class="line5 row6"></td>
+					<td class="line6 row6"></td>
+					<td class="line7 row6"></td>
+					<td class="line8 row6"></td>
+					<td class="line9 row6"></td>
+					<td class="line10 row6"></td>
+					<td class="line11 row6"></td>
+					<td class="line12 row6"></td>
+					<td class="line13 row6"></td>
+					<td class="line14 row6"></td>
+					<td class="line15 row6"></td>
+					<td class="line16 row6"></td>
+					<td class="line17 row6"></td>
+				</tr>
+
+				<tr class="row">
+					<td class="line1 row7"></td>
+					<td class="line2 row7"></td>
+					<td class="line3 row7"></td>
+					<td class="line4 row7"></td>
+					<td class="line5 row7"></td>
+					<td class="line6 row7"></td>
+					<td class="line7 row7"></td>
+					<td class="line8 row7"></td>
+					<td class="line9 row7"></td>
+					<td class="line10 row7"></td>
+					<td class="line11 row7"></td>
+					<td class="line12 row7"></td>
+					<td class="line13 row7"></td>
+					<td class="line14 row7"></td>
+					<td class="line15 row7"></td>
+					<td class="line16 row7"></td>
+					<td class="line17 row7"></td>
+				</tr>
+
+				<tr class="row">
+					<td class="line1 row8"></td>
+					<td class="line2 row8"></td>
+					<td class="line3 row8"></td>
+					<td class="line4 row8"></td>
+					<td class="line5 row8"></td>
+					<td class="line6 row8"></td>
+					<td class="line7 row8"></td>
+					<td class="line8 row8"></td>
+					<td class="line9 row8"></td>
+					<td class="line10 row8"></td>
+					<td class="line11 row8"></td>
+					<td class="line12 row8"></td>
+					<td class="line13 row8"></td>
+					<td class="line14 row8"></td>
+					<td class="line15 row8"></td>
+					<td class="line16 row8"></td>
+					<td class="line17 row8"></td>
+				</tr>
+
+				<tr class="row">
+					<td class="line1 row9"></td>
+					<td class="line2 row9"></td>
+					<td class="line3 row9"></td>
+					<td class="line4 row9"></td>
+					<td class="line5 row9"></td>
+					<td class="line6 row9"></td>
+					<td class="line7 row9"></td>
+					<td class="line8 row9"></td>
+					<td class="line9 row9"></td>
+					<td class="line10 row9"></td>
+					<td class="line11 row9"></td>
+					<td class="line12 row9"></td>
+					<td class="line13 row9"></td>
+					<td class="line14 row9"></td>
+					<td class="line15 row9"></td>
+					<td class="line16 row9"></td>
+					<td class="line17 row9"></td>
+				</tr>
+
+				<tr class="row">
+					<td class="line1 row10"></td>
+					<td class="line2 row10"></td>
+					<td class="line3 row10"></td>
+					<td class="line4 row10"></td>
+					<td class="line5 row10"></td>
+					<td class="line6 row10"></td>
+					<td class="line7 row10"></td>
+					<td class="line8 row10"></td>
+					<td class="line9 row10"></td>
+					<td class="line10 row10"></td>
+					<td class="line11 row10"></td>
+					<td class="line12 row10"></td>
+					<td class="line13 row10"></td>
+					<td class="line14 row10"></td>
+					<td class="line15 row10"></td>
+					<td class="line16 row10"></td>
+					<td class="line17 row10"></td>
+				</tr>
+				
+				<tr class="row">
+					<td class="line1 row11"></td>
+					<td class="line2 row11"></td>
+					<td class="line3 row11"></td>
+					<td class="line4 row11"></td>
+					<td class="line5 row11"></td>
+					<td class="line6 row11"></td>
+					<td class="line7 row11"></td>
+					<td class="line8 row11"></td>
+					<td class="line9 row11"></td>
+					<td class="line10 row11"></td>
+					<td class="line11 row11"></td>
+					<td class="line12 row11"></td>
+					<td class="line13 row11"></td>
+					<td class="line14 row11"></td>
+					<td class="line15 row11"></td>
+					<td class="line16 row11"></td>
+					<td class="line17 row11"></td>
+				</tr>
+
+				<tr class="row">
+					<td class="line1 row12"></td>
+					<td class="line2 row12"></td>
+					<td class="line3 row12"></td>
+					<td class="line4 row12"></td>
+					<td class="line5 row12"></td>
+					<td class="line6 row12"></td>
+					<td class="line7 row12"></td>
+					<td class="line8 row12"></td>
+					<td class="line9 row12"></td>
+					<td class="line10 row12"></td>
+					<td class="line11 row12"></td>
+					<td class="line12 row12"></td>
+					<td class="line13 row12"></td>
+					<td class="line14 row12"></td>
+					<td class="line15 row12"></td>
+					<td class="line16 row12"></td>
+					<td class="line17 row12"></td>
+				</tr>
+
+				<tr class="row">
+					<td class="line1 row13"></td>
+					<td class="line2 row13"></td>
+					<td class="line3 row13"></td>
+					<td class="line4 row13"></td>
+					<td class="line5 row13"></td>
+					<td class="line6 row13"></td>
+					<td class="line7 row13"></td>
+					<td class="line8 row13"></td>
+					<td class="line9 row13"></td>
+					<td class="line10 row13"></td>
+					<td class="line11 row13"></td>
+					<td class="line12 row13"></td>
+					<td class="line13 row13"></td>
+					<td class="line14 row13"></td>
+					<td class="line15 row13"></td>
+					<td class="line16 row13"></td>
+					<td class="line17 row13"></td>
+				</tr>
+
+				<tr class="row">
+					<td class="line1 row14"></td>
+					<td class="line2 row14"></td>
+					<td class="line3 row14"></td>
+					<td class="line4 row14"></td>
+					<td class="line5 row14"></td>
+					<td class="line6 row14"></td>
+					<td class="line7 row14"></td>
+					<td class="line8 row14"></td>
+					<td class="line9 row14"></td>
+					<td class="line10 row14"></td>
+					<td class="line11 row14"></td>
+					<td class="line12 row14"></td>
+					<td class="line13 row14"></td>
+					<td class="line14 row14"></td>
+					<td class="line15 row14"></td>
+					<td class="line16 row14"></td>
+					<td class="line17 row14"></td>
+				</tr>
+
+				<tr class="row">
+					<td class="line1 row15"></td>
+					<td class="line2 row15"></td>
+					<td class="line3 row15"></td>
+					<td class="line4 row15"></td>
+					<td class="line5 row15"></td>
+					<td class="line6 row15"></td>
+					<td class="line7 row15"></td>
+					<td class="line8 row15"></td>
+					<td class="line9 row15"></td>
+					<td class="line10 row15"></td>
+					<td class="line11 row15"></td>
+					<td class="line12 row15"></td>
+					<td class="line13 row15"></td>
+					<td class="line14 row15"></td>
+					<td class="line15 row15"></td>
+					<td class="line16 row15"></td>
+					<td class="line17 row15"></td>
+				</tr>
+
+				<tr class="row">
+					<td class="line1 row16"></td>
+					<td class="line2 row16"></td>
+					<td class="line3 row16"></td>
+					<td class="line4 row16"></td>
+					<td class="line5 row16"></td>
+					<td class="line6 row16"></td>
+					<td class="line7 row16"></td>
+					<td class="line8 row16"></td>
+					<td class="line9 row16"></td>
+					<td class="line10 row16"></td>
+					<td class="line11 row16"></td>
+					<td class="line12 row16"></td>
+					<td class="line13 row16"></td>
+					<td class="line14 row16"></td>
+					<td class="line15 row16"></td>
+					<td class="line16 row16"></td>
+					<td class="line17 row16"></td>
+				</tr>
+
+				<tr class="row">
+					<td class="line1 row17"></td>
+					<td class="line2 row17"></td>
+					<td class="line3 row17"></td>
+					<td class="line4 row17"></td>
+					<td class="line5 row17"></td>
+					<td class="line6 row17"></td>
+					<td class="line7 row17"></td>
+					<td class="line8 row17"></td>
+					<td class="line9 row17"></td>
+					<td class="line10 row17"></td>
+					<td class="line11 row17"></td>
+					<td class="line12 row17"></td>
+					<td class="line13 row17"></td>
+					<td class="line14 row17"></td>
+					<td class="line15 row17"></td>
+					<td class="line16 row17"></td>
+					<td class="line17 row17"></td>
+				</tr>
+			</tbody>
+		</table>
+   
+
+		<table class="table2" cellspacing="0">
+			<tbody>
+				<tr class="row">
+					<td class="line1 row1"></td>
+					<td class="line2 row1"></td>
+					<td class="line3 row1"></td>
+					<td class="line4 row1"></td>
+					<td class="line5 row1"></td>
+					<td class="line6 row1"></td>
+					<td class="line7 row1"></td>
+					<td class="line8 row1"></td>
+					<td class="line9 row1"></td>
+					<td class="line10 row1"></td>
+					<td class="line11 row1"></td>
+					<td class="line12 row1"></td>
+					<td class="line13 row1"></td>
+					<td class="line14 row1"></td>
+					<td class="line15 row1"></td>
+					<td class="line16 row1"></td>
+					<td class="line17 row1"></td>
+					<td class="line18 row1"></td>
+				</tr>
+
+				<tr class="row">
+					<td class="line1 row2"></td>
+					<td class="line2 row2"></td>
+					<td class="line3 row2"></td>
+					<td class="line4 row2"></td>
+					<td class="line5 row2"></td>
+					<td class="line6 row2"></td>
+					<td class="line7 row2"></td>
+					<td class="line8 row2"></td>
+					<td class="line9 row2"></td>
+					<td class="line10 row2"></td>
+					<td class="line11 row2"></td>
+					<td class="line12 row2"></td>
+					<td class="line13 row2"></td>
+					<td class="line14 row2"></td>
+					<td class="line15 row2"></td>
+					<td class="line16 row2"></td>
+					<td class="line17 row2"></td>
+					<td class="line18 row2"></td>
+				</tr>
+
+				<tr class="row">
+					<td class="line1 row3"></td>
+					<td class="line2 row3"></td>
+					<td class="line3 row3"></td>
+					<td class="line4 row3"></td>
+					<td class="line5 row3"></td>
+					<td class="line6 row3"></td>
+					<td class="line7 row3"></td>
+					<td class="line8 row3"></td>
+					<td class="line9 row3"></td>
+					<td class="line10 row3"></td>
+					<td class="line11 row3"></td>
+					<td class="line12 row3"></td>
+					<td class="line13 row3"></td>
+					<td class="line14 row3"></td>
+					<td class="line15 row3"></td>
+					<td class="line16 row3"></td>
+					<td class="line17 row3"></td>
+					<td class="line18 row3"></td>
+				</tr>
+
+				<tr class="row">
+					<td class="line1 row4"></td>
+					<td class="line2 row4"></td>
+					<td class="line3 row4"></td>
+					<td class="line4 row4"></td>
+					<td class="line5 row4"></td>
+					<td class="line6 row4"></td>
+					<td class="line7 row4"></td>
+					<td class="line8 row4"></td>
+					<td class="line9 row4"></td>
+					<td class="line10 row4"></td>
+					<td class="line11 row4"></td>
+					<td class="line12 row4"></td>
+					<td class="line13 row4"></td>
+					<td class="line14 row4"></td>
+					<td class="line15 row4"></td>
+					<td class="line16 row4"></td>
+					<td class="line17 row4"></td>
+					<td class="line18 row4"></td>
+				</tr>
+
+				<tr class="row">
+					<td class="line1 row5"></td>
+					<td class="line2 row5"></td>
+					<td class="line3 row5"></td>
+					<td class="line4 row5"></td>
+					<td class="line5 row5"></td>
+					<td class="line6 row5"></td>
+					<td class="line7 row5"></td>
+					<td class="line8 row5"></td>
+					<td class="line9 row5"></td>
+					<td class="line10 row5"></td>
+					<td class="line11 row5"></td>
+					<td class="line12 row5"></td>
+					<td class="line13 row5"></td>
+					<td class="line14 row5"></td>
+					<td class="line15 row5"></td>
+					<td class="line16 row5"></td>
+					<td class="line17 row5"></td>
+					<td class="line18 row5"></td>
+				</tr>
+
+				<tr class="row">
+					<td class="line1 row6"></td>
+					<td class="line2 row6"></td>
+					<td class="line3 row6"></td>
+					<td class="line4 row6"></td>
+					<td class="line5 row6"></td>
+					<td class="line6 row6"></td>
+					<td class="line7 row6"></td>
+					<td class="line8 row6"></td>
+					<td class="line9 row6"></td>
+					<td class="line10 row6"></td>
+					<td class="line11 row6"></td>
+					<td class="line12 row6"></td>
+					<td class="line13 row6"></td>
+					<td class="line14 row6"></td>
+					<td class="line15 row6"></td>
+					<td class="line16 row6"></td>
+					<td class="line17 row6"></td>
+					<td class="line18 row6"></td>
+				</tr>
+
+				<tr class="row">
+					<td class="line1 row7"></td>
+					<td class="line2 row7"></td>
+					<td class="line3 row7"></td>
+					<td class="line4 row7"></td>
+					<td class="line5 row7"></td>
+					<td class="line6 row7"></td>
+					<td class="line7 row7"></td>
+					<td class="line8 row7"></td>
+					<td class="line9 row7"></td>
+					<td class="line10 row7"></td>
+					<td class="line11 row7"></td>
+					<td class="line12 row7"></td>
+					<td class="line13 row7"></td>
+					<td class="line14 row7"></td>
+					<td class="line15 row7"></td>
+					<td class="line16 row7"></td>
+					<td class="line17 row7"></td>
+					<td class="line18 row7"></td>
+				</tr>
+
+				<tr class="row">
+					<td class="line1 row8"></td>
+					<td class="line2 row8"></td>
+					<td class="line3 row8"></td>
+					<td class="line4 row8"></td>
+					<td class="line5 row8"></td>
+					<td class="line6 row8"></td>
+					<td class="line7 row8"></td>
+					<td class="line8 row8"></td>
+					<td class="line9 row8"></td>
+					<td class="line10 row8"></td>
+					<td class="line11 row8"></td>
+					<td class="line12 row8"></td>
+					<td class="line13 row8"></td>
+					<td class="line14 row8"></td>
+					<td class="line15 row8"></td>
+					<td class="line16 row8"></td>
+					<td class="line17 row8"></td>
+					<td class="line18 row8"></td>
+				</tr>
+
+				<tr class="row">
+					<td class="line1 row9"></td>
+					<td class="line2 row9"></td>
+					<td class="line3 row9"></td>
+					<td class="line4 row9"></td>
+					<td class="line5 row9"></td>
+					<td class="line6 row9"></td>
+					<td class="line7 row9"></td>
+					<td class="line8 row9"></td>
+					<td class="line9 row9"></td>
+					<td class="line10 row9"></td>
+					<td class="line11 row9"></td>
+					<td class="line12 row9"></td>
+					<td class="line13 row9"></td>
+					<td class="line14 row9"></td>
+					<td class="line15 row9"></td>
+					<td class="line16 row9"></td>
+					<td class="line17 row9"></td>
+					<td class="line18 row9"></td>
+				</tr>
+
+				<tr class="row">
+					<td class="line1 row10"></td>
+					<td class="line2 row10"></td>
+					<td class="line3 row10"></td>
+					<td class="line4 row10"></td>
+					<td class="line5 row10"></td>
+					<td class="line6 row10"></td>
+					<td class="line7 row10"></td>
+					<td class="line8 row10"></td>
+					<td class="line9 row10"></td>
+					<td class="line10 row10"></td>
+					<td class="line11 row10"></td>
+					<td class="line12 row10"></td>
+					<td class="line13 row10"></td>
+					<td class="line14 row10"></td>
+					<td class="line15 row10"></td>
+					<td class="line16 row10"></td>
+					<td class="line17 row10"></td>
+					<td class="line18 row10"></td>
+				</tr>
+				
+				<tr class="row">
+					<td class="line1 row11"></td>
+					<td class="line2 row11"></td>
+					<td class="line3 row11"></td>
+					<td class="line4 row11"></td>
+					<td class="line5 row11"></td>
+					<td class="line6 row11"></td>
+					<td class="line7 row11"></td>
+					<td class="line8 row11"></td>
+					<td class="line9 row11"></td>
+					<td class="line10 row11"></td>
+					<td class="line11 row11"></td>
+					<td class="line12 row11"></td>
+					<td class="line13 row11"></td>
+					<td class="line14 row11"></td>
+					<td class="line15 row11"></td>
+					<td class="line16 row11"></td>
+					<td class="line17 row11"></td>
+					<td class="line18 row11"></td>
+				</tr>
+
+				<tr class="row">
+					<td class="line1 row12"></td>
+					<td class="line2 row12"></td>
+					<td class="line3 row12"></td>
+					<td class="line4 row12"></td>
+					<td class="line5 row12"></td>
+					<td class="line6 row12"></td>
+					<td class="line7 row12"></td>
+					<td class="line8 row12"></td>
+					<td class="line9 row12"></td>
+					<td class="line10 row12"></td>
+					<td class="line11 row12"></td>
+					<td class="line12 row12"></td>
+					<td class="line13 row12"></td>
+					<td class="line14 row12"></td>
+					<td class="line15 row12"></td>
+					<td class="line16 row12"></td>
+					<td class="line17 row12"></td>
+					<td class="line18 row12"></td>
+				</tr>
+
+				<tr class="row">
+					<td class="line1 row13"></td>
+					<td class="line2 row13"></td>
+					<td class="line3 row13"></td>
+					<td class="line4 row13"></td>
+					<td class="line5 row13"></td>
+					<td class="line6 row13"></td>
+					<td class="line7 row13"></td>
+					<td class="line8 row13"></td>
+					<td class="line9 row13"></td>
+					<td class="line10 row13"></td>
+					<td class="line11 row13"></td>
+					<td class="line12 row13"></td>
+					<td class="line13 row13"></td>
+					<td class="line14 row13"></td>
+					<td class="line15 row13"></td>
+					<td class="line16 row13"></td>
+					<td class="line17 row13"></td>
+					<td class="line18 row13"></td>
+				</tr>
+
+				<tr class="row">
+					<td class="line1 row14"></td>
+					<td class="line2 row14"></td>
+					<td class="line3 row14"></td>
+					<td class="line4 row14"></td>
+					<td class="line5 row14"></td>
+					<td class="line6 row14"></td>
+					<td class="line7 row14"></td>
+					<td class="line8 row14"></td>
+					<td class="line9 row14"></td>
+					<td class="line10 row14"></td>
+					<td class="line11 row14"></td>
+					<td class="line12 row14"></td>
+					<td class="line13 row14"></td>
+					<td class="line14 row14"></td>
+					<td class="line15 row14"></td>
+					<td class="line16 row14"></td>
+					<td class="line17 row14"></td>
+					<td class="line18 row14"></td>
+				</tr>
+
+				<tr class="row">
+					<td class="line1 row15"></td>
+					<td class="line2 row15"></td>
+					<td class="line3 row15"></td>
+					<td class="line4 row15"></td>
+					<td class="line5 row15"></td>
+					<td class="line6 row15"></td>
+					<td class="line7 row15"></td>
+					<td class="line8 row15"></td>
+					<td class="line9 row15"></td>
+					<td class="line10 row15"></td>
+					<td class="line11 row15"></td>
+					<td class="line12 row15"></td>
+					<td class="line13 row15"></td>
+					<td class="line14 row15"></td>
+					<td class="line15 row15"></td>
+					<td class="line16 row15"></td>
+					<td class="line17 row15"></td>
+					<td class="line18 row15"></td>
+				</tr>
+
+				<tr class="row">
+					<td class="line1 row16"></td>
+					<td class="line2 row16"></td>
+					<td class="line3 row16"></td>
+					<td class="line4 row16"></td>
+					<td class="line5 row16"></td>
+					<td class="line6 row16"></td>
+					<td class="line7 row16"></td>
+					<td class="line8 row16"></td>
+					<td class="line9 row16"></td>
+					<td class="line10 row16"></td>
+					<td class="line11 row16"></td>
+					<td class="line12 row16"></td>
+					<td class="line13 row16"></td>
+					<td class="line14 row16"></td>
+					<td class="line15 row16"></td>
+					<td class="line16 row16"></td>
+					<td class="line17 row16"></td>
+					<td class="line18 row16"></td>
+				</tr>
+
+				<tr class="row">
+					<td class="line1 row17"></td>
+					<td class="line2 row17"></td>
+					<td class="line3 row17"></td>
+					<td class="line4 row17"></td>
+					<td class="line5 row17"></td>
+					<td class="line6 row17"></td>
+					<td class="line7 row17"></td>
+					<td class="line8 row17"></td>
+					<td class="line9 row17"></td>
+					<td class="line10 row17"></td>
+					<td class="line11 row17"></td>
+					<td class="line12 row17"></td>
+					<td class="line13 row17"></td>
+					<td class="line14 row17"></td>
+					<td class="line15 row17"></td>
+					<td class="line16 row17"></td>
+					<td class="line17 row17"></td>
+					<td class="line18 row17"></td>
+				</tr>
+
+				<tr class="row">
+					<td class="line1 row18"></td>
+					<td class="line2 row18"></td>
+					<td class="line3 row18"></td>
+					<td class="line4 row18"></td>
+					<td class="line5 row18"></td>
+					<td class="line6 row18"></td>
+					<td class="line7 row18"></td>
+					<td class="line8 row18"></td>
+					<td class="line9 row18"></td>
+					<td class="line10 row18"></td>
+					<td class="line11 row18"></td>
+					<td class="line12 row18"></td>
+					<td class="line13 row18"></td>
+					<td class="line14 row18"></td>
+					<td class="line15 row18"></td>
+					<td class="line16 row18"></td>
+					<td class="line17 row18"></td>
+					<td class="line18 row18"></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div id="result"></div>
+	<script type="text/javascript" src="../js/gomoku.js"></script>
+</body>
+</html>

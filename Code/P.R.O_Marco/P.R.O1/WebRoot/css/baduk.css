@@ -1,0 +1,35 @@
+.table1 tbody td{
+	width: 30px;
+	height: 30px;
+	border: 2px solid black;
+	display: inline-block;
+}
+.table2 tbody td{
+	width: 34px;
+	height: 34px;
+	border: 0;
+	border-radius: 50%;
+	display: inline-block;
+}
+.table1{
+	position: relative;
+	top: 100px;
+}
+.table2{
+	position: relative;
+	top: -532px;
+}
+.black{
+	background-color: black;
+}
+.white{
+	background-color: white;
+}
+body{
+	background-color: green;
+}
+#take{
+	position: absolute;
+	top: 725px;
+	left: 947px;
+}
