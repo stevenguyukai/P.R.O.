@@ -6,13 +6,17 @@
 	<link rel="stylesheet" type="text/css" href="../css/register.css">
 </head>
 <body>
-	<form action="servlet/Register" method="post" onsubmit="return check()">
-		用户名:<input type="text" name="username" id="username" /><span class="warning"></span><br />
+	<h1 align="center">注册</h1>
+	<div id="big">
+		<form action="servlet/Register" method="post" onsubmit="return check()">
+		用户名:&ensp;&ensp;&ensp;<input type="text" name="username" id="username" data-point="用户名" placeholder="用户名" /><span class="warning"></span><br />
 		<span></span>
-		密码:<input type="password" name="password" id="password" /><span class="warning"></span><br />
-		确认密码:<input type="password" name="rppassword" id="rppassword" /><span class="warning"></span><br />
+		密码:&ensp;&ensp;&ensp;&ensp;&ensp;<input type="password" name="password" id="password" data-point="密码" placeholder="密码" /><span class="warning"></span><br />
+		确认密码:&ensp;<input type="password" name="rppassword" id="rppassword" data-point="重复密码" placeholder="确认密码" /><span class="warning"></span><br />
 		<input type="submit" name="submit" value="立即注册" />
 	</form>
+	</div>
+	
 	<div id="x"></div>
 </body>
 <script type="text/javascript" src="../js/register.js"></script>
