@@ -1,0 +1,30 @@
+/* CSS Document */
+#MainWebHead {
+    font-size: 55px;
+    text-shadow: 0 0 1px black;
+    color: rgba(32, 206, 221, 1.00);
+    text-align: center;
+    font-family: abril-fatface;
+    font-style: normal;
+    font-weight: 300;
+}
+
+#MainWeb {
+    padding: 0px;
+    margin: 0px;
+}
+
+#headhr {
+    position: relative;
+    top: -25px;
+}
+
+#headbutton {
+    height: 40px;
+    width: 80px;
+    box-shadow: 0px 0px 1px;
+    background-color: white;
+    position: relative;
+    left: 40px;
+    float: left;
+}
