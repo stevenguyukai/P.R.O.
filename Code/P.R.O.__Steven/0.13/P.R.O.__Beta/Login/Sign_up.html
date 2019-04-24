@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<h1 align="center" style="color: dodgerblue">Sign up</h1>
+<div align="center" style="font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, sans-serif">
+    <table>
+        <tr>
+            <td>User name</td>
+            <td><input type="text" placeholder="User name"/></td>
+        </tr>
+        <tr>
+            <td>E-mail address</td>
+            <td><input type="email" placeholder="E-mail address"/></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password" placeholder="Password"/></td>
+        </tr>
+        <tr>
+            <td>Check Password</td>
+            <td><input type="password" placeholder="Check Password"/></td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <input type="button" onClick="submit()" value="Sign up">
+</div>
+<script>
+		function submit(){
+			//document.getElementById("message").innerHTML="Success";
+			var t=setTimeout("goback()",0000);
+		}
+		function goback(){
+			alert("Sign up successfully!");
+			location.href="javascript:history.go(-1)";
+		}
+	</script>
+</body>
+</html>

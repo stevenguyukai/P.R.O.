@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+
+<!--HEAD-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>先驱者PRO</title>
+<link href="css/Main_web.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap-grid.min.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap-grid.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap-reboot.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap-reboot.min.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body style="background-color:aliceblue">
+
+<!--NAV BAR-->
+<div class="pos-f-t">
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <h5 class="text-white h4">Welcome to PRO</h5>
+      <span class="text-muted">
+		  
+		<!--MENU-->
+<div id="button1" style="display: none;">
+    <table style="list-style: none;">
+        <tr>
+        <td>
+            <button id="info" style=" float: left; width: 310px; height: 30px; position: relative; border-radius: 20px;" type="button" onClick="window.location.href='Menu/Info.html'" class="btn btn-secondary btn-sm" >Info.</button>
+        </td>
+        <td>
+            <button class="btn btn-secondary btn-sm" id="braingame" style=" border-radius: 20px; float: left; width: 310px; height: 30px; position: relative;" type="button" onClick="window.location.href='Menu/braingame.html'">Braingame</button>
+        </td>
+        <td>
+            <button class="btn btn-secondary btn-sm" id="market" style="border-radius: 20px; float: left; width: 310px; height: 30px; position: relative;" type="button" onClick="window.location.href='Menu/market.html'">Market</button>
+        </td>
+        <td>
+            <button class="btn btn-secondary btn-sm" id="membership" style="border-radius: 20px; float: left; width: 310px; height: 30px; position:relative;" type="button"  onClick="window.location.href='Menu/membership.html'">Membership</button>
+        </td>
+    </tr>
+    <div id="infomassage" style="display: none;"> <h5>Info! </h5></div>
+    <div id="braingamemassage" style="display: none;"> <h5>Braingame </h5> </div>
+    <div id="marketmassage" style="display: none;"><h5>Market</h5> </div>
+    <div id="membershipmassage" style="display: none;"> <h5>Membership </h5> </div>
+	</table>
+</div>
+		  
+      </span>
+    </div>
+  </div>
+  <nav class="navbar navbar-dark bg-dark">
+    <button onClick="ShowMenu()" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+	<h1 id="MainWebHead" style="margin: 0 auto;">P. R. O.</h1>
+	<button class="btn btn-outline-info" style="float: right; width: 80px; height: 35px;position: relative; right: 0px;border-radius: 40px" type="button" onClick="window.location.href='Login/Loginout.html'">Login</button>
+  </nav>
+</div>
+
+<!--ROLLING PICTURES-->
+<div class="bd-example" style="width: 80%; margin: 0 auto;">
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active"> <a href="Picture information/Picture1.html"><img src="Img/first.jpg" class="d-block w-100" alt="Can't find image?"></a>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Welcome to P.R.O.</h5>
+                    <p>click to see more information</p>
+                </div>
+            </div>
+            <div class="carousel-item"> <a href="Picture information/Picture2.html"><img src="Img/second.jpg" class="d-block w-100" alt="Can't find image?"></a>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Welcome to P.R.O.</h5>
+                    <p>click to see more information</p>
+                </div>
+            </div>
+            <div class="carousel-item"> <a href="Picture information/Picture3.html"><img src="Img/third.jpg" class="d-block w-100" alt="Can't find image?"></a>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Welcome to P.R.O.</h5>
+                    <p>click to see more information</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
+</div>
+
+<!--JAVASCRIPT--> 
+<script src="js/Main_web.js"></script> 
+<script src="js/bootstrap.bundle.js"></script> 
+<script src="js/bootstrap.bundle.min.js"></script> 
+<script src="js/bootstrap.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
