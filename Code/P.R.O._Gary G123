@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Gary的网页</title>
+	<style type="text/css">
+	body{background: white;}
+	div.one{
+		height: 200px;
+		width: 1450px; 
+		font-size: 45px;
+		font-family: serif;
+		border-style: solid;
+		border-width: 6px;
+		position: static;
+		background: green;
+		border-radius: 25px;
+		border-color: green;}
+	p.two{
+		height: 50px;
+		border-style: solid;
+		border-width: 2px;
+		background: green;
+		border-color: green;
+		border-radius: 10px;
+		font-size: 20px;}   
+
+	
+
+  
+              
+
+
+
+
+		
+	</style>
+</head>
+<body>
+<div>
+		<h1><div class="one" style="text-align: center;">P.R.O</div></h1>
+		<tr><td><a href="file:///C:/Users/13641/Desktop/%E6%B3%A8%E5%86%8C.html"><input type="button" id="four" title="登注册" value="CREATE AN ACCOUNT">
+		</a></tr>
+			<tr><td><button type="button" style="border-style: solid;background: grey;border-color: grey;font-size: 20px;">MENU</button></td>
+			    <td><button type="button" style="border-style: solid;background: grey;border-color: grey;font-size: 20px;">ABOUT</button></td>
+			    <td><button type="button" style="border-style: solid;background: grey;border-color: grey;font-size: 20px;">PRODUCTS</button></td>
+			    <td><button type="button" style="border-style: solid;background: grey;border-color: grey;font-size: 20px;">LINK</button></td>
+		    </tr>
+		<img border="0" src="C:\Users\13641\Pictures/21113.jpg" alt="Pulpit rock" width="1450" height="700">
+		<h3><p class="two">联系我们：xxxxxxxxxx orxxxxxxx@xxx.com</p></h3>
+	</div>
+		
+	
+
+
+
+        	
+
+
+</body>
+</html>
+注册网页
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>http://www.account.com</title>
+</head>
+<body>
+
+	<div style="text-align: center;">
+		<h2>创建账户</h2>
+	<ul>
+		<li>账户名称</li>
+	    <input type="text" >
+	</ul>
+	<ul>
+		<li>密码</li>
+	    <input type="password" >
+	</ul>
+	<ul>
+		<li>确认密码</li>
+	    <input type="password" >
+	</ul>
+	<a href="dwdadad">
+	<input type="button" value="注册">
+</a>
+	
+</div>
+</body>
+</html>
