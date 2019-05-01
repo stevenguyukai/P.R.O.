@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<!--HEAD-->
+<head>
+<meta charset="UTF-8">
+<link href="../css/Main_web.css" rel="stylesheet" type="text/css">
+<link href="../css/bootstrap-grid.min.css" rel="stylesheet" type="text/css">
+<link href="../css/bootstrap-grid.css" rel="stylesheet" type="text/css">
+<link href="../css/bootstrap-reboot.css" rel="stylesheet" type="text/css">
+<link href="../css/bootstrap-reboot.min.css" rel="stylesheet" type="text/css">
+<link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<title>Braingame</title>
+</head>
+
+<body>
+
+<!--NAV BAR-->
+<div class="pos-f-t">
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+            <h5 class="text-white h4">Braingame</h5>
+            <span class="text-muted"> </span> 
+            <!--MENU-->
+            <div style="margin: 0 auto;">
+                <button id="info" style=" width:24%; height: 30px; border-radius: 20px;" type="button" onClick="window.location.href='../Menu/Info.html'" class="btn btn-secondary btn-sm" >Info</button>
+                <button class="btn btn-secondary btn-sm" id="braingame" style="background-color: cadetblue; border-radius: 20px;  width:24%; height: 30px; position: relative;" type="button" onClick="window.location.href='../Main web.html'">Home</button>
+                <button class="btn btn-secondary btn-sm" id="market" style="border-radius: 20px;  width:24%; height: 30px; position: relative;" type="button" onClick="window.location.href='../Menu/market.html'">Market</button>
+                <button class="btn btn-secondary btn-sm" id="membership" style=" border-radius: 20px; width:24%;height: 30px; "  type="button" onClick="window.location.href='../Menu/membership.html'">Membership</button>
+                <div id="infomassage">
+                    <h4>Info</h4>
+                    <p>You can find what we are here!</p>
+                </div>
+                <div id="braingamemassage">
+                    <h4>Braingame</h4>
+                    <p>Let's play games!</p>
+                </div>
+                <div id="marketmassage">
+                    <h4>Market</h4>
+                    <p>What's interesting goods here?</p>
+                </div>
+                <div id="membershipmassage">
+                    <h4>Membership</h4>
+                    <p>Join us!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+        <button onClick="ShowMenu()" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+        <h1 id="MainWebHead" style="margin: 0 auto;">Braingame</h1>
+        <a href="../Main web.html"><img src="../Img/goback.png" width="48" style="float: left;" height="48" alt="can not find"/></a> </nav>
+</div>
+<div style="text-align: center;">
+    <h1 style="text-align: center; position: relative; top: 200px;">Developing...</h1>
+    <img src="../Img/wait.gif" style="position: relative; top: 200px;" width="400" height="120" alt="can't find?"/> </div>
+
+<!--JAVASCRIPT--> 
+<script src="js/Main_web.js"></script> 
+<script src="js/bootstrap.bundle.js"></script> 
+<script src="js/bootstrap.bundle.min.js"></script> 
+<script src="js/bootstrap.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+<script>
+		function goback(){
+			location.href="javascript:history.go(-1)";
+		}
+	</script>
+</body>
+</html>

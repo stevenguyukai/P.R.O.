@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<!--HEAD-->
+<head>
+<meta charset="UTF-8">
+<link href="../css/Main_web.css" rel="stylesheet" type="text/css">
+<link href="../css/bootstrap-grid.min.css" rel="stylesheet" type="text/css">
+<link href="../css/bootstrap-grid.css" rel="stylesheet" type="text/css">
+<link href="../css/bootstrap-reboot.css" rel="stylesheet" type="text/css">
+<link href="../css/bootstrap-reboot.min.css" rel="stylesheet" type="text/css">
+<link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<title>Picture Icon</title>
+</head>
+
+<body style="background-color: aliceblue;">
+
+<!--NAV BAR-->
+<div class="pos-f-t">
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+            <h5 class="text-white h4">Picture Icon</h5>
+            <span class="text-muted"> </span> </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+        <button onClick="ShowMenu()" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+        <h1 id="MainWebHead" style="margin: 0 auto;">Picture Icon</h1>
+        <button class="btn btn-outline-info" id="Back" onClick="goback()" style="float: left; width: 80px; height: 35px;position: relative;" type="button">Back</button>
+    </nav>
+</div>
+
+<!--BODY-->
+<div> <img src="../Img/Icon.jpg" style="border-radius:0px 8px 8px 8px;height: 70%; width: 70%;" alt="Picture not find!">
+    <div style="float: right;">
+        <div style="text-align: center;">
+            <h2>This is our Icon<br>
+                Ha!Ha!Ha!</h2>
+        </div>
+    </div>
+</div>
+
+<!--JAVASCRIPT--> 
+<script src="js/Main_web.js"></script> 
+<script src="js/bootstrap.bundle.js"></script> 
+<script src="js/bootstrap.bundle.min.js"></script> 
+<script src="js/bootstrap.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+<script>
+		function goback(){
+			location.href="javascript:history.go(-1)";
+		}
+	</script>
+</body>
+</html>

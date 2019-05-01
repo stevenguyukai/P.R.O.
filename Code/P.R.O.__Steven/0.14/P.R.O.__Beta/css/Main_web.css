@@ -1,0 +1,95 @@
+/* CSS Document */
+#MainWebHead {
+    font-size: 55px;
+    text-shadow: 0.6px 0px 0px black;
+    color: rgba(26,163,184,1.00);
+    text-align: center;
+    font-family: abril-fatface;
+    font-style: normal;
+    font-weight: 300;
+}
+#MainWeb {
+    position: fixed;
+    top: 0px;
+    height: 62px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: antiquewhite;
+    z-index: 1;
+}
+#headhr {
+    position: relative;
+    top: -20px;
+}
+#headbutton {
+    height: 40px;
+    width: 80px;
+    box-shadow: 0px 0px 1px;
+    background-color: white;
+    position: relative;
+    left: 40px;
+    float: left;
+}
+#menubackground {
+    position: fixed;
+    top: 50px;
+    left: -33px;
+    height: 240px;
+    width: 160px;
+    background-color: antiquewhite;
+    border-bottom-right-radius: 60px;
+    z-index: 2;
+}
+#infomassage {
+    height: 85px;
+    width: 28%;
+	left: 9.5%;
+    top: 100px;
+    border-radius: 30px;
+    background-color:#6A757C;
+    display: none;
+    z-index: 4;
+    position: absolute;
+	text-align: center;
+	color: black;
+}
+#braingamemassage {
+    height: 85px;
+    width: 28%;
+    border-radius: 30px;
+    background-color: #6A757C;
+    display: none;
+    text-align: center;
+    z-index: 4;
+    position: absolute;
+    left: 9.5%;
+    top: 100px;
+	color: black;
+}
+#marketmassage {
+    height: 85px;
+    width: 28%;
+    border-radius: 30px;
+    background-color: #6A757C;
+    text-align: center;
+    display: none;
+    z-index: 4;
+    position: absolute;
+    left: 59.3%;
+    top: 100px;
+	color: black;
+}
+#membershipmassage {
+    height: 85px;
+    width: 28%;
+    border-radius: 30px;
+    background-color:#6A757C;
+    text-align: center;
+    display: none;
+    z-index: 4;
+    position: absolute;
+    left: 59.3%;
+    top: 100px;
+	color: black;
+}

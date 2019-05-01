@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+
+<!--HEAD-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>先驱者PRO</title>
+<link href="../css/Main_web.css" rel="stylesheet" type="text/css">
+<link href="../css/bootstrap-grid.min.css" rel="stylesheet" type="text/css">
+<link href="../css/bootstrap-grid.css" rel="stylesheet" type="text/css">
+<link href="../css/bootstrap-reboot.css" rel="stylesheet" type="text/css">
+<link href="../css/bootstrap-reboot.min.css" rel="stylesheet" type="text/css">
+<link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<!--NAV BAR-->
+<div class="pos-f-t">
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+            <h5 class="text-white h4">Welcome to PRO</h5>
+            <span class="text-muted"> 
+            
+            <!--MENU-->
+            <div id="button1" style="display: none;"> </div>
+            </span> </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+        <h1 id="MainWebHead" style="margin: 0 auto;">Welcome to PRO</h1>
+    </nav>
+</div>
+<br>
+<br>
+<div align="center" style="font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, sans-serif">
+    <table>
+        <tr>
+            <td>User name</td>
+            <td><input type="text" placeholder="User name"/></td>
+        </tr>
+        <tr>
+            <td>password</td>
+            <td><input type="password" placeholder="Password"/></td>
+        </tr>
+    </table>
+    <br/>
+    <a href="Forget_password.html" style="font-size: 13px; float: center; color: rgba(97,31,186,1.00);">Forget password?</a>&emsp;&emsp;&emsp;<a href="Sign_up.html" style="font-size: 13px; float: center; color: rgba(97,31,186,1.00);">Sign up!</a><br/>
+    <br/>
+    <input type="button" onClick="submit()" value="Log in!">
+</div>
+<!--<div id="message" style="height: 100px; border-color:(255,0,4,1.00); border-style: solid; font-size:100px;" >
+	</div>--> 
+<script>
+		function submit(){
+			//document.getElementById("message").innerHTML="Success";
+			var t=setTimeout("goback()",0000);
+		}
+		function goback(){
+			alert("Sign in successfully!");
+			location.href="javascript:history.go(-1)";
+		}
+	</script> 
+<!--JAVASCRIPT--> 
+<script src="../js/Main_web.js"></script> 
+<script src="../js/bootstrap.bundle.js"></script> 
+<script src="../js/bootstrap.bundle.min.js"></script> 
+<script src="../js/bootstrap.js"></script> 
+<script src="../js/bootstrap.min.js"></script> 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
