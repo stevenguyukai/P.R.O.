@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<div align="center">
+	    <input type="number" placeholder="总共几个数字" id="number">
+	    <input type="button" id="calculate" onClick="Calculate()" value="Calculate">
+		<br>
+		<h1 id="result"></h1>
+		<br>
+		<span id="formula"></span>
+	</div>
+	
+</body>
+	
+	<script>
+		var number = document.getElementById("number");
+		var a = 1;
+		var formula =1;
+
+		
+		function Calculate(){
+			a = 1;
+			formula = 1;
+			for(var i = 1; i<=Number(number.value); i++){
+				a=a * i;
+			}
+			for(var k = 1; k<i;k++){
+				if(k>=2){
+				formula+= "&times" + k;
+				}
+			}
+			
+			if(Number(number.value)<=0){
+				alert("Error! Number must be bigger than 0.");
+			}
+			
+			var answer = document.getElementById("result");
+			answer.innerHTML=a;
+			var formulawrite = document.getElementById("formula");
+			formulawrite.innerHTML=formula;
+		}
+	</script>
+</html>

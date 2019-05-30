@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>数组</title>
+</head>
+
+<body>
+</body>
+	<script>
+		var a = [3,64,234,1,23]
+		for (var i=0;i<a.length;i++){
+			for(var j=0; j<a.length; j++){
+				if (a[j]>a[j+1]){
+					var b=a[j+1];
+					a[j+1] = a[j];
+					a[j]=b;
+				}
+			}
+		}
+/*		document.write(a);*/
+		
+		
+		var c = [2,65,1234,12,32,23]
+		for(var z=0;z<c.length;z++){
+			for(var x=0;x<c.length;x++){
+				if(c[x]<c[x+1]){
+					var v=c[x+1];
+					c[x+1]=c[x];
+					c[x]=v;
+				}
+			}
+		}
+		document.write(c);
+	</script>
+</html>
