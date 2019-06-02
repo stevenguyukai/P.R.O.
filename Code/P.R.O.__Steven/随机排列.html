@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<table style="border: solid #FF0004 2px; height: 300px; width: 300px;">
+    <tr style="border: solid #000BFF 2px; height: 100px; width: 300px">
+        <td style="border: solid #48FF00 2px; text-align: center; font-size: 50px;" id="a0"></td>
+        <td style="border: solid #48FF00 2px; text-align: center; font-size: 50px;" id="a1"></td>
+        <td style="border: solid #48FF00 2px; text-align: center; font-size: 50px;" id="a2"></td>
+    </tr>
+    <tr style="border: solid #000BFF 2px; height: 100px; width: 300px">
+        <td style="border: solid #48FF00 2px; text-align: center; font-size: 50px;" id="a3"></td>
+        <td style="border: solid #48FF00 2px; text-align: center; font-size: 50px;" id="a4"></td>
+        <td style="border: solid #48FF00 2px; text-align: center; font-size: 50px;" id="a5"></td>
+    </tr>
+    <tr style="border: solid #000BFF 2px; height: 100px; width: 300px">
+        <td style="border: solid #48FF00 2px; text-align: center; font-size: 50px;" id="a6"></td>
+        <td style="border: solid #48FF00 2px; text-align: center; font-size: 50px;" id="a7"></td>
+        <td style="border: solid #48FF00 2px; text-align: center; font-size: 50px;" id="a8"></td>
+    </tr>
+</table>
+<input type="button" id="check" onClick="aqaq()" value="随机排列">
+
+<!--<script src="../js/Sudoku.js"></script>--> 
+<script>
+		function aqaq(){
+            var allnumber = [];
+			var caninputnumber = [1,2,3,4,5,6,7,8,9];
+			
+			console.log("1");
+			for(var i = 0; i<9 ; i++){
+            var checki = parseInt(Math.random()*caninputnumber.length);
+            
+				allnumber.push("a"+i);
+				var number = caninputnumber[checki];
+				console.log("checki = " + checki);
+				console.log("number = " + number);
+				var a1 = document.getElementById(allnumber[i]);
+				var answer = parseInt(number);
+				a1.innerHTML = answer;
+				caninputnumber.splice(checki,1);
+			}
+			
+		}
+	</script>
+</body>
+</html>

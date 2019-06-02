@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<input type="number" id="numbers" placeholder="添加数字">
+	<input type="button" value="添加数字到数组" onClick="addNumberToArray()">
+	<input type="button" value="冒泡从小到大" onClick="rerangeGettingsmaller()">
+	<input type="button" value="冒泡从大到小" onClick="rerangeGettingBigger()">
+	<br><br>
+	<h2 id="array"></h2>
+</body> 
+	
+	<script>
+		var allnumber=[];
+	    var a = document.getElementById("array");
+		var times = 0;
+		
+		function addNumberToArray(){
+			var addnumber = document.getElementById("numbers").value;
+			allnumber[times] = addnumber; 
+			a.innerHTML = (allnumber);
+						times ++;
+
+		}
+		
+		function rerangeGettingsmaller(){
+			for (var i=0;i<allnumber.length;i++){
+			for(var j=0; j<allnumber.length; j++){
+				if (allnumber[j]>allnumber[j+1]){
+					var b=allnumber[j+1];
+					allnumber[j+1] = allnumber[j];
+					allnumber[j]=b;
+				}
+			}
+		}
+			a.innerHTML = (allnumber);
+		}
+		
+		
+		function rerangeGettingBigger(){
+		for(var z=0;z<allnumber.length;z++){
+			for(var x=0;x<allnumber.length;x++){
+				if(allnumber[x]<allnumber[x+1]){
+					var v=allnumber[x+1];
+					allnumber[x+1]=allnumber[x];
+					allnumber[x]=v;
+				}
+			}
+		}
+			a.innerHTML = (allnumber);
+		}
+	</script>
+	
+</html>
