@@ -35,15 +35,13 @@ function a(i){
 function check(i){
 	if((i % 3 == 0) && (b[i] == "teamA") && (b[i + 1] == "teamA") && (b[i + 2] == "teamA") ||
 		(b[i] == "teamA") && (b[i + 3] == "teamA") && (b[i + 6] == "teamA") ||
-		(b[i] == "teamA") && (b[i + 4] == "teamA") && (b[i + 8] == "teamA") ||
-		(b[i] == "teamA") && (b[i + 2] == "teamA") && (b[i + 4] == "teamA")){
+		(b[i] == "teamA") && (b[i + 4] == "teamA") && (b[i + 8] == "teamA")){
 			result.innerHTML = "teamA win";
 			c = true;
 	}
 	if((i % 3 == 0) && (b[i] == "teamB") && (b[i + 1] == "teamB") && (b[i + 2] == "teamB") ||
 		(b[i] == "teamB") && (b[i + 3] == "teamB") && (b[i + 6] == "teamB") ||
-		(b[i] == "teamB") && (b[i + 4] == "teamB") && (b[i + 8] == "teamB") ||
-		(b[i] == "teamB") && (b[i + 2] == "teamB") && (b[i + 4] == "teamB")){
+		(b[i] == "teamB") && (b[i + 4] == "teamB") && (b[i + 8] == "teamB") ){
 			result.innerHTML = "teamB win";
 			c = true;
 	}
