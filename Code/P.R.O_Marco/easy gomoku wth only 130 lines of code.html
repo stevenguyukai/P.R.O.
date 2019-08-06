@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<style type="text/css">
+		.span{
+			border: 1px solid red;
+		}
+		#table .line{
+			width: 20px;
+			height: 20px;
+			border: 1px solid blue;
+
+		}
+		#table1 .line{
+			width: 22px;
+			height: 22px;
+			border-radius: 50%;
+		}
+		#table1{
+			position: relative;
+			left: -465px;
+			top: 10px;
+		}
+		#table{
+			text-align: center;
+		}
+		.table{
+			display: inline-block;
+			border-spacing: 0;
+		}
+		#bigdiv{
+			text-align: center;
+		}
+		body{
+			background-color: rgb(68, 153, 153);
+		}
+		.black{
+			background-color: black; 
+		}
+		.white{
+			background-color: white;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		function createTable(){
+			var body = document.getElementsByTagName("body");
+			var bigDiv = document.createElement("div");
+			body[0].appendChild(bigDiv);
+			bigDiv.id = "bigdiv";
+			var row = [], line, table = [];
+			for (var i = 0; i < 2; i++) {
+				table[i] = document.createElement("table");
+				bigDiv.appendChild(table[i]);
+				table[i].className = "table";
+			}
+			table[0].id = "table";
+			table[1].id = "table1";
+			for(var i = 0; i < 20; i++){
+				for(var k = 0; k < 2; k++){
+					if(i == 19 && k == 0) continue;
+					row[k] = document.createElement("tr");
+				 	table[k].appendChild(row[k]);
+				 	row[k].className = "row";
+				}
+			 	for(var j = 0; j < 20; j++){
+			 		for(var k = 0; k < 2; k++){
+			 			if((i == 19 || j == 19) && k == 0) continue;
+				 		line = document.createElement("td");
+					 	row[k].appendChild(line);
+					 	line.className = "line";
+					 }
+			 	}
+	 		}
+		}
+		createTable();
+	</script>
+	<script type="text/javascript">
+		var body = document.getElementsByTagName("body");
+		var block = document.querySelectorAll('#table1 tr td');
+		var chessNum = 0;
+		var save1 = [];
+		var check1, win;
+		function check(){
+			setInterval(function(){
+				if(win) return;
+				for (var i = 0; i < block.length; i++) {
+						save(i);
+						chessA(i);
+						checkA(i);
+					 }
+			},10)
+		}
+		function chessA(i){
+			block[i].onmousedown = function(){
+				if(save1[i] != "line") return;
+				if(chessNum % 2 == 0){
+					block[i].className += " black";
+				}else if(chessNum % 2 == 1){
+					block[i].className += " white";
+				}
+				chessNum++;
+			}
+		}
+		function save(i){
+			save1[i] = block[i].className.substr(-5);
+		}
+		function checkA(i){
+			for(var k = 0; k < 2; k++){
+				if(k == 0) check1 = "white";
+				else if(k == 1) check1 = "black";
+				if(save1[i] == check1 && save1[i + 1] == check1 && save1[i + 2] == check1 && save1[i + 3] == check1 && save1[i + 4] == check1 ||
+					save1[i] == check1 && save1[i + 20] == check1 && save1[i + 40] == check1 && save1[i + 60] == check1 && save1[i + 80] == check1 ||
+					save1[i] == check1 && save1[i + 21] == check1 && save1[i + 42] == check1 && save1[i + 63] == check1 && save1[i + 84] == check1 ||
+					save1[i] == check1 && save1[i + 19] == check1 && save1[i + 38] == check1 && save1[i + 57] == check1 && save1[i + 76] == check1){
+					var answer = document.createElement("div");
+					answer.innerHTML = check1 + " win";
+					body[0].appendChild;
+					console.log(check1 + " win");
+					win = true;
+				}
+			}
+		}
+		check();
+	</script>
+</body>
+</html>
