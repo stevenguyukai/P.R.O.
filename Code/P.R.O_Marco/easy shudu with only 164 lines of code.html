@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<style type="text/css">
+		td{
+			width: 50px;
+			height: 50px;
+			border: 1px solid red;
+		}
+		.bigdiv{
+			text-align: center;
+		}
+		.table{
+			display: inline-block;
+			border-spacing: 0;
+			border: 5px solid red;
+		}
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.number{
+			width: 50px;
+			height: 50px;
+			position: absolute;
+			left: 30px;
+			border: 1px solid red;
+		}
+		#number1, #number6{
+			top: 0;
+		}
+		#number2, #number7{
+			top: 80px;
+		}
+		#number3, #number8{
+			top: 160px;
+		}
+		#number4, #number9{
+			top: 240px;
+		}
+		#number5{
+			top: 320px;
+		}
+		#number6, #number7, #number8, #number9{
+			left: 100px;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		function createTable(){
+		var body = document.getElementsByTagName('body');
+		var bigDiv = document.createElement("div");
+		body[0].appendChild(bigDiv);
+		bigDiv.className = "bigdiv";
+		var table = [], row = [], line, br, number;
+		for(var i = 0; i < 9; i++){
+			table[i] = document.createElement("table");
+			bigDiv.appendChild(table[i]);
+			table[i].className = "table table" + i;
+			for(var j = 0; j < 3; j++){
+				row[j] = document.createElement("tr");
+				table[i].appendChild(row[j]);
+				row[j].className = "row" + (j + i - i % 3);
+				for(var k = 0; k < 3; k++){
+					line = document.createElement("td");
+					row[j].appendChild(line);
+					line.className = "line" + ((i % 3) * 3 + k);
+					
+				}
+			}
+			if((i + 1) % 3 == 0){
+				br = document.createElement("br");
+				bigDiv.appendChild(br);
+			}
+		}
+		for(var i = 1; i < 10; i++){
+			number = document.createElement("div");
+			number.innerHTML = i;
+			number.className = "number";
+			number.id = "number" + i;
+			bigDiv.appendChild(number);
+		}
+	}
+	createTable();
+	</script>
+	<script type="text/javascript">
+		var number = document.getElementsByClassName('number');
+		var number1 = null, save1 = [], table1 = [], row1 = [], line1 = [], allTd1 = [], space2 = true, table2 = true, row2 = true, line2 = true, table3, row3, line3;
+		fillInCheck1 = document.querySelectorAll(".table td");
+		function fill(){
+			setInterval(function(){
+				allTd(i);
+				for (var i = 0; i < number.length; i++) {
+					save(i);
+					fillIn(i);
+				}
+				for (var i = 0; i < allTd1.length; i++) {
+					fillIn1(i);
+					saveA(i);
+				}
+				
+				for (var i = 0; i < allTd1.length; i++) {
+					checkSpace(i);
+				}
+				checkA();
+			},10)
+		}
+		
+		function save(i){
+			save1[i] = number[i];
+			
+		}
+		function saveA(i){
+			table3 = ".table" + i + " td";
+			row3 = ".row" + i + " td";
+			line3 = ".line" + i;
+			table1[i] = document.querySelectorAll(table3);
+			row1[i] = document.querySelectorAll(row3);
+			line1[i] = document.querySelectorAll(line3);
+		}
+		function allTd(){
+			allTd1 = document.querySelectorAll(".table td");
+		}
+		function fillIn(i){
+			number[i].onmousedown = function(){
+					number1 = number[i].innerHTML;
+			}
+		}
+		function fillIn1(i){
+			allTd1[i].onmousedown = function(){
+				if(number1 == null){
+					return;
+				}else{
+					allTd1[i].innerHTML = number1;
+				}
+				number1 = null;
+			}
+		}
+		function checkSpace(i){
+			if(allTd1[i].innerHTML == "") space2 = false;
+		}
+		function checkA(){
+			for (var k = 0; k < 9; k++) {
+				for (var i = 0; i < 9; i++) {
+					for (var j = 0; j < 9; j++) {
+						if(i == j) continue;
+						if(table1[k][i].innerHTML == table1[k][j].innerHTML) table2 = false;
+						if(row1[k][i].innerHTML == row1[k][j].innerHTML) row2 = false;
+						 if(line1[k][i].innerHTML == line1[k][j].innerHTML) line2 = false;
+					}
+				}
+			} 
+			if(row2 && line2 && table2 && space2) {
+				alert("You finish it");
+			}
+			space2 = true, table2 = true, row2 = true, line2 = true;
+		}
+		fill();
+	</script>
+</body>
+</html>
