@@ -1,0 +1,48 @@
+<view id="{{bgColor}}">
+
+  <!-- 顶部视图 -->
+  <view id="{{dayORnight}}" animation="{{openLargeView}}">
+    <view id="topBgColor" animation="{{changeColor}}">
+      <image src="/assets/learning/trophyIcon.png" class="trophyIconStyle"></image>
+      <image src="/assets/learning/computerIcon.png" id="computerTableIcon"></image>
+      <text id="userName" bindtap="warningLogin">{{userName}}</text>
+      <text id="introduce">PRO CODING CLUB</text>
+      <image src="{{sunORmoon}}" id="sunORmoon" bindtap="changeTimeState"></image>
+      <image src="{{openORretract}}" id="openANDretractIcon" bindtap="openView"></image>
+    </view>
+  </view>
+
+
+  <!-- 学习内容视图 -->
+  <view>
+    <view id="contentWhole" style="background-color:{{blackORwhite}}" animation="{{changeBgColor}}"></view>
+
+    <!-- A.1 -->
+    <view animation="{{animationGameBaseMove}}">
+      <view class="{{learningCard}}" style="top:300rpx;left:31.4%;width:370rpx;" animation="{{cardBgColor}}">
+        <text class="learningCardTitle" style="color:{{blackORwhiteTitle}}">脑容量</text>
+        <text class="learningCardSummary" style="color:{{blackORwhiteTitle}}" decode="nbsp">制作者：小黑\n&nbsp;&nbsp;&nbsp;你的大脑可以装下多少东西呢？</text>
+        <button class="learningCardButton"plain="true" type="primary" bindtap="transferToGame1">开始训练</button>
+        <image src="{{gameArrow}}" bindtap="learningCardExtend" class="gameArrowIcon"></image>
+      </view>
+    </view>
+    <view animation="{{animationGameTopMove}}">
+      <view class="{{learningCard}}" style="top:300rpx;left:31.4%;" animation="{{cardBgColor}}" bindtap="learningCardExtend">
+        <image src="{{gameOneRemember}}" class="gameIcon"></image>
+      </view>
+    </view>
+
+    <!-- B.1 -->
+    <view class="{{learningCard}}" style="top:650rpx;left:6%" animation="{{cardBgColor}}">
+    </view>
+    <!-- B.2 -->
+    <view class="{{learningCard}}" style="top:650rpx;left:58%" animation="{{cardBgColor}}">
+    </view>
+
+    <!-- C.1 -->
+    <view class="{{learningCard}}" style="top:1000rpx;left:31.4%" animation="{{cardBgColor}}">
+    </view>
+
+  </view>
+
+</view>

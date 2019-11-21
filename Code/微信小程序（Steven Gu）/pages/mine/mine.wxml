@@ -1,0 +1,52 @@
+<!--pages/mine/mine.wxml-->
+
+<!-- 用户身份卡片 -->
+<view class="userInfo" animation="{{slide_up3}}">
+  <image class="backgroundImage" src="/assets/Avatar/backgroundAvatar/avatarBackground.png">
+    <view>
+      <image class="avatarBorder" src="/assets/Avatar/backgroundAvatar/avatarBorder2.png">
+        <view>
+          <image class="avatar" src="{{userAvatar}}" bindtap="changeAvatar"></image>
+        </view>
+      </image>
+      <view class="userInfomation">
+        <text>{{userInfomationText}}</text>
+      </view>
+    </view>
+  </image>
+</view>
+
+<!-- 登陆按钮 -->
+<button id="getUserInfoBtn" class="{{mineInfoBtnPush}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" bindtap="showLoading" type="primary" animation="{{slide_up4}}"> 
+  微信授权登陆
+</button>
+
+<!-- 选择框1 -->
+<view id="mineOptionsStyle1" class="{{btnPushed}}" animation="{{slide_up1}}">
+  <image class="backgroundImageSmall" src="/assets/Avatar/backgroundAvatar/borderSelect.png"></image>
+</view>
+
+<!-- 选择框2 -->
+<view id="mineOptionsStyle2" class="{{btnPushed}}" animation="{{slide_up1}}">
+  <image class="backgroundImageSmall" src="/assets/Avatar/backgroundAvatar/borderSelect.png"></image>
+</view>
+
+<!-- 选择框3 -->
+<view id="mineOptionsStyle3" class="{{btnPushed}}" animation="{{slide_up1}}">
+  <image class="backgroundImageSmall" src="/assets/Avatar/backgroundAvatar/borderSelect.png"></image>
+</view>
+
+<!-- 选择框4 -->
+<view id="mineOptionsStyle4" class="{{btnPushed}}" animation="{{slide_up1}}">
+  <image class="backgroundImageSmall" src="/assets/Avatar/backgroundAvatar/borderSelect.png"></image>
+</view>
+
+<!-- 选择框5 -->
+<view id="mineOptionsStyle5" class="{{btnPushed}}" animation="{{slide_up1}}">
+  <image class="backgroundImageSmall" src="/assets/Avatar/backgroundAvatar/borderSelect.png"></image>
+</view>
+
+<!-- 选择框6 -->
+<view id="mineOptionsStyle6" class="{{btnPushed}}" animation="{{slide_up1}}">
+  <image class="backgroundImageSmall" src="/assets/Avatar/backgroundAvatar/borderSelect.png"></image>
+</view>
