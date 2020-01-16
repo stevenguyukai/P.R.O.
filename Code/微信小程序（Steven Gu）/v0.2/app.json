@@ -1,0 +1,64 @@
+{
+  "pages": [
+    "pages/about/about",
+    "pages/news/news",
+    "pages/learning/learning",
+    "pages/mine/mine",
+    "pages/changeAvatar/changeAvatar",
+    "pages/articles/articles",
+    "pages/search/search",
+    "gamePages/game1/game1",
+    "gamePages/game2/game2",
+    "gamePages/game3/game3",
+    "gamePages/game4/game4",
+    "gamePages/game5/game5",
+    "gamePages/game6/game6",
+    "gamePages/game7/game7",
+    "gamePages/game8/game8",
+    "gamePages/game9/game9",
+    "gamePages/game1/game1Game"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#444858",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "先驱者 PRO",
+    "backgroundColor": "#444858",
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "selectedColor": "#327DD4",
+    "list": [
+      {
+        "pagePath": "pages/learning/learning",
+        "text": "大脑训练",
+        "iconPath": "assets/tabBarIcon/learning.png",
+        "selectedIconPath": "assets/tabBarIcon/learning_selected.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "主页",
+        "iconPath": "assets/tabBarIcon/about.png",
+        "selectedIconPath": "assets/tabBarIcon/about_selected.png"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "text": "文章",
+        "iconPath": "assets/tabBarIcon/news.png",
+        "selectedIconPath": "assets/tabBarIcon/news_selected.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "assets/tabBarIcon/mine.png",
+        "selectedIconPath": "assets/tabBarIcon/mine_selected.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "pop-up-observasion": "/component/my-cpn/my-cpn",
+    "pop-up-multitask": "/component/my-cpn-multitask/my-cpn-multitask",
+    "pop-up-react": "/component/my-cpn-react/my-cpn-react",
+    "van-button": "/miniprogram-npm/miniprogram_npm/@vant/weapp/button/index"
+  },
+  "sitemapLocation": "sitemap.json"
+}

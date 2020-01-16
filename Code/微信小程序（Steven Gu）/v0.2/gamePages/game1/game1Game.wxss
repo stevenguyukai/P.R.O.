@@ -1,0 +1,51 @@
+.separateLine{
+  height: 100%;
+  width: 0.4%;
+  position: fixed;
+  left: 49.8%;
+  background: linear-gradient(lightblue,#444444,#3d616e)
+}
+
+.character1{
+  position: absolute;
+  height: 300rpx;
+  width: 40%;
+  left: 42%;
+  top: 70%;
+}
+.character2{
+  position: absolute;
+  height: 300rpx; 
+  width: 40%;
+  left: 18%;
+  top: 70%;
+}
+
+.leftHalfView{
+  height: 100%;
+  width: 49.5%;
+  position: fixed;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.rightHalfView{
+  height: 100%;
+  width: 49.5%;
+  position: fixed;
+  left: 50.5%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.enermyLeft{
+  position: absolute;
+  width:62%;
+  height: 300rpx;
+  left: -5%;
+}
+.enermyRight{
+  position: absolute;
+  width:62%;
+  height: 300rpx;
+  left: 43%;
+}

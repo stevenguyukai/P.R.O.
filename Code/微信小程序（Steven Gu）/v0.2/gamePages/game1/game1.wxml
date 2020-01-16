@@ -1,0 +1,52 @@
+<text class="gameName">深海救援</text>
+<view class="seperationLine" style="background-Color:#5e3fdf;top:60rpx;"></view>
+
+<!--about-->
+<scroll-view scroll-y="true" id="about">
+  <view class="content1">
+    <text class="aboutText">训练方向:</text>
+    <view class="aimIconBg">
+
+      <view class="aimBlock1" bindtap="observationDetail">
+        <image src="/assets/learning/game3/observation.png" class="aimIcon"></image>
+        <view class="aimIconText">
+          <text class="aimIconText1">观察力</text>
+        </view>
+      </view>
+      
+ 
+      <view class="aimBlock2" bindtap="multitaskDetail">
+        <image src="/assets/learning/game3/multitask.png" class="aimIcon"></image>
+        <view class="aimIconText">
+          <text class="aimIconText2">Multitask</text>
+        </view>
+      </view>
+
+      <view class="aimBlock3" bindtap="reactDetail">
+        <image src="/assets/learning/game3/react.png" class="aimIcon"></image>
+        <view class="aimIconText">
+          <text class="aimIconText3">反应力</text>
+        </view>
+      </view>
+
+    </view>
+  </view>
+  <view class="content1">
+    <text class="aboutText">训练目标:</text>
+    <view class="purposeView">
+      <text class="purposeViewText">深海救援通过左右屏的方式，将游戏做的像是同时在玩两个游戏，以来实现一心多用的目的，可以锻炼左右手的反应力和左右眼的观察力。这游戏看起来简单，不过当难度上升，速度加快，游戏的挑战性也会随之增加。</text>
+    </view>
+  </view>
+</scroll-view>
+
+<image src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=415350471,948573095&fm=26&gp=0.jpg" id="picDownName"></image>
+<button class="btnToGame" bindtap="btnIntoGame">进入训练</button>
+
+
+
+
+<pop-up-observasion head="观察力" textColor="#57aaf1" imageLink="/assets/learning/game3/observation.png" wx:if="{{inObser}}" bindtap="observationDetail"></pop-up-observasion>
+
+<pop-up-multitask head="多任务" textColor="#5e6df4" imageLink="/assets/learning/game3/multitask.png" wx:if="{{inMul}}" bindtap="multitaskDetail"></pop-up-multitask>
+
+<pop-up-react head="反应力" textColor="#e77d7a" imageLink="/assets/learning/game3/react.png" wx:if="{{inReact}}" bindtap="reactDetail"></pop-up-react>

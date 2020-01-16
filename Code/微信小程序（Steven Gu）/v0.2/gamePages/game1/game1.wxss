@@ -1,0 +1,152 @@
+/* gamePages/game1.wxss */ 
+page{
+  background-color: white;
+}
+
+#picDownName{ 
+  width: 70%;
+  height: 22%;
+  position: fixed;
+  top: 68%;
+  left: 15%;
+} 
+ 
+.gameName{
+  font-size: 60rpx;
+  position: absolute;
+  left: 34%;
+  top: 20rpx;
+  color: #5e3fdf;
+}
+
+.btnToGame{
+  position: fixed;
+  width: 80%;
+  left: 10%;
+  height: 7%;
+  top: 91%;
+  border-radius: 180rpx;
+  background:linear-gradient(90deg,#0c89d1,blue,#0c89d1);
+  color: white;
+}
+
+.contents{
+  height: 30%;
+  position: absolute;
+  background-color: red;
+}
+
+#about{
+  height: 650rpx;
+  width: 94%;
+  background-color:#47acfa;
+  top: 170rpx;
+  left: 3%;
+  border-radius: 30rpx;
+  position: absolute;
+  box-shadow: 3px 1px 4px 2px #444444;
+}
+
+.content1{
+  width: 90%;
+  height: 440rpx;
+  position: relative;
+  left: 3%;
+  top: 20rpx;
+}
+
+.aboutText{
+  position: relative;
+  left: 3%;
+  color: white;
+}
+
+.aimIconBg{
+  position: relative;
+  top: 50rpx;
+  left: 2%;
+  width: 100%;
+  height: 280rpx;
+  background-color: white;
+  border-radius: 30rpx;
+}
+
+.aimIcon{
+  width: 84%;
+  height: 62%;
+  position: relative;
+  top: 10rpx;
+  left: 8%;
+}
+
+.aimIconText1{
+  position: relative;
+  padding-top: 10rpx;
+  width: 100%;
+  font-size: 35rpx;
+  color: #57aaf1;
+  text-align: center;
+  display: block;
+}
+.aimIconText2{
+  position: relative;
+  padding-top: 10rpx;
+  width: 100%;
+  font-size: 35rpx;
+  color: #5e6df4;
+  text-align: center;
+  display: block;
+}
+.aimIconText3{
+  position: relative;
+  padding-top: 10rpx;
+  width: 100%;
+  font-size: 35rpx;
+  color: #e27a77;
+  text-align: center;
+  display: block;
+}
+
+.aimBlock1{
+  display: inline-block;
+  width: 33%;
+  position: absolute;
+  height: 280rpx;
+  top: 10rpx;
+  left: 0%;
+}
+.aimBlock2{
+  display: inline-block;
+  width: 33%;
+  position: absolute;
+  left: 33%;
+  height: 280rpx;
+  top: 10rpx;
+}
+.aimBlock3{
+  display: inline-block;
+  width: 33%;
+  position: absolute;
+  height: 280rpx;
+  top: 10rpx;
+  left: 66%;
+}
+
+.purposeView{
+  position: relative;
+  top: 50rpx;
+  left: 2%;
+  width: 100%;
+  height: 320rpx;
+  background-color: white;
+  border-radius: 30rpx;
+}
+
+.purposeViewText{
+  color: #666666;
+  font-size: 35rpx;
+  width: 90%;
+  position: absolute;
+  left: 5%;
+  top: 16rpx;
+}

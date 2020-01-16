@@ -1,0 +1,19 @@
+<view>
+  <image src="http://bestanimations.com/Nature/Water/underwater-ocean-gif.gif" style="height:100%;width:100%;position:fixed;"></image>
+  <view class="separateLine"></view>
+
+  <!-- 左屏 -->
+  <image src="/assets/learning/game3/character2.png" class="character2" animation="{{flipLeft}}"></image>
+  <view class="leftHalfView" bindtap="tapLeft">
+    <!-- 敌人 -->
+    <image src="/assets/learning/game3/shark1.png" class="enermyLeft" style="top:{{enermy1X}}rpx;"></image>
+  </view>
+
+  <!-- 右屏 -->
+  <image src="/assets/learning/game3/character1.png" class="character1" animation="{{flipRight}}"></image>
+  <view class="rightHalfView" bindtap="tapRight">
+    <!-- 敌人 -->
+    <image src="/assets/learning/game3/shark2.png" class="enermyRight" style="top:{{enermy2X}}rpx;"></image>
+  </view>
+
+</view>

@@ -1,0 +1,19 @@
+/**app.wxss**/
+
+.seperationLine{
+  margin-top: 70rpx;
+  margin-bottom: 20rpx;
+  width: 92%;
+  left: 4%;
+  position: relative;
+  background-color: #cccccc;
+  height: 4rpx;
+}
+
+.show{
+  display: inline-block;
+}
+
+.hide{
+  display: none;
+}

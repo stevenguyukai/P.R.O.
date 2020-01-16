@@ -1,0 +1,179 @@
+<view id="{{bgColor}}" > 
+
+  <!-- 顶部视图 -->
+  <view id="{{dayORnight}}" animation="{{openLargeView}}">
+    <view id="topBgColor" animation="{{changeColor}}">
+      <!-- 顶部非常驻view -->
+      <image src="/assets/learning/proLogo.png" class="proLogo"></image>
+      <text class="noneImportantText" style="color:#66ade7" decode="nbsp">&nbsp;&nbsp;&nbsp;&nbsp;先驱者PRO团队——倾力打造的益脑游戏+小程序 </text>
+      <text class="noneImportantText">\n \n 用户们可以进入“大脑训练”界面开发大脑🧠，也可以进入“文章”页面浏览先驱者PRO团队的原创文章。</text>
+      <image src="/assets/learning/iconFontIcon.png" id="iconFontIcon"></image>
+      <image src="/assets/learning/iconFontIcon2.png" id="iconFontIcon2"></image>
+      <text id="iconFontIconText">小程序内大部分图标来自 www.iconfont.cn</text>
+      <text bindtap="copyEmail" class="noneImportantText" decode="nbsp" style="top:520rpx;left:13%;font-size:26rpx;">如有BUG或者反馈或者就是想说话 请发送至邮箱\n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;proclub@126.com （点击复制）</text>
+      <!-- 顶部常驻view -->
+      <image src="/assets/learning/computerIcon.png" id="computerTableIcon"></image>
+      <text id="userName" bindtap="warningLogin">{{userName}}</text>
+      <text id="introduce">PRO CODING CLUB</text>
+      <image src="{{sunORmoon}}" id="sunORmoon" bindtap="changeTimeState"></image>
+      <image src="{{openORretract}}" id="openANDretractIcon" bindtap="openView"></image>
+    </view>
+  </view>
+  
+ 
+  <!-- 学习内容视图 -->
+  <view>
+
+    <!--用户屏蔽视图开始-->
+      <view style="background-color:black;z-index;100;width:100%;height:100%;position:fixed;display:cover;">
+        <text style="color:yellow;font-size:60rpx;position:relative;z-index:100;">正在加速施工⚠️中</text><text style="color:yellow;font-size:60rpx;position:relative;z-index:100;">正在加速施工⚠️中</text><text style="color:yellow;font-size:60rpx;position:relative;z-index:100;">正在加速施工⚠️中</text><text style="color:yellow;font-size:60rpx;position:relative;z-index:100;">正在加速施工⚠️中</text><text style="color:yellow;font-size:60rpx;position:relative;z-index:100;">正在加速施工⚠️中</text><text style="color:yellow;font-size:60rpx;position:relative;z-index:100;">正在加速施工⚠️中</text><text style="color:yellow;font-size:60rpx;position:relative;z-index:100;">正在加速施工⚠️中</text><text style="color:yellow;font-size:60rpx;position:relative;z-index:100;">正在加速施工⚠️中</text><text style="color:yellow;font-size:60rpx;position:relative;z-index:100;">正在加速施工⚠️中</text><text style="color:yellow;font-size:60rpx;position:relative;z-index:100;">正在加速施工⚠️中</text><text style="color:yellow;font-size:60rpx;position:relative;z-index:100;">正在加速施工⚠️中</text><text style="color:yellow;font-size:60rpx;position:relative;z-index:100;">正在加速施工⚠️中</text><text style="color:yellow;font-size:60rpx;position:relative;z-index:100;">正在加速施工⚠️中</text><text style="color:yellow;font-size:60rpx;position:relative;z-index:100;">正在加速施工⚠️中</text><text style="color:yellow;font-size:60rpx;position:relative;z-index:100;">正在加速施工⚠️中</text><text style="color:yellow;font-size:60rpx;position:relative;z-index:100;">正在加速施工⚠️中</text><text style="color:yellow;font-size:60rpx;position:relative;z-index:100;">正在加速施工⚠️中</text><text style="color:yellow;font-size:60rpx;position:relative;z-index:100;">正在加速施工⚠️中</text><text style="color:yellow;font-size:60rpx;position:relative;z-index:100;">正在加速施工⚠️中</text><text style="color:yellow;font-size:60rpx;position:relative;z-index:100;">正在加速施工⚠️中</text><text style="color:yellow;font-size:60rpx;position:relative;z-index:100;">正在加速施工⚠️中</text><text style="color:yellow;font-size:60rpx;position:relative;z-index:100;">正在加速施工⚠️中</text><text style="color:yellow;font-size:60rpx;position:relative;z-index:100;">正在加速施工⚠️中</text><text style="color:yellow;font-size:60rpx;position:relative;z-index:100;">正在加速施工⚠️中</text><text style="color:yellow;font-size:60rpx;position:relative;z-index:100;">正在加速施工⚠️中</text>
+      </view>
+    <!--用户屏蔽视图结束-->
+
+    <view id="contentWhole" style="background-color:{{blackORwhite}}" animation="{{changeBgColor}}"></view>
+
+    <!-- A.1 -->
+    <view animation="{{animationGameBaseMove}}">
+      <view class="{{learningCard}}" style="top:300rpx;left:31.4%;width:370rpx;" animation="{{cardBgColor}}">
+        <text class="learningCardTitleFour" style="color:{{blackORwhiteTitle}}">深海救援</text>
+        <text class="learningCardSummary" style="color:{{blackORwhiteTitle}}" decode="nbsp">制作者：小黑\n&nbsp;&nbsp;&nbsp;有两个潜水员等着你去拯救，加油！</text>
+        <button class="learningCardButton" plain="true" type="primary" bindtap="transferToGame1">开始训练</button>
+        <image src="{{gameArrow}}" bindtap="learningCardExtend" class="gameArrowIcon"></image>
+      </view>
+    </view>
+    <view animation="{{animationGameTopMove}}">
+      <view class="{{learningCard}}" style="top:300rpx;left:31.4%;" animation="{{cardBgColor}}" bindtap="learningCardExtend">
+        <image src="/assets/learning/game3/icon.png" class="gameIconRight"></image>
+      </view>
+    </view>
+
+    <!-- B.1 -->
+    <view animation="{{learningCardFlip}}">
+      <view class="{{learningCard}}" style="top:700rpx;left:6%" animation="{{cardBgColor}}" bindtap="learningCardFlip">
+        <!-- 正面 -->
+        <view wx:if="{{isOnFront==true}}">
+          <image src="/assets/learning/game1/colorsIcon.png" class="gameIconLeft"></image>
+        </view>
+        <!-- 反面 -->
+        <view wx:if="{{isOnFront==false}}" animation="{{learningCardFlip}}">
+          <text class="flipLearningCardTitle" style="color:{{blackORwhiteTitle}}">五彩缤纷</text>
+          <text class="learningCardSummaryFlip" style="color:{{blackORwhiteTitle}}" decode="nbsp">制作者：张郭圣/小黑\n&nbsp;&nbsp;&nbsp;以最快的速度判断出最精确的颜色。</text>
+          <button class="learningCardButtonFlip" plain="true" type="primary" bindtap="transferToGame2">开始训练</button>
+        </view>
+      </view>
+    </view>
+
+    <!-- B.2 -->
+    <view animation="{{learningCardFlipRight}}">
+      <view class="{{learningCard}}" style="top:700rpx;left:58%" animation="{{cardBgColor}}" bindtap="learningCardFlipRight">
+        <!-- 正面 -->
+        <view wx:if="{{isOnFrontRight==true}}">
+          <image src="/assets/learning/game2/icon.png" class="gameIconRight"></image>
+        </view>
+        <!-- 反面 -->
+        <view wx:if="{{isOnFrontRight==false}}" animation="{{learningCardFlipContent}}" style="learningCardFlipRight">
+          <text class="flipLearningCardTitle" style="color:{{blackORwhiteTitle}}">打破气球</text>
+          <text class="learningCardSummaryFlip" style="color:{{blackORwhiteTitle}}" decode="nbsp">制作者：李骏卫/小黑\n&nbsp;&nbsp;&nbsp;用同样颜色的箭击破同样颜色的气球。</text>
+          <button class="learningCardButtonFlip" plain="true" type="primary" bindtap="transferToGame3">开始训练</button>
+        </view>
+      </view>
+    </view>
+
+    <!-- C.1 -->
+    <view animation="{{animationGameBaseMove2}}">
+      <view class="{{learningCard}}" style="top:1100rpx;left:31.4%;width:370rpx;" animation="{{cardBgColor}}">
+        <text class="learningCardTitle" style="color:{{blackORwhiteTitle}}">脑容量</text>
+        <text class="learningCardSummary" style="color:{{blackORwhiteTitle}}" decode="nbsp">制作者：小黑\n&nbsp;&nbsp;&nbsp;你的大脑可以装下多少东西呢？</text>
+        <button class="learningCardButton" plain="true" type="primary" bindtap="transferToGame4">开始训练</button>
+        <image src="{{gameArrow2}}" bindtap="learningCardExtend2" class="gameArrowIcon"></image>
+      </view>
+    </view>
+    <view animation="{{animationGameTopMove2}}">
+      <view class="{{learningCard}}" style="top:1100rpx;left:31.4%;" animation="{{cardBgColor}}" bindtap="learningCardExtend2">
+        <image src="{{gameOneRemember}}" class="gameIcon"></image>
+      </view>
+    </view>
+
+    <!-- D.1 -->
+    <view animation="{{learningCardFlip2}}">
+      <view class="{{learningCard}}" style="top:1500rpx;left:6%" animation="{{cardBgColor}}" bindtap="learningCardFlip2">
+        <!-- 正面 -->
+        <view wx:if="{{isOnFront2==true}}">
+          <image src="/assets/learning/game4/icon.png" class="gameIcon"></image>
+        </view>
+        <!-- 反面 -->
+        <view wx:if="{{isOnFront2==false}}" animation="{{learningCardFlip2}}">
+          <text class="flipLearningCardTitle" style="color:{{blackORwhiteTitle}}">购物达人</text>
+          <text class="learningCardSummaryFlip" style="color:{{blackORwhiteTitle}}" decode="nbsp">制作者：小黑\n&nbsp;&nbsp;&nbsp;你的盆友们需要你的帮助——购物！</text>
+          <button class="learningCardButtonFlip" plain="true" type="primary" bindtap="transferToGame5">开始训练</button>
+        </view>
+      </view>
+    </view>
+
+    <!-- D.2 -->
+    <view animation="{{learningCardFlipRight2}}">
+      <view class="{{learningCard}}" style="top:1500rpx;left:58%" animation="{{cardBgColor}}" bindtap="learningCardFlipRight2">
+        <!-- 正面 -->
+        <view wx:if="{{isOnFrontRight2==true}}">
+          <image src="/assets/learning/game5/icon.png" class="gameIconRight"></image>
+        </view>
+        <!-- 反面 -->
+        <view wx:if="{{isOnFrontRight2==false}}" animation="{{learningCardFlipContent2}}" style="learningCardFlipRight">
+          <text class="flipLearningCardTitle" style="color:{{blackORwhiteTitle}}">需要验证</text>
+          <text class="learningCardSummaryFlip" style="color:{{blackORwhiteTitle}}" decode="nbsp">制作者：小黑\n&nbsp;&nbsp;&nbsp;登陆各种网站和APP都需要输入验证码啊。</text>
+          <button class="learningCardButtonFlip" plain="true" type="primary" bindtap="transferToGame6">开始训练</button>
+        </view>
+      </view>
+    </view>
+
+    <!-- E.1 -->
+    <view animation="{{animationGameBaseMove3}}">
+      <view class="{{learningCard}}" style="top:1900rpx;left:31.4%;width:370rpx;" animation="{{cardBgColor}}">
+        <text class="learningCardTitleFour" style="color:{{blackORwhiteTitle}}">左右互搏</text>
+        <text class="learningCardSummary" style="color:{{blackORwhiteTitle}}" decode="nbsp">制作者：胡博恒/小黑\n&nbsp;&nbsp;&nbsp;左手画圆右手画方，训练左右手协调能力。</text>
+        <button class="learningCardButton" plain="true" type="primary" bindtap="transferToGame7">开始训练</button>
+        <image src="{{gameArrow3}}" bindtap="learningCardExtend3" class="gameArrowIcon"></image>
+      </view>
+    </view>
+    <view animation="{{animationGameTopMove3}}">
+      <view class="{{learningCard}}" style="top:1900rpx;left:31.4%;" animation="{{cardBgColor}}" bindtap="learningCardExtend3">
+        <image src="/assets/learning/game6/icon.png" class="gameIconRight"></image>
+      </view>
+    </view>
+
+    <!-- F.1 -->
+    <view animation="{{learningCardFlip3}}">
+      <view class="{{learningCard}}" style="top:2300rpx;left:6%" animation="{{cardBgColor}}" bindtap="learningCardFlip3">
+        <!-- 正面 -->
+        <view wx:if="{{isOnFront3==true}}">
+          <image src="/assets/learning/game7/icon.png" class="gameIconLeft"></image>
+        </view>
+        <!-- 反面 -->
+        <view wx:if="{{isOnFront3==false}}" animation="{{learningCardFlip3}}">
+          <text class="flipLearningCardTitle" style="color:{{blackORwhiteTitle}}">平衡之道</text>
+          <text class="learningCardSummaryFlip" style="color:{{blackORwhiteTitle}}" decode="nbsp">制作者：潘鹏/小黑\n&nbsp;&nbsp;&nbsp;无形的力量在破坏天平的平衡，保持平衡！</text>
+          <button class="learningCardButtonFlip" plain="true" type="primary" bindtap="transferToGame8">开始训练</button>
+        </view>
+      </view>
+    </view>
+
+    <!-- F.2 -->
+    <view animation="{{learningCardFlipRight3}}">
+      <view class="{{learningCard}}" style="top:2300rpx;left:58%" animation="{{cardBgColor}}" bindtap="learningCardFlipRight3">
+        <!-- 正面 -->
+        <view wx:if="{{isOnFrontRight3==true}}">
+          <image src="/assets/learning/game8/icon.png" class="gameIconRight"></image>
+        </view>
+        <!-- 反面 -->
+        <view wx:if="{{isOnFrontRight3==false}}" animation="{{learningCardFlipContent3}}" style="learningCardFlipRight">
+          <text class="flipLearningCardTitle" style="color:{{blackORwhiteTitle}}">冰山一角</text>
+          <text class="learningCardSummaryFlip" style="color:{{blackORwhiteTitle}}" decode="nbsp">制作者：小黑\n&nbsp;&nbsp;&nbsp;一个绿色的猪尾巴？哦...原来是西瓜。</text>
+          <button class="learningCardButtonFlip" plain="true" type="primary" bindtap="transferToGame9">开始训练</button>
+        </view>
+      </view>
+    </view>
+
+  </view> 
+
+</view>
+
