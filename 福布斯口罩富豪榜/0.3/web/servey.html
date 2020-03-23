@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>福布斯口罩富豪榜</title>
+<link href="css/servey.css" rel="stylesheet" type="text/css">
+<script src="js/vue.js"></script>
+	<script src="https://api.map.baidu.com/api?v=2.0&ak=cuaAOPQZcdHvcvLBYMTuyGmPbyYU7cwk" type="text/javascript"></script>
+</head>
+     
+<body class="wholeWeb">
+
+	<!-- 请求用户地理位置 -->
+	<div :style="getLoca" class="getLocation">
+		<div class="getLocationDivBlur"></div>
+		<div class="getLocationDiv">
+			<div class="getLocationTextDiv" style="width: 90%; height: 90%; margin-left: 5%; margin-top: 5%;">
+				<p class="getLocationText"  id="text">
+					我们希望获取您的地理位置以根据区域排名(´･ω･`)
+				</p>
+				<img src="images/like.svg" style="width: 70px;position:relative;left: 235px;" onclick="getLocation()"/>
+				<img src="images/dislike.svg" style="width: 70px;position:relative;left: -120px;"  onclick="disalike()"/>
+				<img src="images/map.svg" style="margin-top: -30%;" />
+			</div>
+		</div>
+	</div>
+	
+    <!-- 标题 -->
+    <div class="mainTopic">
+        <p class="topicFont">福布斯口罩富豪榜</p> 
+    </div>
+    
+	<!-- 排行榜 -->
+    <div class="rank">
+        <span class="rankTopic">排行榜</span>
+        <div class="separateLine1"></div>
+
+		<!-- 选择排行方式 -->
+        <div  class="rankStyle">
+            <button class="changeRankBtn">距离排行</button>
+            <button class="changeRankBtn">数量排行</button>
+        </div>
+
+		<!-- 网页中部的排名显示 -->
+        <div id="innerRank">
+        	<div class="userAreaBorder" v-for="user in users">
+				<div class="userAreaAvatar">
+					<img class="userAreaAvatarPic" :src="user.headimgurl"></img>
+				</div>
+				<div class="userDetail">
+					<span class="userName">{{user.nickname}}</span>
+					<div class="userSeperateLine"></div>
+					<span class="mask"><span class="maskAmount">{{user.mask}}</span> 个口罩</span>
+					<br><span class="userDistance">距离暂不可用</span>
+				</div> 
+			</div>
+        </div>
+
+		<!-- 排行榜背景修饰图片 -->
+        <div class="colorBall1"></div>
+        <div class="colorBall2"></div>
+    </div>
+    
+	<!--亮家底按钮-->
+    <button class="button" onclick="window.location.href='selectAmount.html'">我要亮家底!</button>
+    
+    <script src="js/servey.js"></script>
+</body>
+    
+</html>
+
