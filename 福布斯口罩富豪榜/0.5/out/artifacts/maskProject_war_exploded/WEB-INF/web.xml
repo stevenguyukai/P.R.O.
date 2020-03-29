@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <!-- 使获取用户物品数的servlet可以使用 -->
+    <servlet>
+        <servlet-name>userMaskNum</servlet-name>
+        <servlet-class>com.Servlet.getItemAmountServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>userMaskNum</servlet-name>
+        <url-pattern>/user/getItemAmount</url-pattern>
+    </servlet-mapping>
+
+    <!-- 添加用户信息 -->
+    <servlet>
+        <servlet-name>getUsersInformationServlet</servlet-name>
+        <servlet-class>com.Servlet.getUsersInformationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getUsersInformationServlet</servlet-name>
+        <url-pattern>/user/postInfo</url-pattern>
+    </servlet-mapping>
+
+    <!-- 获取所有用户信息 -->
+    <servlet>
+        <servlet-name>getUserInfo</servlet-name>
+        <servlet-class>com.Servlet.showUserInfoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getUserInfo</servlet-name>
+        <url-pattern>/user/get</url-pattern>
+    </servlet-mapping>
+
+</web-app>
