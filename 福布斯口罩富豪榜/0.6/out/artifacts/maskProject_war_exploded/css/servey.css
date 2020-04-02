@@ -1,0 +1,245 @@
+@charset "UTF-8";
+.wholeWeb {
+    margin: 0 auto;
+    display: block;
+	position: fixed;
+	background-image: url(../images/IMG_0276.JPG);
+	background-repeat: repeat-x;
+	background-repeat: repeat-y;
+	overflow: auto;
+}
+.mainTopic{
+    background-color: white;
+    width: 84%;
+    height: 9%;
+    position: fixed;
+    left: 8%;
+    top: 2%;
+    border-radius: 1rem;
+	text-align: center;
+}
+.topicFont{
+    font-size: 2rem;
+    position: relative;
+	top: -1.5rem;
+}
+.rank{
+    width: 78%;
+    height: 74%;
+    background-color: white;
+    position: inherit;
+    top: 13%;
+    left: 11%;
+    border-radius: 35px;
+    overflow-x: hidden;
+	overflow-y: hidden;
+	text-align: center;
+	z-index: 3;
+    
+}
+.button {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 2rem;
+  text-align: center;   
+  outline: none;
+  width: 64%;
+  height: 9%;
+  color: black;
+  background-color: white;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  position: fixed;
+  left: 18%;
+  top: 88.5%;
+    z-index: 10;
+}
+
+.button:hover {background-color: white}
+
+.button:active {
+  background-color: white;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.rankTopic{
+    font-size: 2.5rem;
+    position: relative;
+    color: #D3B369;
+	z-index: 2;
+}
+.separateLine1{
+    background-color: #D3B369;
+    height: 0.2rem;
+    width:88%;
+    position: relative;
+    top: 0;
+    left: 6%;
+	z-index: 2;
+}
+.colorBall1{
+    width: 10rem;
+    height: 10rem;
+    background-color: #f5f4e1;
+    border-radius: 90px;
+    position: absolute;
+    left: 12rem;
+    top: 5rem;
+}
+.colorBall2{
+    width: 10rem;
+    height: 10rem;
+    background-color: #e3f4f4;
+    border-radius: 90px;
+    position: absolute;
+    left: 1rem;
+    top: 20rem;
+}
+.rankStyle{
+    width: 100%;
+    height: 2rem;
+    position:absolute;
+    top: 4.3rem;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+}
+.changeRankBtn {
+    position: relative;
+    background-color: transparent;
+    border: 1px solid black;
+    font-size: 15px;
+    color: black;
+    height: 1.6rem;
+    width: 6rem;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+} 
+
+.changeRankBtn:after {
+    content: "";
+    background: gold;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.changeRankBtn:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+#innerRank{
+    width: 94%;
+    height: 70%;
+    position: absolute;
+    top: 23%;
+    left: 3%;
+    background-color: transparent;
+    border-radius: 10px;
+    z-index: 2;
+	-webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.userAreaBorder{
+	width: 100%;
+	height: 25%; 
+	z-index: 4;
+	background-color: transparent;
+	border-radius: 0.7rem;
+	text-align: center;
+}
+.userAreaAvatar{
+	width: 4.5rem;
+	height: 4.5rem;
+	background-color: black;
+	z-index: 5;
+	border-radius: 5.625rem;
+	left: 0.5rem;
+	position: relative;
+	top: 0.4rem;
+	border: 0.1rem solid black;
+}
+.userAreaAvatarPic{
+	width: 100%;
+	height: 100%;
+	z-index: 6;
+	position: relative;
+	border-radius: 5.625rem;
+}
+.userName{
+	color: black;
+	position: relative;
+	font-size: 1.1rem;
+}
+.userSeperateLine{
+	background-color: #e48a00;
+	height: 0.08rem;
+	width:90%;
+	position: relative;
+	left: 5%;
+	z-index: 6;
+}
+.userDetail{
+	text-align: center;
+	align-content: center;
+	background-color: transparent;
+	width: 50%;
+	height: 4.7rem;
+	position: relative;
+	top: -4.3rem;
+	left: 5.6rem;
+}
+.mask{
+	font-size: 1.5rem;
+}
+.maskAmount{
+	color: #e48a00;
+	font-size: 1.6rem;
+}
+.userDistance{
+	font-size: 0.7rem;
+}
+.getLocationDiv{
+	width: 70%;
+	height: 30%;
+	position: fixed;
+	background-color: white;
+	border-radius: 30px;
+	box-shadow: skyblue 10px 10px 30px 1px;
+	margin-left: 15%;
+	margin-top: 54%;
+	opacity: 1;
+	z-index: 6;
+}
+.getLocationDivBlur{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-color: grey;
+	opacity: 0.7;
+	z-index:5;
+}
+.getLocationTextDiv{
+	width: 90%; 
+	height: 90%; 
+	margin-left: 5%; 
+	margin-top: 5%;
+}
+.getLocationText{
+	font-size: 22px;
+	color: #666666;
+}
