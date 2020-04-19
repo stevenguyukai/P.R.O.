@@ -1,0 +1,199 @@
+
+.big{
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	background-color: transparent;
+}
+.back{
+	font-size: 2rem;
+	position: fixed;
+	width: 2rem;
+	height: 2rem;
+	background-color: transparent;
+	border-radius: 2rem;
+	border: transparent;
+}
+
+.title{
+	font-size: 2rem;
+	position: fixed;
+	top: 1.5rem;
+	left: 7.8rem;
+	color: #707070;
+}
+
+
+.hands{
+	position: fixed;
+	top: 8.7rem;
+	width: 100%;
+	height: 20%;
+	background-color: transparent;
+	overflow: hidden;
+}
+.hand{
+	height: 100%;
+	width: 45%;
+}
+
+#rightHand{
+	position: fixed;
+	left: 14.5rem;
+}
+#right{
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+
+#leftHand{
+	position: fixed;
+	right: 0rem;
+}
+#left{
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+
+.form{
+	position: absolute;
+	top: 10rem;
+	text-align: center;
+	z-index: 1;
+}
+
+
+#submit{
+	position: fixed;
+	top: 80%;
+	height: 9.5%;
+	width: 14rem;
+	left: 5.6rem;
+	border-radius: 1.8rem;
+	border: black solid 0.08rem;
+	background-color: transparent;
+	color: #707070;
+	border-color: #505050;
+	font-size: 1.6rem;
+}
+
+.cue{
+	color: #707070;
+	font-size: 1.9rem;
+	position: fixed;
+	left: 4rem;
+	top: 47%;
+}
+.smallCue{
+	color: #909090;
+	font-size: 0.8rem;
+	position: fixed;
+	left: 7rem;
+	top: 54%;
+}
+#num{
+	width: 10rem;
+	height: 8%;
+	border: 0.05rem solid #909090;
+	position: fixed;
+	left: 7.6rem;
+	top: 64%;
+	text-align: center;
+	font-size: 1.2rem;
+	color: black;
+}
+
+.again {
+	position: fixed;
+	background-color: transparent;
+	border: #707070 solid 0.1px;
+	font-size: 1rem;
+	padding-left: 10px;
+	padding-right: 10px;
+	top: 6rem;
+	left: 11.5rem;
+	color: #707070;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	text-decoration: none;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.again:after {
+	content: "";
+	background: gold;
+	display: block;
+	position: absolute;
+	padding-top: 300%;
+	padding-left: 350%;
+	margin-left: -20px!important;
+	margin-top: -120%;
+	opacity: 0;
+	transition: all 0.8s
+}
+
+.again:active:after {
+	padding: 0;
+	margin: 0;
+	opacity: 1;
+	transition: 0s
+}
+
+.alertBlur{
+	width: 110%;
+	height: 110%;
+	position: fixed;
+	left: -10px;
+	top: -10px;
+	background-color: grey;
+	opacity: 0.7;
+	z-index:5;
+}
+
+.alertMainBox{
+	width: 70%;
+	height: 30%;
+	position: fixed;
+	background-color: white;
+	border-radius: 30px;
+	box-shadow: skyblue 10px 10px 30px 1px;
+	margin-left: 15%;
+	margin-top: 54%;
+	opacity: 1;
+	z-index: 6;
+}
+
+.alertTextArea{
+	width: 90%;
+	height: 90%;
+	margin-left: 5%;
+	margin-top: 5%;
+}
+
+.alertText{
+	font-size: 25px;
+	color: #666666;
+}
+
+.alertYesButton{
+	position: relative;
+	width: 70px;
+	left: 235px;
+}
+
+.alertNoButton{
+	position: relative;
+	width: 70px;
+	left: -120px;
+}
+
+.alertPic{
+	margin-left: 5%;
+	margin-top: -10%;
+	width: 90%;
+	height: 90%;
+}
+
