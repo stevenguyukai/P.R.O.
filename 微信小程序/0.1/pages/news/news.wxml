@@ -1,0 +1,28 @@
+<!-- 新建文章顺序
+     1. news.js 创建cardTeams 
+     2. news.js 创建按钮事件处理函数
+     3. articles.js 监听页面加载里添加连接
+     4. search.js 创建搜索事件
+     5. search.js 创建点击事件 --> 
+
+<!-- 搜索框 -->
+<view>
+  <view id="{{searchBorder}}">
+    <input id="inputBar" type="text" confirm-type="search" placeholder="搜索" placeholder-class="{{placeholder}}" bindfocus="searchFocus" bindblur="searchBlur" bindconfirm="searching"></input>
+    <icon type="search" size="17" color="#cccccc" id="{{searchIcon}}"></icon>
+  </view>
+
+  <!-- 分割线 -->
+  <view class="seperationLine"></view>
+
+  <!-- 文章 -->
+  <view wx:for="{{cardTeams}}" wx:key="{{cardTeam.viewid}}" wx:for-item="cardTeam" class="item" bindtap="bindViewTap{{cardTeam.viewid}}">
+    <image class="img" src="{{cardTeam.imgsrc}}" mode="aspectFill"></image>
+    <view class="number-wrapper">
+      <text class="name">{{cardTeam.name}}</text>
+      <view class="count-wrapper">
+        <text class="count">{{cardTeam.count}}</text>
+      </view>
+    </view> 
+  </view>
+</view>
