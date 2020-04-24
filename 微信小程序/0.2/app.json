@@ -1,0 +1,62 @@
+{
+  "pages": [
+    "pages/learning/learning",
+    "pages/mine/mine",
+    "pages/changeAvatar/changeAvatar",
+
+    "gamePages/Deep_Water_Save/Deep_Water_Save",
+    "gamePages/Pick_Up_The_Color/Pick_Up_The_Color",
+    "gamePages/Hit_Balloon/Hit_Balloon",
+    "gamePages/Brain_Memory/Brain_Memory",
+    "gamePages/Shopping_Expert/Shopping_Expert",
+    "gamePages/Need_Verify/Need_Verify",
+    "gamePages/Struggle_Fight/Struggle_Fight",
+    "gamePages/The_Key_To_Balance/The_Key_To_Balance",
+    "gamePages/The_Sudoku/The_Sudoku",
+    "gamePages/Bouncing_Ball/Bouncing_Ball",
+
+    "pages/shareItem/shareItem"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#444858",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "先驱者 PRO",
+    "backgroundColor": "#444858",
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "selectedColor": "#327DD4",
+    "list": [
+      {
+        "pagePath": "pages/learning/learning",
+        "text": "大脑训练",
+        "iconPath": "assets/tabBarIcon/learn.png",
+        "selectedIconPath": "assets/tabBarIcon/learn_selected.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "assets/tabBarIcon/mine.png",
+        "selectedIconPath": "assets/tabBarIcon/mine_selected.png"
+      }
+      ,
+      {
+        "pagePath": "pages/shareItem/shareItem",
+        "text": "分享",
+        "iconPath": "assets/tabBarIcon/share.png",
+        "selectedIconPath": "assets/tabBarIcon/share_selected.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "pop-up-observasion": "/component/my-cpn/my-cpn",
+    "pop-up-multitask": "/component/my-cpn-multitask/my-cpn-multitask",
+    "pop-up-focus":  "/component/my-cpn-focus/my-cpn-focus",
+    "pop-up-react": "/component/my-cpn-react/my-cpn-react",
+    "pop-up-logical": "/component/my-cpn-logical/my-cpn-logical",
+    "pop-up-entertainment": "/component/my-cpn-entertainment/my-cpn-entertainment",
+    "pop-up-memory" :"/component/my-cpn-memory/my-cpn-memory",
+    "van-button": "/miniprogram-npm/miniprogram_npm/@vant/weapp/button/index"
+  },
+  "sitemapLocation": "sitemap.json"
+}  

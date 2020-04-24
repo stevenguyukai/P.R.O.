@@ -1,0 +1,37 @@
+
+
+<view id="wholeView">
+  <view>
+    <image src="/assets/mainPage/background.png" id="userInfoBg" bindtap="login"></image>
+    <image src="{{userInfoImgGet}}" id="userInfoImg" bindtap="login"></image>
+    <text id="userInfoName" bindtap="login">{{userInfomationText}}</text>
+  </view>
+
+  <view id="contentViewBlock"></view>
+
+  <view id="contentViewArticle">  
+
+
+    <text id="contentViewArticleText">精选原创文章</text>
+    <swiper indicator-dots="{{false}}" autoplay="{{true}}" circular="{{true}}" interval="{{3200}}" duration="{{800}}" id="swiperStyle">
+      <block wx:for="{{background}}" wx:key="{{background.viewid}}" wx:for-item="background" class="item">
+        <swiper-item>
+          <view class="innerBackground">
+            <image class="img" src="{{background.imgsrc}}" mode="aspectFill" bindtap="article{{background.viewid}}"></image>
+            <view class="blurView" bindtap="article{{background.viewid}}"></view>
+            <text class="backgroundText" bindtap="article{{background.viewid}}">{{background.name}}</text>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+
+
+
+
+  </view>
+
+</view>
+
+
+
+
