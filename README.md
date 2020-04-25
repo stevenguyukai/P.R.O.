@@ -32,5 +32,5 @@ Pioneer Runners of Observation
 ### [福布斯口罩富豪榜 包](https://github.com/stevenguyukai/P.R.O./tree/master/福布斯口罩富豪榜)
     - 我们近期正在做的项目，进入文件内可以看到更多详细信息
     
-### [微信小程序 包](https://github.com/stevenguyukai/P.R.O./tree/master/微信小程序（Steven%20Gu）)
+### [微信小程序 包](https://github.com/stevenguyukai/P.R.O./tree/master/微信小程序)
     - 我们近期正在做的项目，进入文件内可以看到更多详细信息
