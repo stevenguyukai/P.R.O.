@@ -1,0 +1,58 @@
+<view id="{{bgColor}}">
+  <text class="gameName" style="color:#{{gameNameColor}}">左右互搏</text>
+  <view class="seperationLine" style="background-Color:#{{gameNameColor}};top:60rpx;"></view> 
+  
+  <!--about-->
+  <scroll-view scroll-y="true" id="{{about}}">
+    <view class="content1"> 
+      <text class="{{aboutText}}">训练方向:</text>
+        <view class="{{aimIconBg}}">
+
+        <view class="aimBlock1" bindtap="multitaskDetail">
+          <image src="/assets/learning/multitask.png" class="aimIcon"></image>
+          <view class="aimIconText">
+            <text class="{{aimIconText1}}">multitask</text>
+          </view>
+        </view> 
+       
+     
+       <view class="aimBlock2" bindtap="focusDetail">
+          <image src="/assets/learning/focus.png" class="aimIcon" style="width:120%;left:-10%"></image>
+          <view class="aimIconText">
+            <text class="{{aimIconText2}}">专注力</text>
+          </view>
+        </view>
+
+        <view class="aimBlock3" bindtap="logicalDetail">
+          <image src="/assets/learning/logical.png" class="aimIcon"></image>
+          <view class="aimIconText">
+            <text class="{{aimIconText3}}">逻辑力</text>
+          </view>
+        </view>
+
+      </view> 
+    </view> 
+    <view class="content1">
+     <text class="aboutText">训练目标:</text> 
+      <view class="{{purposeView}}">
+       <text class="{{purposeViewText}}">本游戏将需要玩家将手机横过来，左手和右手需要并用，简单的来说就是左手画圆--右手画方</text>
+     </view>
+   </view>
+  </scroll-view>
+
+  <view id="{{picDownName}}" style="border-radius:15px;overflow:hidden">
+   <image src="https://assets-ouch.icons8.com/thumb/397/cb46904e-8690-46a1-b3f5-c52305df80dd.png" mode="widthFix" style="margin-top:-50px;width:95%"></image>
+  </view>
+ 
+  <button class="{{btnToGame}}" bindtap="btnIntoGame">进入训练</button>
+
+
+
+
+  <pop-up-multitask head="多任务" textColor="#57aaf1" imageLink="/assets/learning/multitask.png" wx:if="{{inMultitask}}" bindtap="multitaskDetail"></pop-up-multitask>
+
+  <pop-up-focus head="专注力" textColor="#5e6df4" imageLink="/assets/learning/focus.png" wx:if="{{inFocus}}" bindtap="focusDetail"></pop-up-focus>
+
+  <pop-up-logical head="逻辑力" textColor="#e77d7a" imageLink="/assets/learning/logical.png" wx:if="{{inLogical}}" bindtap="logicalDetail"></pop-up-logical>
+  
+</view>

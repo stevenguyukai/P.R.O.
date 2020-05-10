@@ -1,0 +1,23 @@
+
+<view>
+
+  <view class="blurView"></view>
+
+  <view class="middleView">
+    <text class="head" style="color: {{textColor}};">{{head}}</text>
+    <image src="{{imageLink}}" class="aimIcon"></image>
+  </view> 
+
+
+
+  <view class="separateLine"></view>
+
+  <scroll-view scroll-y="true" class="contant">
+    <text class="title">解释:</text>
+    <text decode="{{true}}" class="describe">&nbsp;&nbsp; 反应能力和应变能力的提高是一个渐进的过程，需要长期进行锻炼.</text>
+    <view class="skipLine"></view>
+    <text class="title">方法:</text>
+    <text decode="{{true}}" class="describe">&nbsp;&nbsp; 参加一些较为激烈的体育活动，比如球类比赛等，可以在强健体魄的同时，提高机体的运动平衡能力和反应速度。</text>
+  </scroll-view>
+
+</view>

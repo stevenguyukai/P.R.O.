@@ -1,0 +1,28 @@
+<view>
+
+  <view class="blurView"></view>
+
+  <view class="middleView">
+    <text class="head" style="color: {{textColor}};">{{head}}</text>
+    <image src="{{imageLink}}" class="aimIcon" style="width:50%;left:-3%"></image> 
+  </view>
+
+  
+  <view class="separateLine"></view> 
+
+  <scroll-view scroll-y="true" class="contant">
+    <text class="title">关联练习法:</text>
+    <text decode="{{true}}" class="describe">&nbsp;&nbsp; 这种练习法的做法是：先让自己记住两种彼此相关联的资料，然后依据一种资料来回想相关的另一种资料</text>
+    <view class="skipLine"></view>
+    <text class="title">次序练习法:</text>
+    <text decode="{{true}}" class="describe">&nbsp;&nbsp; 这种练习法的做法是：先按次序识记一些资料，然后遮住资料，再逐个把资料内容露出来，每露出一个资料，就让自己回想下面紧接着的内容是什么。</text>
+    <view class="skipLine"></view>
+    <text class="title">间隔练习法:</text>
+    <text decode="{{true}}" class="describe">&nbsp;&nbsp; 这种练习法的做法是：先记一些资料，识记完后不让自己立刻去回想，而是接着让强迫自己做一些其他的事情，一段时间后，再回想前面识记过的内容。</text>
+    <view class="skipLine"></view>
+    <text class="title">频度练习法:</text>
+    <text decode="{{true}}" class="describe">&nbsp;&nbsp; 这种练习法的做法是：给自己展示一些资料，其中一些资料重复出现多次。然后会想起这些资料出现的次数</text>
+    <view class="skipLine"></view>
+  </scroll-view>
+
+</view> 

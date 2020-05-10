@@ -1,0 +1,105 @@
+page{
+  background-color: #444857;
+}
+
+#userInfoBg{
+  position: fixed;
+  width: 100%;
+  height: 24%;
+  z-index: 3;
+}
+ 
+
+#userInfoImg{
+  z-index: 4;
+  left: 4%;
+  top: 35rpx;
+  position: fixed;
+  width: 160rpx;
+  height: 160rpx;
+  border: 3rpx solid white;
+  border-radius: 180rpx;
+}
+
+#userInfoName{
+  left: 36%;
+  top: 80rpx;
+  color: white;
+  position: fixed;
+  font-size: 50rpx;
+  z-index: 4;
+}
+
+#wholeView{
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
+
+#contentViewBlock{
+  width: 100%;
+  height: 300rpx;
+  position: relative;
+  background: linear-gradient(#373b47,#454856,#373b47);
+  z-index: 2;
+}
+
+#contentViewArticle{
+  width: 100%;
+  height: 50%;
+  position: relative;
+  background: linear-gradient(#373b47,#222222,#444856);
+  z-index: 2;
+}
+#contentViewArticleText{
+  color: lightblue;
+  position: relative;
+  left: 33.5%;
+  top: 4%;
+  font-size: 42rpx;
+}
+
+
+.innerBackground{
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  width: 80%;
+  height: 80%;
+}
+
+.img {
+  position: relative;
+  width: 100%;
+  height: 95%;
+  border: 4rpx solid white;
+  border-radius: 45rpx;
+  
+}
+
+#swiperStyle{
+  height: 80%;
+}
+
+.backgroundText{
+  position: relative;
+  top: -23%;
+  left: 7%;
+  color: white;
+  font-size: 35rpx;
+  z-index: 2;
+
+}
+
+.blurView{
+  position: absolute;
+  top: 1%;
+  left: 0.7%;
+  background-color: black;
+  opacity: 0.5;
+  width: 99.6%;
+  height: 95%;
+  border-radius: 45rpx;
+  z-index: 2;
+}
