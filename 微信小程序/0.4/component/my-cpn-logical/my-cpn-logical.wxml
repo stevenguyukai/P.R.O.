@@ -1,0 +1,23 @@
+<view>
+
+  <view class="blurView"></view>
+
+  <view class="middleView">
+    <text class="head" style="color: {{textColor}};">{{head}}</text>
+    <image src="{{imageLink}}" class="aimIcon"></image> 
+  </view>
+
+
+  <view class="separateLine"></view> 
+
+  <scroll-view scroll-y="true" class="contant">
+    <text class="title">解释:</text>
+    <text decode="{{true}}" class="describe">&nbsp;&nbsp; 逻辑思维能力是指正确、合理思考的能力。即对事物进行观察、比较、分析、综合、抽象、概括、判断、推理的能力，采用科学的逻辑方法，准确而有条理地表达自己思维过程的能力。它与形象思维能力截然不同</text>
+    <view class="skipLine"></view>
+    <text class="title">重要性:</text>
+    <text decode="{{true}}" class="describe">&nbsp;&nbsp; 逻辑思维能力不仅是学好数学必须具备的能力，也是学好其他学科，处理日常生活问题所必须的能力。数学是用数量关系（包括空间形式）反映客观世界的一门学科，逻辑性很强、很严密。</text>
+    <view class="skipLine"></view>
+    
+  </scroll-view>
+
+</view> 

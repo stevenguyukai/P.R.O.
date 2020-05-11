@@ -1,0 +1,162 @@
+/* pages/mine/mine.wxss */
+
+.userInfo {
+  position: absolute; 
+  width: 100%;
+  height: 340rpx;
+  background-color: #ecf0f3;
+  z-index: -7;
+}
+
+.avatarBorder {
+  width: 40%;
+  height: 70%;
+  position: absolute;
+  left: 6%;
+  top: 17%; 
+  border-radius: 45rpx;
+  z-index: 3;
+} 
+
+.avatar {
+  width: 200rpx;
+  height: 200rpx;
+  position: absolute;
+  left: 15%;
+  top: 12%;
+  border-radius: 180rpx;
+  z-index: 1;
+  box-shadow: inset 6px 6px 6px #aab0b9,inset  -6px -6px 6px #fff;
+}
+
+.backgroundImage {
+  height: 400rpx;
+  position: absolute;
+  width: 88%;
+  left: 6%;
+  top: 8%;
+  border-radius: 40rpx;
+  z-index: 0;
+  box-shadow: 13px 13px 13px #d1d9e6, -13px -13px 13px #fff;
+}
+
+.userInfomation {
+  z-index: 3;
+  width: 300rpx; 
+  color: #5e6473;
+  position: absolute;
+  left: 48%;
+  top: 38%;
+  font-size: 60rpx;
+  text-align: center;
+}
+
+#getUserInfoBtn{
+  position: absolute;
+  top: 500rpx;
+  left: 15%;
+  width: 70%;
+  background: linear-gradient(to right, #4bb0ff, #6149f6);
+  color: white;
+  border-radius: 80rpx;
+}
+
+.overAll{
+  position: absolute; 
+  width: 100%;
+  height: 100%; 
+  background-color: #ecf0f3;
+  z-index: -5;
+  overflow-x: hidden;
+}
+
+.show{
+  display: block;
+}
+
+.hide{
+  display: none;
+}
+
+#mineOptionsStyle1{
+  width: 40%;
+  height: 18%;
+  border-radius: 20px;
+  box-shadow: 13px 13px 13px #d1d9e6, -13px -13px 13px #fff;
+  position: absolute;
+  z-index: 5;
+  top: 48%;
+  left: 8%;
+}
+
+.backgroundImageSmall{
+  height: 100%;
+  position: absolute;
+  width: 102%;
+  border-radius: 45rpx;
+  left: 0.1%;
+  z-index: 5;
+}
+
+
+/* 黑暗模式的样式表 */
+.userInfoDark {
+  position: absolute; 
+  width: 100%;
+  height: 340rpx;
+  background-color: #3d4050;
+  z-index: -7;
+}
+
+.avatarDark {
+  width: 200rpx;
+  height: 200rpx;
+  position: absolute;
+  left: 15%;
+  top: 12%;
+  border-radius: 180rpx;
+  z-index: 1;
+  box-shadow: inset 6px 6px 6px #333,inset  -3px -3px 6px #777;
+}
+
+.backgroundImageDark {
+  height: 400rpx;
+  position: absolute;
+  width: 88%;
+  left: 6%;
+  top: 8%;
+  border-radius: 40rpx;
+  z-index: 0;
+  box-shadow: 6px 6px 6px #333, -4px -4px 8px #777;
+}
+
+.userInfomationDark {
+  z-index: 3;
+  width: 300rpx; 
+  color: #ecf0f3;
+  position: absolute;
+  left: 48%;
+  top: 38%;
+  font-size: 60rpx;
+  text-align: center;
+}
+
+.overAllDark{
+  position: absolute; 
+  width: 100%;
+  height: 100%; 
+  background-color: #3d4050;
+  z-index: -5;
+  overflow-x: hidden;
+}
+
+#mineOptionsStyle1Dark{
+  width: 40%;
+  height: 18%;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px #333, -3px -3px 6px #777;
+  position: absolute;
+  z-index: 5;
+  top: 48%;
+  left: 8%;
+}

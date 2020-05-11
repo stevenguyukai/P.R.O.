@@ -1,0 +1,34 @@
+<view class="{{overAll}}">
+
+	<!-- 用户身份卡片 -->
+	<view class="{{userInfo}}" animation="{{slide_up3}}">
+		<image class="{{backgroundImage}}">
+			<view>
+				<image class="avatarBorder">
+					<view class="{{avatar}}">
+						<image style="width:84%;height:84%;position:relative;left:8%;top:8%;border-radius:180px" src="{{userAvatar}}" bindtap="changeAvatar"></image>
+					</view>
+				</image>
+				<view class="{{userInfomation}}">
+					<text>{{userInfomationText}}</text>
+				</view>
+			</view> 
+		</image>
+	</view> 
+
+
+
+	<!-- 登陆按钮 -->
+	<button id="getUserInfoBtn" class="{{mineInfoBtnPush}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" bindtap="showLoading" type="primary" animation="{{slide_up4}}">
+		微信授权登陆
+	</button>
+
+
+
+	<!-- 选择框1 
+<view id="mineOptionsStyle1" class="{{btnPushed}}" animation="{{slide_up1}}">
+  <image class="backgroundImageSmall"></image>
+</view>
+ -->
+
+</view>

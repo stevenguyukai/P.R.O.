@@ -1,0 +1,61 @@
+<view id="{{bgColor}}">
+  <text class="gameName" style="color:#{{gameNameColor}}">大脑内存</text>
+  <view class="seperationLine" style="background-Color:#{{gameNameColor}};top:60rpx;"></view> 
+  
+  <!--about-->
+  <scroll-view scroll-y="true" id="{{about}}">
+    <view class="content1"> 
+      <text class="{{aboutText}}">训练方向:</text>
+        <view class="{{aimIconBg}}">
+
+        <view class="aimBlock1" bindtap="observationDetail">
+          <image src="/assets/learning/observation.png" class="aimIcon"></image>
+          <view class="aimIconText">
+            <text class="{{aimIconText1}}">观察力</text>
+          </view>
+        </view>
+
+       
+    <view class="aimBlock2" bindtap="memoryDetail">
+          <image src="/assets/learning/memory.png" class="aimIcon"></image>
+          <view class="aimIconText">
+            <text class="{{aimIconText2}}">记忆力</text>
+          </view>
+        </view>
+
+
+       <view class="aimBlock3" bindtap="focusDetail">
+          <image src="/assets/learning/focus.png" class="aimIcon" style="width:120%;left:-10%"></image>
+          <view class="aimIconText">
+            <text class="{{aimIconText3}}">专注力</text>
+          </view>
+        </view>
+
+        
+
+      </view> 
+    </view> 
+    <view class="content1">
+     <text class="aboutText">训练目标:</text> 
+      <view class="{{purposeView}}">
+       <text class="{{purposeViewText}}">场景内有许多物品摆放着，你需要记住所有的物品都是什么，不过物品会慢慢增加，看看你到底可以记住多少轮的物品！</text>
+     </view>
+   </view>
+  </scroll-view>
+
+  <view id="{{picDownName}}" style="border-radius:15px;overflow:hidden">
+   <image src="https://assets-ouch.icons8.com/thumb/577/40f927ba-0e31-41a1-affb-2f8a8672b4d0.png" mode="widthFix" style="width:100%;margin-top:40rpx;"></image>
+  </view>
+ 
+  <button class="{{btnToGame}}" bindtap="btnIntoGame">进入训练</button>
+
+ 
+
+
+  <pop-up-observasion head="观察力" textColor="#57aaf1" imageLink="/assets/learning/observation.png" wx:if="{{inObser}}" bindtap="observationDetail"></pop-up-observasion>
+
+  <pop-up-memory head="记忆力" textColor="#e77d7a" imageLink="/assets/learning/memory.png" wx:if="{{inMemory}}" bindtap="memoryDetail"></pop-up-memory>
+
+   <pop-up-focus head="专注力" textColor="#5e6df4" imageLink="/assets/learning/focus.png" wx:if="{{inFocus}}" bindtap="focusDetail"></pop-up-focus>
+  
+</view>

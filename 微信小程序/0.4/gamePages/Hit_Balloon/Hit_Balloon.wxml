@@ -1,0 +1,58 @@
+<view id="{{bgColor}}">
+  <text class="gameName" style="color:#{{gameNameColor}}">打破气球</text>
+  <view class="seperationLine" style="background-Color:#{{gameNameColor}};top:60rpx;"></view> 
+  
+  <!--about-->
+  <scroll-view scroll-y="true" id="{{about}}">
+    <view class="content1"> 
+      <text class="{{aboutText}}">训练方向:</text>
+        <view class="{{aimIconBg}}">
+
+        <view class="aimBlock1" bindtap="observationDetail">
+          <image src="/assets/learning/observation.png" class="aimIcon"></image>
+          <view class="aimIconText">
+            <text class="{{aimIconText1}}">观察力</text>
+          </view>
+        </view> 
+       
+     
+       <view class="aimBlock2" bindtap="focusDetail">
+          <image src="/assets/learning/focus.png" class="aimIcon" style="width:120%;left:-10%"></image>
+          <view class="aimIconText">
+            <text class="{{aimIconText2}}">专注力</text>
+          </view>
+        </view>
+
+        <view class="aimBlock3" bindtap="reactDetail">
+          <image src="/assets/learning/react.png" class="aimIcon"></image>
+          <view class="aimIconText">
+            <text class="{{aimIconText3}}">反应力</text>
+          </view>
+        </view>
+
+      </view> 
+    </view> 
+    <view class="content1">
+     <text class="aboutText">训练目标:</text> 
+      <view class="{{purposeView}}">
+       <text class="{{purposeViewText}}">在这个游戏中，气球会慢慢变大，在有限的时间内点击他，不然会爆炸。</text>
+     </view>
+   </view>
+  </scroll-view>
+
+  <view id="{{picDownName}}" style="border-radius:15px;overflow:hidden">
+   <image src="https://assets-ouch.icons8.com/thumb/955/dd3af8cf-3ca2-4e33-bb9c-b01b33efdc08.png" mode="widthFix" style="margin-top:-20px;width:95%"></image>
+  </view>
+ 
+  <button class="{{btnToGame}}" bindtap="btnIntoGame">进入训练</button>
+
+
+
+
+  <pop-up-observasion head="观察力" textColor="#57aaf1" imageLink="/assets/learning/observation.png" wx:if="{{inObser}}" bindtap="observationDetail"></pop-up-observasion>
+
+  <pop-up-focus head="专注力" textColor="#5e6df4" imageLink="/assets/learning/focus.png" wx:if="{{inFocus}}" bindtap="focusDetail"></pop-up-focus>
+
+  <pop-up-react head="反应力" textColor="#e77d7a" imageLink="/assets/learning/react.png" wx:if="{{inReact}}" bindtap="reactDetail"></pop-up-react>
+  
+</view>
