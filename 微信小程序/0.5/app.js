@@ -1,8 +1,8 @@
 App({
 
   globalData: {
-    appid: "wx43cdb1bcc40005a2",
-    secret: "dc0d05de5404b7cbc43835b09f92fee6",
+    appid: "不能公开",
+    secret: "不能公开",
 
     isGettedInfo: false, //有没有获取用户信息
     avatar: "/assets/Avatar/noAvatar/mineNoAvatar.png",
