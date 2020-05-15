@@ -1,0 +1,54 @@
+<view class="{{overAll}}">
+
+	<!-- 用户身份卡片 -->
+	<view class="{{userInfo}}" animation="{{slide_up3}}">
+		<image class="{{backgroundImage}}">
+			<view>
+				<image class="avatarBorder">
+					<view class="{{avatar}}">
+						<image style="width:84%;height:84%;position:relative;left:8%;top:8%;border-radius:180px" src="{{userAvatar}}" bindtap="changeAvatar"></image>
+					</view>
+				</image>
+				<view class="{{userInfomation}}">
+					<text>{{userInfomationText}}</text>
+				</view>
+			</view>
+		</image>
+	</view>
+
+
+
+	<!-- 登陆按钮 -->
+	<button id="getUserInfoBtn" class="{{mineInfoBtnPush}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" bindtap="showLoading" type="primary" animation="{{slide_up4}}">
+		微信授权登陆
+	</button>
+
+
+	<!-- 经验 + 等级显示条 -->
+	<view id="{{levelAndExp}}" class="{{btnPushed}}" animation="{{slide_up1}}">
+		<text class="{{level}}">LV <text class="{{levelNum}}">{{userLevel}}</text></text>
+		<progress class="{{expProgress}}" stroke-width='28' backgroundColor="{{progressBGColor}}" active active-mode="backwards" percent="{{expPercentage}}" activeColor="{{activeColor}}" duration="20"></progress>
+	</view>
+
+
+	<!-- 常玩游戏 + 进入游戏和游玩时间 -->
+	<view id="{{oftenPlayGameWholeView}}" class="{{btnPushed}}" animation="{{slide_up1}}">
+
+		<!-- 常玩游戏 -->
+		<scroll-view class="{{oftenPlayGame}}" scroll-y>
+			<view class="{{oftenPlayGameItem}}" wx:for="{{oftenPlayGames}}" wx:key="id" wx:for-item="games" bindtap="oftenPlayGames{{games.id}}">
+				<image src="{{games.img}}" class="oftenPlayGameImg"></image>
+				<text class="{{oftenPlayGameImgInfo}}">{{games.name}}</text>
+			</view>
+		</scroll-view>
+
+		<!-- 常玩游戏的简介 -->
+		<view class="oftenPlayGameInfo">
+			<text class="{{oftenPlayGameName}}">{{oftenPlayGameNameText}}</text>
+			<text id="{{playTime}}" class="{{playTimeInfoPresent}}">游玩时间:</text>
+			<text id="{{playTimeInfo}}" class="{{playTimeInfoPresent}}"><text class="{{gameTimeTextColor}}">{{sudokuPlayHours}}</text> 小时 <text class="{{gameTimeTextColor}}">{{sudokuPlayMinutes}}</text> 分钟 <text class="{{gameTimeTextColor}}">{{sudokuPlaySeconds}}</text> 秒</text>
+			<view id="{{continueGameButton}}" class="{{playTimeInfoPresent}}" bindtap="continueOftenPlayGame">继续挑战</view>
+		</view>
+	</view>
+
+</view>

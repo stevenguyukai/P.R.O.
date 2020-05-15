@@ -1,0 +1,73 @@
+
+.head{
+  font-size:50rpx;
+  position:absolute;
+  width:30%;
+  left:56%;
+  top:10%;
+}
+ 
+.middleView{
+  width: 70%;
+  height: 800rpx;
+  background-color: white;
+  z-index: 20;
+  position:absolute;
+  left:15%;
+  top:160rpx;
+  border-radius: 45rpx;
+  opacity: 1;
+}
+
+.blurView{
+  height:120%;
+  width:100%;
+  background-color: #7c7c7c;
+  position:absolute;
+  opacity: 0.66;
+  top:-20%;
+}
+
+.aimIcon{
+  width: 38%;
+  height: 25%;
+  position: absolute;
+  top: 25rpx;
+  left: 5%;
+}
+
+.separateLine{
+  height: 2rpx;
+  width: 60%;
+  border-top: 3px dashed black;
+  position: absolute;
+  top: 410rpx;
+  z-index: 20;
+  left: 20%;
+}
+
+.contant{
+  height: 40%;
+  width: 60%;
+  position: absolute;
+  top: 36%;
+  z-index: 20;
+  left: 20%;
+}
+
+.title{
+  font-size: 35rpx;
+  color: purple;
+  display: block;
+}
+
+.describe{
+  color: black;
+  font-size: 28rpx;
+  display: block;
+}
+
+.skipLine{
+  height: 30rpx;
+  display: block;
+}

@@ -1,0 +1,68 @@
+{
+  "pages": [
+    "pages/learning/learning",
+    "pages/mine/mine",
+    "pages/changeAvatar/changeAvatar",
+
+    "pages/shareItem/shareItem"
+  ],
+
+  "subpackages": [
+    {
+      "root": "gamePages",
+      "pages": [
+        "Bouncing_Ball/Bouncing_Ball",
+        "Deep_Water_Save/Deep_Water_Save",
+        "Pick_Up_The_Color/Pick_Up_The_Color",
+        "Hit_Balloon/Hit_Balloon",
+        "Brain_Memory/Brain_Memory",
+        "Shopping_Expert/Shopping_Expert",
+        "Need_Verify/Need_Verify",
+        "Struggle_Fight/Struggle_Fight",
+        "The_Key_To_Balance/The_Key_To_Balance",
+        "The_Sudoku/The_Sudoku"
+      ]
+    },{
+      "root": "games",
+      "pages": [
+        "sudoku/sudoku"
+      ]
+    }
+  ],
+
+  "window": {
+    "navigationBarBackgroundColor": "#444858",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "先驱者 PRO",
+    "backgroundColor": "#444858",
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "selectedColor": "#327DD4",
+    "list": [
+      {
+        "pagePath": "pages/learning/learning",
+        "text": "大脑训练",
+        "iconPath": "assets/tabBarIcon/learn.png",
+        "selectedIconPath": "assets/tabBarIcon/learn_selected.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "assets/tabBarIcon/mine.png",
+        "selectedIconPath": "assets/tabBarIcon/mine_selected.png"
+      }
+    
+    ]
+  },
+  "usingComponents": {
+    "pop-up-observasion": "/component/my-cpn/my-cpn",
+    "pop-up-multitask": "/component/my-cpn-multitask/my-cpn-multitask",
+    "pop-up-focus":  "/component/my-cpn-focus/my-cpn-focus",
+    "pop-up-react": "/component/my-cpn-react/my-cpn-react",
+    "pop-up-logical": "/component/my-cpn-logical/my-cpn-logical",
+    "pop-up-entertainment": "/component/my-cpn-entertainment/my-cpn-entertainment",
+    "pop-up-memory" :"/component/my-cpn-memory/my-cpn-memory"
+  },
+  "sitemapLocation": "sitemap.json"
+}  
