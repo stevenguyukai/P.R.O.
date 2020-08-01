@@ -1,0 +1,21 @@
+{
+  "name": "myy-project",
+  "version": "1.0.0",
+  "description": "123",
+  "main": "index.js",
+  "private": true,
+  "dependencies": {
+    "@vant/weapp": "^1.0.3",
+    "vant-weapp": "^0.5.27"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "steven",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "this is a project file"
+  }
+}

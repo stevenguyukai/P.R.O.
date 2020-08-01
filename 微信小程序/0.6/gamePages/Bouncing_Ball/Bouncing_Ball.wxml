@@ -1,0 +1,53 @@
+<view id="{{bgColor}}">
+<text class="gameName" style="color:#{{gameNameColor}};">弹来弹去</text>
+<view class="seperationLine" style="background-Color:#{{gameNameColor}};top:60rpx;"></view>
+ 
+<!--about-->
+<scroll-view scroll-y="true" id="{{about}}">
+  <view class="content1"> 
+    <text class="{{aboutText}}">训练方向:</text>
+    <view class="{{aimIconBg}}">
+
+      <view class="aimBlock1" bindtap=""> 
+        <image src="" class="aimIcon"></image>
+        <view class="aimIconText">
+          <text class="aimIconText1"></text>
+        </view>
+      </view>
+      
+ 
+      <view class="aimBlock2" bindtap="entertainmentDetail">
+        <image src="/assets/learning/entertainment.png" class="aimIcon"></image>
+        <view class="aimIconText">
+          <text class="{{aimIconText2}}">娱乐</text>
+        </view>
+      </view>
+
+      <view class="aimBlock3" bindtap="">
+        <image src="" class="aimIcon"></image>
+        <view class="aimIconText">
+          <text class="aimIconText3"></text>
+        </view>
+      </view>
+
+    </view>
+  </view>
+  <view class="content1">
+    <text class="aboutText">训练目标:</text>
+    <view class="{{purposeView}}">
+      <text class="{{purposeViewText}}">你需要发射一个球，让它碰到属于它同一类的另一个球。不过路程将会是艰辛的，需要躲过障碍，最终与球相会。</text>
+    </view>
+  </view>
+</scroll-view>
+
+<view id="{{picDownName}}" style="border-radius:15px;overflow:hidden">
+  <image src="https://assets-ouch.icons8.com/thumb/766/c32a2f0f-51d9-4e71-aa58-63979a1601e1.png" mode="widthFix" style="width:90%;margin-left:10px"></image>
+</view>
+
+<button class="{{btnToGame}}" bindtap="btnIntoGame">开始游玩</button>
+
+ 
+
+<pop-up-entertainment head="娱乐" textColor="#5e6df4" imageLink="/assets/learning/entertainment.png" wx:if="{{inEntertain}}" bindtap="entertainmentDetail"></pop-up-entertainment>
+
+</view>

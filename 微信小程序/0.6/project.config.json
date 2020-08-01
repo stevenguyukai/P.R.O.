@@ -1,0 +1,143 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"enhance": false,
+		"postcss": true,
+		"preloadBackgroundData": false,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"nodeModules": true,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"useCompilerModule": false,
+		"userConfirmedUseCompilerModuleSwitch": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.10.4",
+	"appid": "wx43cdb1bcc40005a2",
+	"projectname": "%E5%85%88%E9%A9%B1%E8%80%85PRO%E5%B0%8F%E7%A8%8B%E5%BA%8F",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "pages/mine/mine",
+					"pathName": "pages/mine/mine",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/news/news",
+					"pathName": "pages/news/news",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/learning/learning",
+					"pathName": "pages/learning/learning",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "sudoku",
+					"pathName": "games/sudoku/sudoku",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/mine/mine",
+					"pathName": "pages/mine/mine",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/test/test",
+					"pathName": "pages/test/test",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "gamePages/The_Sudoku/The_Sudoku",
+					"pathName": "gamePages/The_Sudoku/The_Sudoku",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "gamePages/Need_Verify/Need_Verify",
+					"pathName": "gamePages/Need_Verify/Need_Verify",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "games/need_Verify/need_Verify",
+					"pathName": "games/need_Verify/need_Verify",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "games/need_Verify/need_Verify",
+					"pathName": "games/test/test",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "gamePages/The_Sudoku/The_Sudoku",
+					"pathName": "gamePages/The_Sudoku/The_Sudoku",
+					"scene": null
+				}
+			]
+		}
+	}
+}

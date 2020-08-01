@@ -1,0 +1,300 @@
+.gameName {
+  font-size: 60rpx;
+  position: absolute;
+  left: 34%;
+  top: 20rpx;
+  color: #5e3fdf;
+}
+
+
+.contents {
+  height: 30%;
+  position: absolute;
+  background-color: red;
+}
+
+.content1 {
+  width: 90%;
+  height: 480rpx;
+  position: relative;
+  left: 3%;
+  top: 20rpx;
+}
+
+
+.aimIcon {
+  width: 84%;
+  height: 62%;
+  position: relative;
+  top: 10rpx;
+  left: 8%;
+}
+
+.aimBlock1 {
+  display: inline-block;
+  width: 33%;
+  position: absolute;
+  height: 280rpx;
+  top: 10rpx;
+  left: 0%;
+}
+
+.aimBlock2 {
+  display: inline-block;
+  width: 33%;
+  position: absolute;
+  left: 33%;
+  height: 280rpx;
+  top: 10rpx;
+}
+
+.aimBlock3 {
+  display: inline-block;
+  width: 33%;
+  position: absolute;
+  height: 280rpx;
+  top: 10rpx;
+  left: 66%;
+}
+
+
+
+/* 光亮模式 */
+pageLight {
+  background-color: #ecf0f3;
+}
+
+#picDownName {
+  width: 64%;
+  height: 18%;
+  position: absolute;
+  top: 70%;
+  left: 18%;
+  background-color: #ecf0f3;
+  border-radius: 15px;
+  box-shadow: 13px 13px 13px #d1d9e6, -13px -13px 13px #fff;
+}
+
+#about {
+  height: 650rpx;
+  width: 86%;
+  background-color: #ecf0f3;
+  top: 170rpx;
+  left: 7%;
+  border-radius: 30rpx;
+  position: absolute;
+  box-shadow: 13px 13px 13px #d1d9e6, -13px -13px 13px #fff;
+}
+
+.btnToGame {
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  height: 7%;
+  top: 91%;
+  border-radius: 90px;
+  background-color: #ecf0f3;
+  box-shadow: 13px 13px 13px #d1d9e6, -13px -13px 13px #fff;
+  color: #5e6473;
+}
+
+.purposeView {
+  position: absolute;
+  top: 50rpx;
+  left: 2%;
+  width: 100%;
+  height: 360rpx;
+  background-color: white;
+  border-radius: 30rpx;
+}
+
+.purposeViewText {
+  color: #666666;
+  font-size: 35rpx;
+  width: 90%;
+  position: absolute;
+  left: 5%;
+  top: 16rpx;
+}
+
+.aimIconBg {
+  position: relative;
+  top: 50rpx;
+  left: 2%;
+  width: 100%;
+  height: 280rpx;
+  background-color: white;
+  border-radius: 30rpx;
+}
+
+#bgColor {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ecf0f3;
+  z-index: 0;
+  overflow-x: hidden;
+}
+
+.aboutText {
+  position: relative; 
+  left: 3%;
+  color: 5e6473;
+}
+
+.aimIconText1 {
+  position: relative;
+  padding-top: 10rpx;
+  width: 100%;
+  font-size: 35rpx;
+  color: #57aaf1;
+  text-align: center;
+  display: block;
+}
+
+.aimIconText2 {
+  position: relative;
+  padding-top: 10rpx;
+  width: 100%;
+  font-size: 35rpx;
+  color: #5e6df4;
+  text-align: center;
+  display: block;
+}
+
+.aimIconText3 {
+  position: relative;
+  padding-top: 10rpx;
+  width: 100%;
+  font-size: 35rpx;
+  color: #e27a77;
+  text-align: center;
+  display: block;
+}
+
+
+/* 暗黑模式 */
+pageDark {
+  background-color: #ecf0f3;
+}
+
+#picDownNameDark {
+  width: 64%;
+  height: 18%;
+  position: absolute;
+  top: 70%;
+  left: 18%;
+  border-radius: 15px;
+  background-color: #3d4050;
+  box-shadow: 8px 8px 19px #111, -1px -1px 13px #aaa;
+  color: #ecf0f3;
+}
+
+#aboutDark {
+  height: 650rpx;
+  width: 86%;
+  top: 170rpx;
+  left: 7%;
+  border-radius: 30rpx;
+  position: absolute;
+  background-color: #3d4050;
+  box-shadow: 8px 8px 19px #111, -1px -1px 13px #aaa;
+  color: #ecf0f3;
+}
+
+.btnToGameDark {
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  height: 7%;
+  top: 91%;
+  border-radius: 90px;
+  background-color: #3d4050;
+  box-shadow: 8px 8px 19px #111, -1px -1px 13px #aaa;
+  color: #ecf0f3;
+}
+
+.purposeViewDark {
+  position: absolute;
+  top: 50rpx;
+  left: 2%;
+  width: 100%;
+  height: 360rpx;
+  background-color: #5e6473;
+  border-radius: 30rpx;
+}
+
+.purposeViewTextDark {
+  color: #ecf0f3;
+  font-size: 35rpx;
+  width: 90%;
+  position: absolute;
+  left: 5%;
+  top: 16rpx;
+}
+
+.aimIconBgDark {
+  position: relative;
+  top: 50rpx;
+  left: 2%;
+  width: 100%;
+  height: 280rpx;
+  background-color: #5e6473;
+  border-radius: 30rpx;
+}
+
+#bgColorDark {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #5e6473;
+  z-index: 0;
+  overflow-x: hidden;
+}
+
+.aboutTextDark {
+  position: relative;
+  left: 3%;
+  color: #ecf0f3;
+}
+
+.aimIconText1Dark {
+  position: relative;
+  padding-top: 10rpx;
+  width: 100%;
+  font-size: 35rpx;
+  color: #ecf0f3;
+  text-align: center;
+  display: block;
+}
+
+.aimIconText2Dark {
+  position: relative;
+  padding-top: 10rpx;
+  width: 100%;
+  font-size: 35rpx;
+  color: #ecf0f3;
+  text-align: center;
+  display: block;
+}
+
+.aimIconText3Dark {
+  position: relative;
+  padding-top: 10rpx;
+  width: 100%;
+  font-size: 35rpx;
+  color: #ecf0f3;
+  text-align: center;
+  display: block;
+}
+
+.tourBtn{
+  position: absolute;
+  right: 40px;
+  top: 40rpx;
+  color: #5e6473;
+  font-size: 1.2em;
+  border: #5e6473 1px solid;
+  padding-left: 5px;
+  padding-right: 5px;
+}

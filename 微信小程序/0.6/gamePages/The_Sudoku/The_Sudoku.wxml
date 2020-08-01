@@ -1,0 +1,62 @@
+<view id="{{bgColor}}">
+  <text class="gameName" style="color:#{{gameNameColor}}">数独挑战</text>
+
+  <!-- 教程按钮 -->
+  <view class="tourBtn" bindtap="goToTour">教程</view>
+
+  <view class="seperationLine" style="background-Color:#{{gameNameColor}};top:60rpx;"></view> 
+  
+  <!--about-->
+  <scroll-view scroll-y="true" id="{{about}}">
+    <view class="content1">
+      <text class="{{aboutText}}">训练方向:</text>
+        <view class="{{aimIconBg}}">
+
+        <view class="aimBlock1" bindtap="observationDetail">
+          <image src="/assets/learning/observation.png" class="aimIcon"></image>
+          <view class="aimIconText">
+            <text class="{{aimIconText1}}">观察力</text>
+          </view>
+        </view> 
+       
+     
+       <view class="aimBlock2" bindtap="focusDetail">
+          <image src="/assets/learning/focus.png" class="aimIcon" style="width:120%;left:-10%"></image>
+          <view class="aimIconText">
+            <text class="{{aimIconText2}}">专注力</text>
+          </view>
+        </view>
+
+        <view class="aimBlock3" bindtap="logicalDetail">
+          <image src="/assets/learning/logical.png" class="aimIcon"></image>
+          <view class="aimIconText">
+            <text class="{{aimIconText3}}">逻辑力</text>
+          </view>
+        </view>
+
+      </view> 
+    </view> 
+    <view class="content1">
+     <text class="aboutText">训练目标:</text> 
+      <view class="{{purposeView}}">
+       <text class="{{purposeViewText}}">数独是源自18世纪瑞士的一种数学游戏。玩家需要根据9×9盘面上的已知数字，推理出所有剩余空格的数字，并满足每一行、每一列、每一个粗线宫（3*3）内的数字均含1-9，不重复。</text>
+     </view>
+   </view>
+  </scroll-view>
+
+  <view id="{{picDownName}}" style="border-radius:15px;overflow:hidden">
+   <image src="{{sudokuPic}}" mode="widthFix" style="margin-top:-20px;width:95%"></image>
+  </view>
+ 
+  <button class="{{btnToGame}}" bindtap="btnIntoGame">进入训练</button>
+
+
+
+
+  <pop-up-observasion head="观察力" textColor="#57aaf1" imageLink="/assets/learning/observation.png" wx:if="{{inObser}}" bindtap="observationDetail"></pop-up-observasion>
+
+  <pop-up-focus head="专注力" textColor="#5e6df4" imageLink="/assets/learning/focus.png" wx:if="{{inFocus}}" bindtap="focusDetail"></pop-up-focus>
+
+  <pop-up-logical head="逻辑力" textColor="#e77d7a" imageLink="/assets/learning/logical.png" wx:if="{{inLogical}}" bindtap="logicalDetail"></pop-up-logical>
+  
+</view>
