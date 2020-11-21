@@ -1,0 +1,107 @@
+<!-- 整个页面的选择难度 -->
+<view class="selectModeView" style="display: {{welcomePage}}">
+
+<!-- 打招呼 -->
+<text class="selectModeViewGreet">欢迎来到《方块记忆》</text>
+
+<!-- 教程按钮 -->
+<view class="tourBtn" bindtap="goToTour">教程</view>
+
+<!-- 难度选择框 -->
+<view class="selectMode">
+    <view class="{{selectButton1}}" bindtap="easy">
+        <text class="buttonText">一咪咪</text> 
+    </view>
+    <view class="{{selectButton2}}" bindtap="middle">
+        <text class="buttonText">多一点</text>
+    </view>
+    <view class="{{selectButton3}}" bindtap="hard">
+        <text class="buttonText">挺多的</text>
+    </view>
+    <view class="{{selectButton4}}" bindtap="epic">
+        <text class="buttonText">太多了</text>
+    </view>
+</view>
+
+<!-- 难度选择图片 -->
+<view class="selectModePic">
+    <image src="{{modePic}}" class="buttonPicStyle"  mode="aspectFill"></image>
+</view>
+
+<!-- 进入数独按钮 -->
+<view class="inGameButton" bindtap="getIntoGame">
+    <text class="inGameText">{{mode}}</text>
+</view>
+
+<!-- 开发者 -->
+<view class="developerPic">
+    <image src="{{developerPic}}" class="developerInnerPic"></image>
+    <view class="developerName">小黑</view>
+</view>
+
+
+</view>
+
+
+<!-- 游戏页面 -->
+<view  style="display: {{gamePage}}; pointer-events: {{tapBlcoksAvailability}}">
+    <!-- 游戏内容 -->
+    <view class="overAllView" style="{{isBluring}}">
+
+    <!-- 倒计时 -->
+    <view style="display: {{countDownView}};" class="countDownWholeView">
+        <text class="countDownNum">{{countDownNum}}</text>
+        <view class="countDownEffect" animation="{{countDownEffect}}"></view>
+    </view>
+
+    <!-- 方块显示区域 -->
+    <view class="blockShowView">
+        <view style="display:{{blocksViewDisplay}}; margin-left:{{blocksViewLeftJustify}}" class="blocksView">
+            <!-- 单个格子 -->
+            <view style="background-color: {{grid.blockBgColor}}; width:{{singleBlockWidth}};height:{{singleBlockHeight}};position:relative;display:inline-block;margin-left:{{singleBlockLeft}}; margin-top:{{singleBlockTop}}; box-shadow: {{blockShadowPx}}px {{blockShadowPx}}px {{blockShadowPx}}px #d1d9e6, -{{blockShadowPx}}px -{{blockShadowPx}}px {{blockShadowPx}}px #fff;"
+            wx:for="{{blocks}}" 
+            wx:key="id" 
+            wx:for-item="grid" 
+            animation="{{animationList[grid.id]}}"
+            catchtap="blockTap"
+            data-clearid="{{grid.id}}"
+            >
+
+            </view>
+        </view>
+    </view> 
+
+    </view>
+</view>
+ 
+
+<!-- 正确或错误动画显示 -->
+<view class="rightOrWrong" animation="{{rightOrWrongAnimation}}">{{rightORwrong}}</view>
+
+
+<!-- 下一回合提示 -->
+<view class="noteNextRound" style="display: {{noteNextRoundShow}}" animation="{{noteNextRoundAnimation}}">
+    <text class="noteNextRoundText" animation="{{noteNextRoundAnimation}}">进入第 {{nowRoundNum}} / {{roundNum}} 回合</text>
+</view>
+
+
+<!-- 总结画面 (做对，做错) -->
+<view class="summaryView" style="display: {{summaryPage}}">
+	<view class="summaryViewCircles">
+		<circle lineColor="#71ab48" lineWidth="6" canvasWidth="{{bigPerSize}}" id="correctCircle" value="{{rightNum}}" />
+		<circle lineColor="#ce3d31" lineWidth="6" canvasWidth="{{bigPerSize}}" id="wrongCircle" value="{{wrongNum}}" />
+	</view>
+	<view class="summaryViewText"> 
+		<text style="color:#71ab48">正确</text>
+		<text style="color:#ce3d31">错误</text>
+	</view>
+	<view class="confirmGameEnd" bindtap="confirmGameEnd">确认</view>
+</view> 
+
+
+<!-- 获得经验显示条 -->
+<view id="levelAndExp" animation="{{EXPandLEVEL}}">
+	<text class="level">LV <text class="levelNum">{{userLevel}}</text></text>
+	<progress class="expProgress" stroke-width='28' backgroundColor="#ecf0f3" active active-mode="forwards" percent="{{expPercentage}}" activeColor="purple" duration="50"></progress>
+</view>  
+ 

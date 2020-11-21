@@ -1,0 +1,58 @@
+<view id="{{bgColor}}">
+  <text class="gameName" style="color:#{{gameNameColor}}">购物达人</text>
+  <view class="seperationLine" style="background-Color:#{{gameNameColor}};top:60rpx;"></view> 
+  
+  <!--about-->
+  <scroll-view scroll-y="true" id="{{about}}">
+    <view class="content1"> 
+      <text class="{{aboutText}}">训练方向:</text>
+        <view class="{{aimIconBg}}">
+
+        <view class="aimBlock1" bindtap="memoryDetail">
+          <image src="/assets/learning/memory.png" class="aimIcon"></image>
+          <view class="aimIconText">
+            <text class="{{aimIconText1}}">记忆力</text>
+          </view>
+        </view> 
+       
+    
+       <view class="aimBlock2" bindtap="focusDetail">
+          <image src="/assets/learning/focus.png" class="aimIcon" style="width:120%;left:-10%"></image>
+          <view class="aimIconText">
+            <text class="{{aimIconText2}}">专注力</text>
+          </view>
+        </view>
+
+        <view class="aimBlock3" bindtap="logicalDetail">
+          <image src="/assets/learning/logical.png" class="aimIcon"></image>
+          <view class="aimIconText">
+            <text class="{{aimIconText3}}">逻辑力</text>
+          </view>
+        </view>
+
+      </view> 
+    </view> 
+    <view class="content1">
+     <text class="aboutText">训练目标:</text> 
+      <view class="{{purposeView}}">
+       <text class="{{purposeViewText}}">你有这一些不喜欢出门的朋友和家人，你的人物就是帮他们从超市里购买他们所需要的物品，不过所有要买的都得记住，因为他们懒得写便签。</text>
+     </view>
+   </view>
+  </scroll-view>
+
+  <view id="{{picDownName}}" style="border-radius:15px;overflow:hidden">
+   <image src="https://assets-ouch.icons8.com/thumb/611/9379dd6f-12d5-4ad1-957f-b87c00deef90.png" mode="widthFix" style="width:96%;margin-left:2%"></image>
+  </view>
+ 
+  <button class="{{btnToGame}}" bindtap="btnIntoGame">进入训练</button>
+
+
+
+
+  <pop-up-memory head="记忆力" textColor="#57aaf1" imageLink="/assets/learning/memory.png" wx:if="{{inMemory}}" bindtap="memoryDetail"></pop-up-memory>
+
+  <pop-up-focus head="专注力" textColor="#5e6df4" imageLink="/assets/learning/focus.png" wx:if="{{inFocus}}" bindtap="focusDetail"></pop-up-focus>
+
+  <pop-up-logical head="逻辑力" textColor="#e77d7a" imageLink="/assets/learning/logical.png" wx:if="{{inLogical}}" bindtap="logicalDetail"></pop-up-logical>
+  
+</view>

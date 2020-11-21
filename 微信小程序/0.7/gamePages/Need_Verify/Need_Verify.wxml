@@ -1,0 +1,62 @@
+<view id="{{bgColor}}">
+  <text class="gameName" style="color:#{{gameNameColor}}">需要验证</text>
+   
+  <!-- 教程按钮 -->
+  <view class="tourBtn" bindtap="goToTour">教程</view>
+
+  <view class="seperationLine" style="background-Color:#{{gameNameColor}};top:60rpx;"></view> 
+  
+  <!--about-->
+  <scroll-view scroll-y="true" id="{{about}}">
+    <view class="content1"> 
+      <text class="{{aboutText}}">训练方向:</text>
+        <view class="{{aimIconBg}}">
+
+        <view class="aimBlock1" bindtap="memoryDetail">
+          <image src="/assets/learning/memory.png" class="aimIcon"></image>
+          <view class="aimIconText">
+            <text class="{{aimIconText1}}">记忆力</text>
+          </view>
+        </view> 
+       
+     
+       <view class="aimBlock2" bindtap="focusDetail">
+          <image src="/assets/learning/focus.png" class="aimIcon" style="width:120%;left:-10%"></image>
+          <view class="aimIconText">
+            <text class="{{aimIconText2}}">专注力</text>
+          </view>
+        </view>
+
+        <view class="aimBlock3" bindtap="reactDetail">
+          <image src="/assets/learning/react.png" class="aimIcon"></image>
+          <view class="aimIconText">
+            <text class="{{aimIconText3}}">反应力</text>
+          </view>
+        </view>
+
+      </view> 
+    </view> 
+    <view class="content1">
+     <text class="aboutText">训练目标:</text> 
+      <view class="{{purposeView}}">
+       <text class="{{purposeViewText}}">每次注册新网站或者APP的时候，是不是都会需要绑定手机号并且输入验证码呢，这款游戏可以充分练习您的记忆力和反应力！</text>
+     </view>
+   </view>
+  </scroll-view> 
+ 
+  <view id="{{picDownName}}" style="border-radius:15px;overflow:hidden">
+   <image src="{{needVerifyPic}}" mode="widthFix" style="margin-top:-10px;width:100%"></image>
+  </view>
+ 
+  <button class="{{btnToGame}}" bindtap="btnIntoGame">进入训练</button>
+
+
+
+
+  <pop-up-memory head="记忆力" textColor="#57aaf1" imageLink="/assets/learning/memory.png" wx:if="{{inMemory}}" bindtap="memoryDetail"></pop-up-memory>
+
+  <pop-up-focus head="专注力" textColor="#5e6df4" imageLink="/assets/learning/focus.png" wx:if="{{inFocus}}" bindtap="focusDetail"></pop-up-focus>
+
+  <pop-up-react head="反应力" textColor="#e77d7a" imageLink="/assets/learning/react.png" wx:if="{{inReact}}" bindtap="reactDetail"></pop-up-react>
+  
+</view>

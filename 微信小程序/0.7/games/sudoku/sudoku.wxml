@@ -1,0 +1,239 @@
+<!-- 整个页面的游戏 -->
+<view class="overAllView">
+
+	<!-- 计时器 -->
+	<view class="timeCount">
+		<view class="timeCountBox">{{hours}}</view>
+		<view class="timeCountBox">{{minutes}}</view>
+		<view class="timeCountBox">{{seconds}}</view>
+	</view>
+
+	<!-- 设置选项 -->
+	<image src="/assets/learning/setting.png" class="setting" bindtap="setting"></image>
+
+	<!-- 选中工具提示框 -->
+	<view class="alertTool" animation="{{alertToolAnimation}}">
+		<image src="{{alertToolPic}}" class="alertToolPic"></image>
+		<text class="alertToolText">{{alertToolText}}</text>
+	</view>
+
+	<!-- 选中数字提示框 -->
+	<view class="alertNum" animation="{{alertNumAnimation}}">{{alertNum}}</view>
+
+
+	<!-- 9*9格子 -->
+	<view class="nineNineGrid">
+
+		<!-- 第一大行 -->
+		<view class="row">
+			<!-- 1.1 -->
+			<view class="sudoku">
+				<view class="sudokuGrid">
+					<view class="grid" style="background-color: {{grid.backgroundColor}};" bindtap="sudokuTap" data-grids="sudokuOne{{grid.id}}" wx:for="{{sudokuGrid1}}" wx:key="id" wx:for-item="grid">
+						<text class="gridValue" style="color: {{grid.fontColor}};">{{grid.value}}</text>
+					</view>
+				</view>
+			</view>
+			<!-- 1.2 -->
+			<view class="sudoku">
+				<view class="sudokuGrid">
+					<view class="grid" style="background-color: {{grid.backgroundColor}};" bindtap="sudokuTap" data-grids="sudokuTwo{{grid.id}}" wx:for="{{sudokuGrid2}}" wx:key="id" wx:for-item="grid">
+						<text class="gridValue" style="color: {{grid.fontColor}}">{{grid.value}}</text>
+					</view>
+				</view>
+			</view>
+			<!-- 1.3 -->
+			<view class="sudoku">
+				<view class="sudokuGrid">
+					<view class="grid" style="background-color: {{grid.backgroundColor}};" bindtap="sudokuTap" data-grids="sudokuThree{{grid.id}}" wx:for="{{sudokuGrid3}}" wx:key="id" wx:for-item="grid">
+						<text class="gridValue" style="color: {{grid.fontColor}}">{{grid.value}}</text>
+					</view>
+				</view>
+			</view>
+		</view>
+
+		<!-- 第二大行 -->
+		<view class="row">
+			<!-- 2.1 -->
+			<view class="sudoku">
+				<view class="sudokuGrid">
+					<view class="grid" style="background-color: {{grid.backgroundColor}};" bindtap="sudokuTap" data-grids="sudokuFour{{grid.id}}" wx:for="{{sudokuGrid4}}" wx:key="id" wx:for-item="grid">
+						<text class="gridValue" style="color: {{grid.fontColor}}">{{grid.value}}</text>
+					</view>
+				</view>
+			</view>
+			<!-- 2.2 -->
+			<view class="sudoku">
+				<view class="sudokuGrid">
+					<view class="grid" style="background-color: {{grid.backgroundColor}};" bindtap="sudokuTap" data-grids="sudokuFive{{grid.id}}" wx:for="{{sudokuGrid5}}" wx:key="id" wx:for-item="grid">
+						<text class="gridValue" style="color: {{grid.fontColor}}">{{grid.value}}</text>
+					</view>
+				</view>
+			</view>
+			<!-- 2.3 -->
+			<view class="sudoku">
+				<view class="sudokuGrid">
+					<view class="grid" style="background-color: {{grid.backgroundColor}};" bindtap="sudokuTap" data-grids="sudokuSix{{grid.id}}" wx:for="{{sudokuGrid6}}" wx:key="id" wx:for-item="grid">
+						<text class="gridValue" style="color: {{grid.fontColor}}">{{grid.value}}</text>
+					</view>
+				</view>
+			</view>
+		</view>
+
+		<!-- 第三大行-->
+		<view class="row">
+			<!-- 3.1 -->
+			<view class="sudoku">
+				<view class="sudokuGrid">
+					<view class="grid" style="background-color: {{grid.backgroundColor}};" bindtap="sudokuTap" data-grids="sudokuSeven{{grid.id}}" wx:for="{{sudokuGrid7}}" wx:key="id" wx:for-item="grid">
+						<text class="gridValue" style="color: {{grid.fontColor}}">{{grid.value}}</text>
+					</view>
+				</view>
+			</view>
+			<!-- 3.2 -->
+			<view class="sudoku">
+				<view class="sudokuGrid">
+					<view class="grid" style="background-color: {{grid.backgroundColor}};" bindtap="sudokuTap" data-grids="sudokuEight{{grid.id}}" wx:for="{{sudokuGrid8}}" wx:key="id" wx:for-item="grid">
+						<text class="gridValue" style="color: {{grid.fontColor}}">{{grid.value}}</text>
+					</view>
+				</view>
+			</view>
+			<!-- 3.3 -->
+			<view class="sudoku">
+				<view class="sudokuGrid">
+					<view class="grid" style="background-color: {{grid.backgroundColor}};" bindtap="sudokuTap" data-grids="sudokuNine{{grid.id}}" wx:for="{{sudokuGrid9}}" wx:key="id" wx:for-item="grid">
+						<text class="gridValue" style="color: {{grid.fontColor}}">{{grid.value}}</text>
+					</view>
+				</view>
+			</view>
+		</view>
+
+	</view>
+
+	<!-- 工具栏 -->
+	<view class="edit">
+		<!-- 橡皮擦（擦去数字和笔记） -->
+		<view class="{{toolButtonErase}}" bindtap="erase">
+			<image class="editToolPic" src="/assets/learning/erase.svg"></image>
+			<text class="editToolText">橡皮</text>
+		</view>
+		<!-- 检查数独是否做完 -->
+		<view class="{{toolButtonCheck}}" bindtap="settingCheck">
+			<image class="editToolPic" src="/assets/learning/check.svg"></image>
+			<text class="editToolText">检查</text>
+		</view>
+		<!-- 提示 -->
+		<view class="{{toolButtonHint}}" bindtap="hint">
+			<image class="editToolPic" src="/assets/learning/idea.svg"></image>
+			<text class="editToolText">提示</text>
+		</view>
+	</view>
+  
+	<!-- 可选数字 -->
+	<view class="selectNumber">
+		<!-- 数字们 -->
+		<view class="{{number1}}" bindtap="numTap" data-num="1" animation="oneMove" style="{{numStyle1}}">1
+			<text class="smallHintNumber">{{remain1}}</text>
+		</view>
+		<view class="{{number2}}"  bindtap="numTap" data-num="2" animation="twoMove" style="{{numStyle2}}">2
+			<text class="smallHintNumber">{{remain2}}</text>
+		</view>
+		<view class="{{number3}}"  bindtap="numTap" data-num="3" animation="threeMove" style="{{numStyle3}}">3
+			<text class="smallHintNumber">{{remain3}}</text>
+		</view>
+		<view class="{{number4}}"  bindtap="numTap" data-num="4" animation="fourMove" style="{{numStyle4}}">4
+			<text class="smallHintNumber">{{remain4}}</text>
+		</view>
+		<view class="{{number5}}"  bindtap="numTap" data-num="5" animation="fiveMove" style="{{numStyle5}}">5
+			<text class="smallHintNumber">{{remain5}}</text>
+		</view>
+		<view class="{{number6}}"  bindtap="numTap" data-num="6" animation="sixMove" style="{{numStyle6}}">6
+			<text class="smallHintNumber">{{remain6}}</text>
+		</view>
+		<view class="{{number7}}"  bindtap="numTap" data-num="7" animation="sevenMove" style="{{numStyle7}}">7
+			<text class="smallHintNumber">{{remain7}}</text>
+		</view>
+		<view class="{{number8}}"  bindtap="numTap" data-num="8" animation="eightMove" style="{{numStyle8}}">8
+			<text class="smallHintNumber">{{remain8}}</text>
+		</view>
+		<view class="{{number9}}"  bindtap="numTap" data-num="9" animation="nineMove" style="{{numStyle9}}">9
+			<text class="smallHintNumber">{{remain9}}</text>
+		</view>
+	</view>
+
+</view>
+
+<!-- 整个页面的选择难度 -->
+<view class="selectModeView" style="display: {{welcomePage}}">
+
+	<!-- 打招呼 -->
+	<text class="selectModeViewGreet">欢迎来到《数独挑战》</text>
+
+	<!-- 教程按钮 -->
+  <view class="tourBtn" bindtap="goToTour">教程</view>
+   
+	<!-- 难度选择框 -->
+	<view class="selectMode">
+		<view class="{{selectButton1}}" bindtap="easy">
+			<text class="buttonText">幼儿园</text>
+		</view>
+		<view class="{{selectButton2}}" bindtap="middle">
+			<text class="buttonText">中学</text>
+		</view>
+		<view class="{{selectButton3}}" bindtap="hard">
+			<text class="buttonText">研究生</text>
+		</view>
+		<view class="{{selectButton4}}" bindtap="epic">
+			<text class="buttonText">博士后</text>
+		</view>
+	</view>
+
+	<!-- 难度选择图片 -->
+	<view class="selectModePic">
+		<image src="{{modePic}}" class="buttonPicStyle" mode="aspectFill"></image>
+	</view>
+
+	<!-- 进入数独按钮 -->
+	<view class="inGameButton" bindtap="getIntoGame">
+		<text class="inGameText">{{mode}}</text>
+	</view>
+ 
+	<!-- 开发者 -->
+	<view class="developerPic">
+		<image src="{{developerPic}}" class="developerInnerPic"></image>
+		<view class="developerName">小黑</view>
+	</view>
+
+
+</view>
+
+<!-- 设置页面 --> 
+<view class="settingView" style="display: {{settingView}}">
+	<text class="settingTitle">设置</text>
+	<text class="settingContinue" bindtap="settingContinue">继续数独</text>
+	<text class="settingVolumn" bindtap="settingVolumn">{{isVolumnOn}}</text>
+	<text class="settingBack" bindtap="settingBack">返回大厅</text>
+</view>
+
+<!-- 获得经验显示条 -->
+<view id="levelAndExp" animation="{{EXPandLEVEL}}">
+	<text class="level">LV <text class="levelNum">{{userLevel}}</text></text>
+	<progress class="expProgress" stroke-width='28' backgroundColor="#ecf0f3" active active-mode="forwards" percent="{{expPercentage}}" activeColor="purple" duration="30"></progress>
+</view> 
+
+<!-- 总结画面 -->
+<view class="summaryView" style="display: {{summaryPage}}">
+	<text class="summaryNomalTextColor">
+		<text class="summaryNormalText">您总共用时:</text>
+		<text class="summarySpecialText">{{completeTime}}</text><text class="summarySpecialText2">秒钟</text>
+	</text>
+	<text class="summaryNomalTextColor">
+		<text class="summaryNormalText">一共使用了:</text>
+		<text class="summarySpecialText">{{useHintAmount}}</text><text class="summarySpecialText2">个提示</text>
+	</text>
+	<text class="summaryNomalTextColor">
+		<text class="summaryNormalText">最终完成了:</text>
+		<text class="summarySpecialText">{{gameDifficulty}}</text><text class="summarySpecialText2">级别</text>
+	</text>
+	<view class="confirmGameEnd" bindtap="confirmGameEnd">确认</view>
+</view>

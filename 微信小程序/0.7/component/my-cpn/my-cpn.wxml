@@ -1,0 +1,32 @@
+
+<view>
+
+  <view class="blurView"></view>
+
+  <view class="middleView">
+    <view class="topView">
+      <text class="head" style="color: {{textColor}};">{{head}}</text>
+      <image src="{{imageLink}}" class="aimIcon"></image> 
+    </view>
+  </view>
+ 
+  <view class="separateLine"></view>
+
+  <scroll-view scroll-y="true" class="contant">
+    <text class="title">目的性:</text>
+    <text decode="{{true}}" class="describe">&nbsp;&nbsp; 当那种感知活动具有明确的目的时，才能算是观察。</text>
+    <view class="skipLine"></view>
+    <text class="title">条理性:</text>
+    <text decode="{{true}}" class="describe">&nbsp;&nbsp; 观察是一种复杂而细致的艺术，不是随随便便，漫无条理地进行所能奏效的。观察必须全面系统，有条不紊地进行。</text>
+    <view class="skipLine"></view>
+    <text class="title">理解性:</text>
+    <text decode="{{true}}" class="describe">&nbsp;&nbsp; 观察力包含两个必不可少的因素：一是感知因素（通常是视觉），二是思维因素。</text>
+    <view class="skipLine"></view>
+    <text class="title">敏锐性:</text>
+    <text decode="{{true}}" class="describe">&nbsp;&nbsp; 观察力的敏锐性指迅速而善于发现易被忽略的信息。</text>
+    <view class="skipLine"></view>
+    <text class="title">准确性:</text>
+    <text decode="{{true}}" class="describe">&nbsp;&nbsp; 正确地获得与观察对象有关的信息。在观察过程中，不只是注意搜寻那些预期的事物，而且还要注意那些意外的情况。</text>
+  </scroll-view>
+
+</view>

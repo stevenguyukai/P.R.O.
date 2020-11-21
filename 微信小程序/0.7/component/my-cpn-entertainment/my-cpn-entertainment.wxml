@@ -1,0 +1,21 @@
+<view>
+
+  <view class="blurView"></view>
+
+  <view class="middleView">
+    <view class="topView">
+      <text class="head" style="color: {{textColor}};">{{head}}</text>
+      <image src="{{imageLink}}" class="aimIcon"></image> 
+    </view>
+  </view>
+
+
+  <view class="separateLine"></view> 
+
+  <scroll-view scroll-y="true" class="contant">
+    <text class="title">解释:</text>
+    <text decode="{{true}}" class="describe">&nbsp;&nbsp; 本游戏包含娱乐性质，可以适当放松疲惫</text>
+    <view class="skipLine"></view>
+  </scroll-view>
+
+</view> 

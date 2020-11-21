@@ -1,0 +1,240 @@
+<view id="{{bgColor}}" > 
+
+  <!-- 顶部视图 -->
+  <view id="{{dayORnight}}" animation="{{openLargeView}}">
+    <view id="topBgColor" animation="{{changeColor}}">
+      <!-- 顶部非常驻view --> 
+      <view class="{{nonStillViewTop}}">
+        <image src="/assets/learning/proLogo.png" class="proLogo"></image>
+        <text class="noneImportantText">先驱者PRO团队——倾力打造的益脑游戏+小程序 </text> 
+      </view>
+      <view class="{{imageUse}}">
+        <image src="/assets/learning/iconFontIcon.png" id="iconFontIcon"></image>
+        <image src="/assets/learning/iconFontIcon2.png" id="iconFontIcon2"></image>
+       <text id="{{iconFontIconText}}">图形提供: www.iconfont.cn</text>
+      </view>
+
+      <button class="{{feedbackBtn}}" open-type="feedback">问题反馈</button>
+
+      <!-- 顶部常驻view -->
+      <image src="/assets/learning/computerIcon.png" id="computerTableIcon"></image>
+      <text id="userName" bindtap="warningLogin">{{userName}}</text>
+      <text id="introduce">PRO CODING CLUB</text>
+      <image src="{{sunORmoon}}" id="sunORmoon" bindtap="changeTimeState"></image>
+      <image src="{{openORretract}}" id="openANDretractIcon" bindtap="openView"></image>
+    </view>
+  </view> 
+   
+  
+  <!-- 学习内容视图 -->
+  <view>
+
+    <view id="contentWhole" style="background-color:{{blackORwhite}}" animation="{{changeBgColor}}"/>
+
+    <!-- 深海救援 Deep Water Save -->
+    <view>
+      <view class="{{learningCard}}" style="{{Deep_Water_Save}}" animation="{{cardBgColor}}" bindtap="Deep_Water_Save_Move">
+        <!-- 可用性图片 -->
+        <image src="/assets/learning/lock.png" class="availabilityPic"></image>
+        <!-- 图片 -->
+        <view animation="{{Deep_Water_Save_Animation}}" style="z-index:-5">
+          <image src="/assets/learning/game3/icon.png" class="gameIconLeft"></image>
+        </view>
+        <!-- 介绍 -->
+        <view animation="{{Deep_Water_Save_Animation_Back}}" style="opacity:0; z-index:-10">
+          <text class="flipLearningCardTitle" style="color:{{blackORwhiteTitle}}">深海救援</text>
+          <text class="learningCardSummaryFlip" style="color:{{blackORwhiteTitle}}" decode="nbsp">制作者：小黑\n&nbsp;&nbsp;&nbsp;有两个潜水员等着你去拯救，加油！</text>
+          <button class="learningCardButtonFlip" plain="true" type="primary" bindtap="Deep_Water_Save_Start" disabled="{{Deep_Water_Save_Btn}}">开始训练</button>
+        </view>
+      </view>
+    </view> 
+
+    
+    <!-- 五彩缤纷 Pick Up The Color --> 
+    <view>
+      <view class="{{learningCard}}" style="{{Pick_Up_The_Color}}" animation="{{cardBgColor}}" bindtap="Pick_Up_The_Color_Move">
+        <!-- 可用性图片 -->
+        <image src="/assets/learning/lock.png" class="availabilityPic"></image>
+        <!-- 图片 -->
+        <view animation="{{Pick_Up_The_Color_Animation}}" style="z-index:-5">
+          <image src="/assets/learning/game1/colorsIcon.png" class="gameIconLeft"></image>
+        </view>
+        <!-- 介绍 -->
+        <view animation="{{Pick_Up_The_Color_Animation_Back}}" style="opacity:0; z-index:-10">
+          <text class="flipLearningCardTitle" style="color:{{blackORwhiteTitle}}">五彩缤纷</text>
+          <text class="learningCardSummaryFlip" style="color:{{blackORwhiteTitle}}" decode="nbsp">制作者：张郭圣/小黑\n&nbsp;&nbsp;&nbsp;以最快的速度判断出最精确的颜色。</text>
+          <button class="learningCardButtonFlip" plain="true" type="primary" bindtap="Pick_Up_The_Color_Start" disabled="{{Pick_Up_The_Color_Btn}}">开始训练</button>
+        </view>
+      </view>
+    </view>
+    
+
+    <!-- 打破气球 Hit Balloon -->
+    <view>
+      <view class="{{learningCard}}" style="{{Hit_Balloon}}" animation="{{cardBgColor}}" bindtap="Hit_Balloon_Move">
+        <!-- 可用性图片 -->
+        <image src="/assets/learning/lock.png" class="availabilityPic"></image>
+        <!-- 图片 -->
+        <view animation="{{Hit_Balloon_Animation}}">
+          <image src="/assets/learning/game2/icon.png" class="gameIconRight"></image>
+        </view>
+        <!-- 介绍 -->
+        <view animation="{{Hit_Balloon_Animation_Back}}" style="opacity:0;">
+          <text class="flipLearningCardTitle" style="color:{{blackORwhiteTitle}}">打破气球</text>
+          <text class="learningCardSummaryFlip" style="color:{{blackORwhiteTitle}}" decode="nbsp">制作者：李骏卫/小黑\n&nbsp;&nbsp;&nbsp;用同样颜色的箭击破同样颜色的气球。</text>
+          <button class="learningCardButtonFlip" plain="true" type="primary" bindtap="Hit_Balloon_Start" disabled="{{Hit_Balloon_Btn}}">开始训练</button>
+        </view>
+      </view>
+    </view>
+
+
+    <!-- 方块记忆 Brain Memory  -->
+    <view>
+      <view class="{{learningCard}}" style="{{Brain_Memory}}" animation="{{cardBgColor}}" bindtap="Brain_Memory_Move">
+        <!-- 可用性图片 -->
+        <image src="/assets/learning/new.png" class="availabilityPic" animation="{{availabilityAnimation}}"></image>
+        <!-- 图片 -->
+        <view animation="{{Brain_Memory_Animation}}">
+          <image src="{{gameOneRemember}}" class="gameIconRight"></image>
+        </view>
+        <!-- 介绍 -->
+        <view animation="{{Brain_Memory_Animation_Back}}" style="opacity:0;">
+          <text class="flipLearningCardTitle" style="color:{{blackORwhiteTitle}};">方块记忆</text>
+          <text class="learningCardSummaryFlip" style="color:{{blackORwhiteTitle}}" decode="nbsp">制作者：小黑\n&nbsp;&nbsp;&nbsp;努力记住变换颜色方块的位置吧！</text>
+          <button class="learningCardButtonFlip" plain="true" type="primary" bindtap="Brain_Memory_Start">开始训练</button>
+        </view>
+      </view>
+    </view>
+
+
+    <!-- 需要验证  Need Verify --> 
+    <view>
+      <view class="{{learningCard}}" style="{{Need_Verify}}" animation="{{cardBgColor}}" bindtap="Need_Verify_Move">
+        <!-- 可用性图片 -->
+        <image src="/assets/learning/new.png" class="availabilityPic" animation="{{availabilityAnimation}}"></image>
+        <!-- 图片 -->
+        <view animation="{{Need_Verify_Animation}}">
+          <image src="/assets/learning/game5/icon.png" class="gameIconRight"></image>
+        </view>
+        <!-- 介绍 -->
+        <view animation="{{Need_Verify_Animation_Back}}" style="opacity:0;">
+          <text class="flipLearningCardTitle" style="color:{{blackORwhiteTitle}}">需要验证</text>
+          <text class="learningCardSummaryFlip" style="color:{{blackORwhiteTitle}}" decode="nbsp">制作者：小黑\n&nbsp;&nbsp;&nbsp;登陆各种网站和APP都需要输入验证码啊。</text>
+          <button class="learningCardButtonFlip" plain="true" type="primary" bindtap="Need_Verify_Start">开始训练</button>
+        </view>
+      </view>
+    </view> 
+    
+
+    <!-- 购物达人 Shopping Expert -->
+    <view>
+      <view class="{{learningCard}}" style="{{Shopping_Expert}}" animation="{{cardBgColor}}" bindtap="Shopping_Expert_Move">
+        <!-- 可用性图片 -->
+        <image src="/assets/learning/lock.png" class="availabilityPic"></image>
+        <!-- 图片 -->
+        <view animation="{{Shopping_Expert_Animation}}">
+          <image src="/assets/learning/game4/icon.png" class="gameIcon"></image>
+        </view>
+        <!-- 介绍 -->
+        <view animation="{{Shopping_Expert_Animation_Back}}" style="opacity:0;">
+          <text class="flipLearningCardTitle" style="color:{{blackORwhiteTitle}}">购物达人</text>
+          <text class="learningCardSummaryFlip" style="color:{{blackORwhiteTitle}}" decode="nbsp">制作者：小黑\n&nbsp;&nbsp;&nbsp;你的盆友们需要你的帮助——购物！</text>
+          <button class="learningCardButtonFlip" plain="true" type="primary" bindtap="Shopping_Expert_Start" disabled="{{Shopping_Expert_Btn}}">开始训练</button>
+        </view>
+      </view>
+    </view>
+
+
+
+    <!-- 左右互搏 Struggle Fight -->
+    <view>
+      <view class="{{learningCard}}" style="{{Struggle_Fight}}" animation="{{cardBgColor}}" bindtap="Struggle_Fight_Move">
+        <!-- 可用性图片 -->
+        <image src="/assets/learning/lock.png" class="availabilityPic"></image>
+        <!-- 图片 -->
+        <view animation="{{Struggle_Fight_Animation}}">
+          <image src="/assets/learning/game6/icon.png" class="gameIconRight"></image>
+        </view>
+        <!-- 介绍 -->
+        <view animation="{{Struggle_Fight_Animation_Back}}" style="opacity:0;">
+          <text class="flipLearningCardTitle" style="color:{{blackORwhiteTitle}}">左右互搏</text>
+          <text class="learningCardSummaryFlip" style="color:{{blackORwhiteTitle}}" decode="nbsp">制作者：胡博恒/小黑\n&nbsp;&nbsp;&nbsp;左手画圆右手画方，训练左右手协调能力。</text>
+          <button class="learningCardButtonFlip" plain="true" type="primary" bindtap="Struggle_Fight_Start" disabled="{{Struggle_Fight_Btn}}">开始训练</button>
+        </view>
+      </view>
+    </view>
+
+
+    <!-- 平衡之道 The Key To Balance -->
+    <view>
+      <view class="{{learningCard}}" style="{{The_Key_To_Balance}}" animation="{{cardBgColor}}" bindtap="The_Key_To_Balance_Move">
+        <!-- 可用性图片 -->
+        <image src="/assets/learning/lock.png" class="availabilityPic"></image>
+        <!-- 图片 -->
+        <view animation="{{The_Key_To_Balance_Animation}}">
+          <image src="/assets/learning/game7/icon.png" class="gameIconLeft"></image>
+        </view>
+        <!-- 介绍 -->
+        <view animation="{{The_Key_To_Balance_Animation_Back}}" style="opacity:0;">
+          <text class="flipLearningCardTitle" style="color:{{blackORwhiteTitle}}">平衡之道</text>
+          <text class="learningCardSummaryFlip" style="color:{{blackORwhiteTitle}}" decode="nbsp">制作者：潘鹏/小黑\n&nbsp;&nbsp;&nbsp;无形的力量在破坏天平的平衡，保持平衡！</text>
+          <button class="learningCardButtonFlip" plain="true" type="primary" bindtap="The_Key_To_Balance_Start" disabled="{{The_Key_To_Balance_Btn}}">开始训练</button>
+        </view>
+      </view>
+    </view>
+  
+
+    <!-- 数独 The sudoku -->
+    <view>
+      <view class="{{learningCard}}" style="{{The_Sudoku}}" animation="{{cardBgColor}}" bindtap="The_Sudoku_Move">
+        <!-- 可用性图片 -->
+        <image src="/assets/learning/new.png" class="availabilityPic" animation="{{availabilityAnimation}}"></image>
+        <!-- 图片 -->
+        <view animation="{{The_Sudoku_Animation}}">
+          <image src="/assets/learning/sudoku.png" class="gameIconRight"></image>
+        </view>
+        <!-- 介绍 -->
+        <view animation="{{The_Sudoku_Animation_Back}}" style="opacity:0;">
+          <text class="flipLearningCardTitle" style="color:{{blackORwhiteTitle}}">数独挑战</text>
+          <text class="learningCardSummaryFlip" style="color:{{blackORwhiteTitle}}" decode="nbsp">制作者：小黑\n&nbsp;&nbsp;&nbsp;人尽皆知的数独游戏，考验脑力和眼力</text>
+          <button class="learningCardButtonFlip" plain="true" type="primary" bindtap="The_Sudoku_Start">开始训练</button>
+        </view>
+      </view>
+    </view>
+
+    
+    <!-- 弹来弹去 Bouncing Ball -->
+    <view>
+      <view class="{{learningCard}}" style="{{Bouncing_Ball}}" animation="{{cardBgColor}}" bindtap="Bouncing_Ball_Move">
+        <!-- 可用性图片 -->
+        <image src="/assets/learning/lock.png" class="availabilityPic"></image>
+        <!-- 图片 -->
+        <view animation="{{Bouncing_Ball_Animation}}">
+          <image src="/assets/learning/ball.png" class="gameIconRight"></image>
+        </view>
+        <!-- 介绍 -->
+        <view animation="{{Bouncing_Ball_Animation_Back}}" style="opacity:0;">
+          <text class="flipLearningCardTitle" style="color:{{blackORwhiteTitle}}">弹来弹去</text>
+          <text class="learningCardSummaryFlip" style="color:{{blackORwhiteTitle}}" decode="nbsp">制作者：小黑\n&nbsp;&nbsp;&nbsp;需要让一个球碰到另一个球，放松一下！</text>
+          <button class="learningCardButtonFlip" plain="true" type="primary" bindtap="Bouncing_Ball_Start" disabled="{{Bouncing_Ball_Btn}}">开始游玩</button>
+        </view>
+      </view>
+    </view>
+
+
+  </view> 
+
+
+</view>
+
+
+
+
+/*
+{
+        "pagePath": "pages/shareItem/shareItem",
+        "text": "分享",
+        "iconPath": "assets/tabBarIcon/share.png",
+        "selectedIconPath": "assets/tabBarIcon/share_selected.png"
+      }
+*/
