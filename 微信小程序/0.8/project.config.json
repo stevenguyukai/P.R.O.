@@ -1,0 +1,225 @@
+{
+    "description": "项目配置文件",
+    "packOptions": {
+        "ignore": []
+    },
+    "setting": {
+        "scopeDataCheck": false
+    },
+    "compileType": "miniprogram",
+    "libVersion": "2.10.4",
+    "appid": "wx43cdb1bcc40005a2",
+    "projectname": "%E5%85%88%E9%A9%B1%E8%80%85PRO%E5%B0%8F%E7%A8%8B%E5%BA%8F",
+    "debugOptions": {
+        "hidedInDevtools": []
+    },
+    "isGameTourist": false,
+    "simulatorType": "wechat",
+    "simulatorPluginLibVersion": {},
+    "condition": {
+        "plugin": {
+            "list": []
+        },
+        "game": {
+            "list": []
+        },
+        "gamePlugin": {
+            "list": []
+        },
+        "miniprogram": {
+            "list": [
+                {
+                    "id": -1,
+                    "name": "pages/learning/learning",
+                    "pathName": "pages/learning/learning",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "id": -1,
+                    "name": "sudoku",
+                    "pathName": "games/sudoku/sudoku",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "id": -1,
+                    "name": "pages/mine/mine",
+                    "pathName": "pages/mine/mine",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "id": -1,
+                    "name": "pages/test/test",
+                    "pathName": "pages/test/test",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "id": -1,
+                    "name": "gamePages/The_Sudoku/The_Sudoku",
+                    "pathName": "gamePages/The_Sudoku/The_Sudoku",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "id": -1,
+                    "name": "gamePages/Need_Verify/Need_Verify",
+                    "pathName": "gamePages/Need_Verify/Need_Verify",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "id": -1,
+                    "name": "games/need_Verify/need_Verify",
+                    "pathName": "games/need_Verify/need_Verify",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "id": -1,
+                    "name": "games/need_Verify/need_Verify",
+                    "pathName": "games/test/test",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "id": -1,
+                    "name": "gamePages/The_Sudoku/The_Sudoku",
+                    "pathName": "gamePages/The_Sudoku/The_Sudoku",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "id": -1,
+                    "name": "gamePages/The_Sudoku/The_Sudoku",
+                    "pathName": "gamePages/The_Sudoku/The_Sudoku",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "id": -1,
+                    "name": "games/sudoku/sudoku",
+                    "pathName": "games/sudoku/sudoku",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "id": -1,
+                    "name": "gamePages/The_Sudoku/The_Sudoku",
+                    "pathName": "gamePages/The_Sudoku/The_Sudoku",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "id": -1,
+                    "name": "gamePages/Need_Verify/Need_Verify",
+                    "pathName": "gamePages/Need_Verify/Need_Verify",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "id": -1,
+                    "name": "games/sudoku/sudoku",
+                    "pathName": "games/sudoku/sudoku",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "id": -1,
+                    "name": "games/need_Verify/need_Verify",
+                    "pathName": "games/need_Verify/need_Verify",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "id": -1,
+                    "name": "gamePages/The_Sudoku/The_Sudoku",
+                    "pathName": "gamePages/The_Sudoku/The_Sudoku",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "id": -1,
+                    "name": "gamePages/Brain_Memory/Brain_Memory",
+                    "pathName": "gamePages/Brain_Memory/Brain_Memory",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "id": -1,
+                    "name": "games/brain_Memory/brain_Memory",
+                    "pathName": "games/brain_Memory/brain_Memory",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "gamePages/Brain_Memory/Brain_Memory",
+                    "pathName": "gamePages/Brain_Memory/Brain_Memory",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "games/brain_Memory/brain_Memory",
+                    "pathName": "games/brain_Memory/brain_Memory",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "gamePages/Brain_Memory/Brain_Memory",
+                    "pathName": "gamePages/Brain_Memory/Brain_Memory",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "gamePages/Brain_Memory/Brain_Memory",
+                    "pathName": "gamePages/Brain_Memory/Brain_Memory",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "gamePages/Need_Verify/Need_Verify",
+                    "pathName": "gamePages/Need_Verify/Need_Verify",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "gamePages/Brain_Memory/Brain_Memory",
+                    "pathName": "gamePages/Brain_Memory/Brain_Memory",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "gamePages/The_Sudoku/The_Sudoku",
+                    "pathName": "gamePages/The_Sudoku/The_Sudoku",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "gamePages/The_Sudoku/The_Sudoku",
+                    "pathName": "gamePages/The_Sudoku/The_Sudoku",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/datas/datas",
+                    "pathName": "pages/datas/datas",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/datas/datas",
+                    "pathName": "pages/datas/datas",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/rank/rank",
+                    "pathName": "pages/rank/rank",
+                    "scene": null
+                }
+            ]
+        }
+    }
+}

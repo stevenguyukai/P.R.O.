@@ -1,0 +1,407 @@
+page{
+  background-color: #3d4050; 
+  height: 100%;
+}
+
+.true{ 
+  display: block;  
+}
+  
+.false{ 
+  display: none;
+}
+
+
+#bgColorBlack{ 
+  position: absolute; 
+  width: 100%; 
+  height: 100%; 
+  background-color: #3d4050;
+  z-index: 0;
+  overflow-x: hidden;
+}
+#bgColorWhite{
+  position: absolute;
+  width: 100%;
+  height: 100%; 
+  background-color: #ecf0f3;
+  z-index: 0;
+  overflow-x: hidden;
+}
+
+#computerTableIcon{
+  width: 200rpx;
+  height: 190rpx; 
+  position: absolute;
+  top: 75%;
+  left: 30rpx;
+}
+
+#topViewDay{
+  position: absolute;
+  top: -53vh;
+  width: 100%;
+  height: 70vh;
+  border-bottom-right-radius:55rpx; 
+  border-bottom-left-radius:55rpx; 
+  background-color: gold;
+  overflow-x: hidden;
+  z-index: 4;
+}
+#topViewNight{
+  color: white;
+  position: absolute;
+  top: -53vh;
+  width: 100%;
+  height: 70vh;
+  border-bottom-right-radius:55rpx; 
+  border-bottom-left-radius:55rpx; 
+  background-color: purple;
+  overflow-x: hidden;
+  z-index: 4;
+}
+
+#userName{
+  font-size: 45rpx;
+  position: relative;
+  left: 2%;
+  top: 81%;
+}
+
+#introduce{
+  position: absolute;
+  left: 266rpx;
+  top: 89%;
+  color: grey;
+}
+
+#sunORmoon{
+  position: absolute;
+  top: 79%;
+  left: 78%;
+  width: 140rpx;
+  height: 140rpx;
+} 
+
+#openANDretractIcon{
+  position: absolute;
+  top: 94.5%;
+  left: 48%;
+  width: 50rpx;
+  height: 50rpx;
+}
+
+#topBgColor{
+  position: absolute;
+  width: 100%;
+  height: 70vh;
+  text-align: center;
+  border-bottom-right-radius:45rpx; 
+  border-bottom-left-radius:45rpx;
+}
+
+.learningCardBlack{
+  height: 280rpx;
+  width: 280rpx;
+  position: absolute;
+  border-radius: 20px;
+  box-shadow: 8px 8px 8px #222, -5px -5px 8px #777;
+  background-color: #3d4050;
+  z-index: -1;
+}
+
+.learningCardWhite{
+  height: 280rpx; 
+  width: 280rpx;
+  position: absolute;
+  border-radius: 20px;
+  box-shadow: 13px 13px 13px #d1d9e6, -13px -13px 13px #fff;
+  background-color: #ecf0f3;
+  z-index: -1;
+}
+
+#contentWhole{
+  position: absolute;
+  width: 100%;
+  height: 2250rpx;
+  z-index: -2;
+}
+
+.gameIcon{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.gameArrowIcon{
+  width: 70rpx;
+  height: 70rpx;
+  position: absolute;
+  left: 79%;
+  top: 36%;
+}
+
+.learningCardTitle{
+  font-size: 45rpx;
+  position: absolute;
+  left: 32%;
+  top: 3%;
+}
+
+.learningCardSummary{
+  font-size: 25rpx;
+  position: absolute;
+  left: 8%;
+  top: 30%;
+  width: 70%;
+}
+
+.learningCardButton{
+  position: absolute;
+  top: 70%;
+  left: 26%;
+  height: 60rpx;
+  font-size: 25rpx;
+}
+
+.proLogo{
+  height: 70rpx;
+  width: 16%;
+  position: absolute;
+  left: 42%;
+  top: 10%;
+}
+
+.noneImportantText{
+  position: relative;
+  top: 60%;
+  color:#66ade7
+}
+
+#iconFontIcon{
+  height: 17vh;
+  width: 17vh;
+  position: absolute;
+  border-radius: 30rpx;
+  left: 1.5vh;
+  top: 1.5vh;
+}
+
+#iconFontIcon2{
+  height: 17vw;
+  width: 55vw;
+  position: absolute;
+  border-radius: 20rpx; 
+  left: 35vw;
+  top: 1.5vh;
+}
+
+#iconFontIconText{
+  position: absolute;
+  width: 60%;
+  left: 34vw;
+  top: 14vh;
+  color: purple; 
+}
+
+#iconFontIconTextDark{
+  position: absolute;
+  width: 60%; 
+  left: 34vw;
+  top: 14vh;
+  color: gold;
+}
+
+.flipLearningCardTitle{
+  font-size: 40rpx; 
+  position: absolute;
+  left: 23%;
+  top: -22rpx;
+}
+
+.learningCardButtonFlip{
+  position: absolute;
+  top: 165rpx;
+  left: 21%;
+  height: 60rpx;
+  font-size: 25rpx;
+}
+
+.learningCardSummaryFlip{
+  font-size: 25rpx;
+  position: absolute;
+  left: 6%;
+  top: 50rpx;
+  width: 90%;
+}
+
+.gameIconLeft{
+  height: 94%;
+  width: 94%;
+  position: absolute;
+  top: 3%;
+  left: 3%;
+}
+
+.gameIconRight{
+  height: 90%;
+  width: 90%;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+
+.gameIconBig{
+  height: 130%;
+  width: 130%;
+  position: absolute;
+  top: -16%;
+  left: -10%;
+}
+
+.learningCardTitleFour{
+  font-size: 45rpx;
+  position: absolute;
+  left: 28%;
+  top: 3%;
+}
+
+.buttomText{
+  color: #888888;
+  position: relative;
+  margin-top: 400rpx;
+}
+
+
+.nonStillViewTop{
+  position: absolute;
+  top: 1.5vh;
+  width: 94vw;
+  left: 3vw;
+  height: 14.5vh;
+  border-radius: 15px;
+  background: #f9d749;
+  box-shadow: inset 4px 4px 4px #d4b73e, inset 4px -4px 4px #fff754;
+}
+
+.feedbackBtn{
+  position: absolute;
+  top: 43vh;
+  width: 50vw;
+  left: 25vw;
+  border-radius: 15pxx;
+  background: #f9d749;
+  box-shadow:  4px 4px 4px #d4b73e,  -4px -4px 4px #fff754;
+  color: black;
+}
+
+.imageUse{
+  position: absolute;
+  top: 20vh;
+  width: 94vw;
+  left: 3vw;
+  height: 20vh;
+  border-radius: 15px;
+  background: #f9d749;
+  box-shadow: inset 4px 4px 4px #d4b73e, inset 4px -4px 4px #fff754;
+}
+
+.nonStillViewTopDark{
+  position: absolute;
+  top: 1.5vh;
+  width: 94vw;
+  left: 3vw;
+  height: 14.5vh;
+  border-radius: 15px;
+  background: #942192;
+  box-shadow: inset 4px 4px 4px #58145d, inset 4px -4px 4px #92229b;
+}
+
+.feedbackBtnDark{
+  position: absolute;
+  top: 43vh;
+  width: 50vw;
+  left: 25vw;
+  border-radius: 15pxx;
+  background: #942192;
+  box-shadow:  4px 4px 4px #6e186c,  -4px -4px 4px #ba2ab8;
+  color: white;
+}
+
+.imageUseDark{
+  position: absolute;
+  top: 20vh;
+  width: 94vw;
+  left: 3vw;
+  height: 20vh;
+  border-radius: 15px;
+  background: #942192;
+  box-shadow: inset 4px 4px 4px #58145d, inset 4px -4px 4px #92229b;
+}
+
+.availabilityPic{
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+  top: -40rpx;
+  left: 240rpx;
+}
+
+/* 提示添加「我的小程序」样式 */
+.invite {
+  width: 375rpx;
+  font-size: 25rpx;
+  height: 120rpx;
+  line-height: 40rpx;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  position: fixed;
+  margin-top: 20rpx;
+  right: 90rpx;
+  background-color: #fada4a;
+  border: 1px solid #333333;
+  border-radius: 5px;
+  z-index: 100;
+}
+.invite:after {
+  content: '';
+  width: 20rpx;
+  height: 20rpx;
+  position: absolute;
+  top: -15rpx;
+  right: 40rpx;
+  transform: rotate(45deg);
+  background-color: #fada4a;
+  border: 1px #333333;
+  border-style: solid none none solid ;
+}
+
+/* 提示「授权登陆」样式 */
+.hintToLogin {
+  width: 135rpx;
+  font-size: 25rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  padding-left: 15rpx;
+  position: fixed;
+  bottom: 20rpx;
+  right: 30vw;
+  color: black;
+  background-color: #fada4a;
+  border: 1px solid #333333;
+  border-radius: 5px;
+  z-index: 100;
+}
+.hintToLogin:after {
+  content: '';
+  width: 20rpx;
+  height: 20rpx;
+  position: absolute;
+  top: 40rpx;
+  right: 40rpx;
+  transform: rotate(45deg);
+  background-color: #fada4a;
+  border: 1px #333333;
+  border-style: none solid solid none ;
+}
+

@@ -1,0 +1,128 @@
+<!-- 底层视图 -->
+<view class="baseView" style="{{blackWhiteViewPlain}}">
+
+    <!-- 上半视图（包含脑力值图像/脑力值名字/左右翻按钮/总脑力值） -->
+    <view class="upperView" style="{{blackWhiteView}}">
+        <!-- 总脑力视图 -->
+        <view class="totalBrainScoreView" style="{{blackWhiteViewInset}}">
+            <text class="totalBrainScoreText" style="{{blackWhiteText}}"> 总 脑 力 值 ：</text>
+            <text class="totalBrainScoreNum" style="{{blackWhiteText}}">{{totalBrainScore}}</text>
+        </view>
+        <!-- 脑力值名称 -->
+        <swiper current="{{graphIndex}}" circular="true" class="textSwiper">
+            <!-- 总结 -->
+            <swiper-item class="textSwiperItem">
+                <text class="brainScoreName" style="{{blackWhiteText}}">总 结</text>
+            </swiper-item>
+            <!-- 反应力 -->
+            <swiper-item class="textSwiperItem">
+                <text class="brainScoreName" style="{{blackWhiteText}}">反 应 力</text>
+            </swiper-item>
+            <!-- 多线处理 -->
+            <swiper-item class="textSwiperItem">
+                <text class="brainScoreName" style="{{blackWhiteText}}">多 线 处 理</text>
+            </swiper-item>
+            <!-- 记忆力 -->
+            <swiper-item class="textSwiperItem">
+                <text class="brainScoreName" style="{{blackWhiteText}}">记 忆 力</text>
+            </swiper-item>
+            <!-- 逻辑力 -->
+            <swiper-item class="textSwiperItem">
+                <text class="brainScoreName" style="{{blackWhiteText}}">逻 辑 力</text>
+            </swiper-item>
+            <!-- 专注力 -->
+            <swiper-item class="textSwiperItem">
+                <text class="brainScoreName" style="{{blackWhiteText}}">专 注 力</text>
+            </swiper-item>
+            <!-- 观察力 -->
+            <swiper-item class="textSwiperItem">
+                <text class="brainScoreName" style="{{blackWhiteText}}">观 察 力</text>
+            </swiper-item>
+        </swiper>
+        <!-- 左右翻页图标 -->
+        <image src="{{switchIconImageLeft}}" class="switchIcon" style="left: 5vw" bindtap="switchIconLeftTap"></image>
+        <image src="{{switchIconImageRight}}" class="switchIcon" style="right: 5vw" bindtap="switchIconRightTap">
+        </image>
+        <!-- 左右提示文字 -->
+        <text class="switchHintText" id="switchHintTextLeft" style="{{blackWhiteText}}">{{previousItem}}</text>
+        <text class="switchHintText" id="switchHintTextRight" style="{{blackWhiteText}}">{{foreItem}}</text>
+        <!-- 脑力值图像 -->
+        <swiper current="{{graphIndex}}" circular="true" class="pictureSwiper"
+            style="{{blackWhiteViewInset}}">
+            <!-- 总结 -->
+            <swiper-item>
+                <image class="brainScoreImage" src="/assets/learning/summaryBrainScore.png"></image>
+            </swiper-item>
+            <!-- 反应力 -->
+            <swiper-item>
+                <image class="brainScoreImage" src="/assets/learning/react.png"></image>
+            </swiper-item>
+            <!-- 多线处理 -->
+            <swiper-item>
+                <image class="brainScoreImage" src="/assets/learning/multitask.png"></image>
+            </swiper-item>
+            <!-- 记忆力 -->
+            <swiper-item>
+                <image class="brainScoreImage" src="/assets/learning/memory.png"></image>
+            </swiper-item>
+            <!-- 逻辑力 -->
+            <swiper-item>
+                <image class="brainScoreImage" src="/assets/learning/logical.png"></image>
+            </swiper-item>
+            <!-- 专注力 -->
+            <swiper-item>
+                <image class="brainScoreImage" src="/assets/learning/focus.png"></image>
+            </swiper-item>
+            <!-- 观察力 -->
+            <swiper-item>
+                <image class="brainScoreImage" src="/assets/learning/observation.png"></image>
+            </swiper-item>
+        </swiper>
+    </view>
+
+    <swiper current="{{graphIndex}}" circular="true" class="graphSwiper" bindchange="swiperChange">
+        <!-- 六边形数据 -->
+        <swiper-item>
+            <ff-canvas class="canvasGraph" canvas-id="canvas1" opts="{{ opts }}"
+                style="left:{{canvasLeft}};top:{{canvasTop}}">
+            </ff-canvas>
+        </swiper-item>
+        <!-- 反应力数据 -->
+        <swiper-item>
+            <ff-canvas class="canvasGraph" canvas-id="canvasReact" opts="{{ optsReact }}"
+                style="left:{{canvasLeft}};top:{{elaborateGraphTop}}">
+            </ff-canvas>
+        </swiper-item>
+        <!-- 多任务处理数据 -->
+        <swiper-item>
+            <ff-canvas class="canvasGraph" canvas-id="canvasMultitask" opts="{{ optsMultitask }}"
+                style="left:{{canvasLeft}};top:{{elaborateGraphTop}}">
+            </ff-canvas>
+        </swiper-item>
+        <!-- 记忆力数据 -->
+        <swiper-item>
+            <ff-canvas class="canvasGraph" canvas-id="canvasMemory" opts="{{ optsMemory }}"
+                style="left:{{canvasLeft}};top:{{elaborateGraphTop}}">
+            </ff-canvas>
+        </swiper-item>
+        <!-- 逻辑力数据 -->
+        <swiper-item>
+            <ff-canvas class="canvasGraph" canvas-id="canvasLogic" opts="{{ optsLogic }}"
+                style="left:{{canvasLeft}};top:{{elaborateGraphTop}}">
+            </ff-canvas>
+        </swiper-item>
+        <!-- 专注力数据 -->
+        <swiper-item>
+            <ff-canvas class="canvasGraph" canvas-id="canvasFocus" opts="{{ optsFocus }}"
+                style="left:{{canvasLeft}};top:{{elaborateGraphTop}}">
+            </ff-canvas>
+        </swiper-item>
+        <!-- 观察力数据 -->
+        <swiper-item>
+            <ff-canvas class="canvasGraph" canvas-id="canvasObservation" opts="{{ optsObservation }}"
+                style="left:{{canvasLeft}};top:{{elaborateGraphTop}}">
+            </ff-canvas>
+        </swiper-item>
+    </swiper>
+
+</view>

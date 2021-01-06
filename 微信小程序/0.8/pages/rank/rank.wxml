@@ -1,0 +1,99 @@
+<!-- 底层视图 -->
+<view class="baseView" style="{{blackWhiteViewBase}}">
+    <!-- 顶部视图 -->
+    <view class="topView">
+        <view class="category">
+            <view>
+                <view class="categorySelectLineLeft" style="opacity: 0" animation="{{levelRankHighLightAnimation}}">
+                </view>
+                <view class="categorySelectLineRight" style="opacity: 0" animation="{{levelRankHighLightAnimation}}">
+                </view>
+                <text class="categoryItem" style="{{blackWhiteText}}" bindtap="levelRankTap">等 级 榜</text>
+            </view>
+            <view>
+                <view class="categorySelectLineLeft" style="opacity: 1" animation="{{brainRankHighLightAnimation}}">
+                </view>
+                <view class="categorySelectLineRight" style="opacity: 1" animation="{{brainRankHighLightAnimation}}">
+                </view>
+                <text class="categoryItem" style="{{blackWhiteText}}" bindtap="brainRankTap">脑 力 榜</text>
+            </view>
+            <view>
+                <view class="categorySelectLineLeft" style="opacity: 0" animation="{{timeRankHighLightAnimation}}">
+                </view>
+                <view class="categorySelectLineRight" style="opacity: 0" animation="{{timeRankHighLightAnimation}}">
+                </view>
+                <text class="categoryItem" style="{{blackWhiteText}}" bindtap="timeRankTap">时 间 榜</text>
+            </view>
+        </view>
+        <!-- 脑力榜选项 -->
+        <scroll-view class="kind" scroll-x="true" enable-flex="true" enhanced="ture" show-scrollbar="false"
+            style="{{brainRankOpacity}}">
+            <view wx:for="{{brainScoreKindArray}}" wx:for-item="brainScoreKindArray" class="kindItem" wx:key="id"
+                id="{{brainScoreKindArray.id}}" bindtap="brainScoreKindTap" style="{{brainScoreKindArray.style}}">
+                <!-- 图像 -->
+                <view class="kindItemPic" style="{{blackWhiteViewMini}}">
+                    <image class="kindItemPicInner" src="{{brainScoreKindArray.imgUrl}}"></image>
+                </view>
+                <text class="kindItemText" style="{{blackWhiteText}}">{{brainScoreKindArray.name}}</text>
+            </view>
+        </scroll-view>
+        <!-- 时间榜选项 -->
+        <scroll-view class="kind" scroll-x="true" enable-flex="true" enhanced="ture" show-scrollbar="false"
+            style="{{timeRankOpacity}}">
+            <view wx:for="{{gameKindArray}}" wx:for-item="gameKindArray" class="kindItem" wx:key="id"
+                id="{{gameKindArray.id}}" bindtap="gameKindTap" style="{{gameKindArray.style}}">
+                <!-- 图像 -->
+                <view class="kindItemPic" style="{{blackWhiteViewMini}}">
+                    <image class="kindItemPicInner" src="{{gameKindArray.imgUrl}}"></image>
+                </view>
+                <text class="kindItemText" style="{{blackWhiteText}}">{{gameKindArray.name}}</text>
+            </view>
+        </scroll-view>
+    </view>
+
+    <!-- 底部视图 -->
+    <view class="bottomView" style="{{blackWhiteView}}" animation="{{bottomViewAnimation}}">
+        <!-- 我的排名 -->
+        <view class="mineRank" style="{{blackWhiteViewInset}}">
+            <!-- 我的排名 -->
+            <view class="mineRankAmount">
+                <view class="mineAmountBox">
+                    <view style="{{blackWhiteText}}" class="mineRankTitle">我的排名</view>
+                    <view class="mineRankNum">{{mineRankNum}}</view>
+                </view>
+            </view>
+
+            <!-- 头像 -->
+            <view class="avatarPic" style="{{blackWhiteViewMini}}">
+                <image src="{{avatar}}" class="mineAvatar"></image>
+            </view>
+
+            <!-- 我的数据 -->
+            <view class="mineData">　
+                <view class="mineAmountBox">
+                    <view style="{{blackWhiteText}}" class="mineDataTitle">{{mineScoreTitle}}</view>
+                    <view style="{{blackWhiteText}}" class="mineDataNum">{{mineRankScore}}</view>
+                </view>
+            </view>
+        </view>
+
+        <!-- 总排行榜 -->
+        <scroll-view class="totalRank" style="{{blackWhiteViewInset}}" scroll-y="true" enable-flex="true" enhanced="true" show-scrollbar="false"  animation="{{bottomRankingViewAnimation}}">
+            <view wx:for="{{totalBrainRankArray}}" wx:for-item="totalBrainRankArray" class="totalBrainRankArrayItem"
+                wx:key="id" id="{{totalBrainRankArray.id}}" style="{{blackWhiteView}}">
+                <!-- 单个排名 -->
+                <text class="totalRankNum" style="{{blackWhiteText}}">{{totalBrainRankArray.rank}}</text>
+                <!-- 单个头像 -->
+                <view class="totalUserAvatarBox" style="{{blackWhiteViewMini}}">
+                    <image src="{{totalBrainRankArray.avatarUrl}}" class="totalUserAvatar"></image>
+                </view>
+                <!-- 单个名字 -->
+                <text style="{{blackWhiteText}}" class="totalUserName">{{totalBrainRankArray.name}}</text>
+                <!-- 单个分数 -->
+                <view class="totalRankScore">
+                    <text class="totalRankScoreAmount" style="{{blackWhiteText}}">{{totalBrainRankArray.score}}</text>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+</view>

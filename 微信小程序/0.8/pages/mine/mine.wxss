@@ -1,0 +1,597 @@
+/* pages/mine/mine.wxss */
+
+.userInfo {
+  position: absolute;
+  width: 100%;
+  height: 340rpx;
+  background-color: #ecf0f3;
+  z-index: -7;
+}
+
+.avatarBorder {
+  width: 200rpx;
+  height: 200rpx; 
+  position: absolute;
+  left: 15%;
+  top: 17%;
+}
+
+.avatar {
+  width: 200rpx;
+  height: 200rpx;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  border-radius: 180rpx;
+  z-index: 1;
+  box-shadow: inset 6px 6px 6px #aab0b9, inset -6px -6px 6px #fff;
+}
+
+.backgroundImage {
+  height: 300rpx;
+  position: absolute;
+  width: 88%;
+  left: 6%;
+  top: 8%;
+  border-radius: 40rpx;
+  z-index: 0;
+  box-shadow: 13px 13px 13px #d1d9e6, -13px -13px 13px #fff;
+}
+
+.userInfomation {
+  z-index: 3; 
+  width: 300rpx;
+  height: 80rpx;
+  overflow: hidden;
+  color: #5e6473;
+  position: absolute;
+  left: 48%;
+  top: 35%;
+  font-size: 60rpx;
+  text-align: center;
+}
+
+#getUserInfoBtn {
+  position: absolute;
+  top: 500rpx;
+  left: 15%;
+  width: 70%;
+  background: linear-gradient(to right, #4bb0ff, #6149f6);
+  color: white;
+  border-radius: 80rpx;
+}
+
+.overAll {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ecf0f3;
+  z-index: -5;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+#levelAndExp {
+  width: 86%;
+  height: 7vh;
+  border-radius: 20px;
+  box-shadow: 13px 13px 13px #d1d9e6, -13px -13px 13px #fff;
+  position: absolute;
+  z-index: 5;
+  top: 33%;
+  left: 7%;
+}
+
+.backgroundImageSmall {
+  height: 100%;
+  position: absolute;
+  width: 102%;
+  border-radius: 45rpx;
+  left: 0.1%;
+  z-index: 5;
+}
+
+.level {
+  position: relative;
+  font-size: 1.8em;
+  left: 1rem;
+  color: #5e6473;
+  display: inline;
+}
+
+.levelNum {
+  color: purple;
+  display: inline;
+}
+
+.expProgress {
+  position: absolute;
+  box-shadow: 6px 6px 6px #d1d9e6, -3px -3px 6px #fff;
+  width: 64%;
+  stroke-width: 4.5vh;
+  background-color: #ecf0f3;
+  left: 32%;
+  top: 1.25vh;
+  color: #5e6473;
+  border-radius: 20px; 
+  overflow: hidden;
+  display: inline;
+}
+
+#oftenPlayGameWholeView {
+  width: 86%;
+  height: 33%;
+  border-radius: 20px;
+  box-shadow: 8px 8px 8px #d1d9e6, -8px -8px 8px #fff;
+  position: absolute;
+  z-index: 5;
+  top: 44%;
+  left: 7%;
+}
+
+.oftenPlayGame {
+  width: 44%;
+  height: 90%;
+  border-radius: 12px;
+  box-shadow: inset 6px 6px 6px #d1d9e6, inset -6px -6px 6px #fff;
+  position: absolute;
+  top: 5%;
+  left: 3%;
+}
+
+.oftenPlayGameItem {
+  width: 86%;
+  height: 100rpx;
+  border-radius: 8px;
+  box-shadow: 4px 4px 4px #d1d9e6, -4px -4px 4px #fff;
+  position: relative;
+  z-index: 6;
+  left: 7%;
+  margin-top: 25rpx;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.oftenPlayGameImg {
+  width: 100rpx;
+  height: 100rpx;
+  position: relative;
+  top: 0%;
+}
+
+.oftenPlayGameInfo {
+  width: 44%;
+  height: 90%;
+  position: absolute;
+  top: 5%;
+  left: 51%;
+  text-align: center;
+}
+
+.oftenPlayGameName {
+  font-size: 2em;
+  position: relative;
+  color: #5e6473;
+}
+
+.oftenPlayGameImgInfo{
+  position: relative;
+  top: -40%;
+  color: #5e6473;
+}
+
+#playTime{
+  position: relative;
+  color: #5e6473;
+  margin-top: 20rpx;
+  left: -25%;
+}
+
+#playTimeInfo{
+  color: #5e6473;
+  margin-top: 10rpx;
+}
+
+.gameTimeTextColor{
+  color: purple;
+  font-size: 1em;
+}
+
+#continueGameButton{
+  width: 84%;
+  height: 80rpx;
+  box-shadow: 4px 4px 4px #d1d9e6, -4px -4px 4px #fff;
+  position: relative;
+  border-radius: 16rpx;
+  left: 8%;
+  top: 7.5%;
+  line-height: 80rpx;
+  font-size: 1.2em;
+  color: #5e6473;
+}
+
+
+
+
+/* 黑暗模式的样式表 */
+.userInfoDark {
+  position: absolute;
+  width: 100%;
+  height: 340rpx;
+  background-color: #3d4050;
+  z-index: -7;
+}
+
+.avatarDark {
+  width: 200rpx;
+  height: 200rpx;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  border-radius: 180rpx;
+  z-index: 1;
+  box-shadow: inset 6px 6px 6px #333, inset -3px -3px 6px #777;
+}
+
+.backgroundImageDark {
+  height: 300rpx;
+  position: absolute;
+  width: 88%;
+  left: 6%;
+  top: 8%;
+  border-radius: 40rpx;
+  z-index: 0;
+  box-shadow: 6px 6px 6px #333, -4px -4px 8px #777;
+}
+
+.userInfomationDark {
+  z-index: 3;
+  width: 300rpx;
+  height: 80rpx;
+  overflow: hidden;
+  color: #ecf0f3;
+  position: absolute;
+  left: 48%;
+  top: 35%;
+  font-size: 60rpx;
+  text-align: center;
+}
+
+.overAllDark {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #3d4050;
+  z-index: -5;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#levelAndExpDark {
+  width: 86%;
+  height: 7vh;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px #333, -3px -3px 6px #777;
+  position: absolute;
+  z-index: 5;
+  top: 33%;
+  left: 7%;
+}
+
+.levelDark {
+  position: relative;
+  font-size: 1.8em;
+  left: 1rem;
+  color: #aab0b9;
+}
+
+.levelNumDark {
+  color: orange;
+}
+
+.expProgressDark {
+  position: absolute;
+  box-shadow: 6px 6px 6px #333, -3px -3px 6px #777;
+  width: 64%;
+  stroke-width: 4.5vh;
+  background-color: #3d4050;
+  left: 32%;
+  top: 1.25vh;
+  color: #aab0b9;
+  border-radius: 20px;
+  overflow: hidden;
+  display: inline;
+}
+
+#oftenPlayGameWholeViewDark {
+  width: 86%;
+  height: 33%;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #333, -5px -5px 5px #777;
+  position: absolute;
+  z-index: 5;
+  top: 44%;
+  left: 7%;
+}
+
+.oftenPlayGameDark {
+  width: 44%;
+  height: 90%;
+  border-radius: 12px;
+  box-shadow: inset 6px 6px 6px #333, inset -3px -3px 3px #777;
+  position: absolute;
+  top: 5%;
+  left: 3%;
+}
+
+.oftenPlayGameItemDark {
+  width: 86%;
+  height: 100rpx;
+  border-radius: 8px;
+  box-shadow: 3px 3px 3px #333, -3px -3px 3px #777;
+  position: relative;
+  z-index: 6;
+  left: 7%;
+  margin-top: 25rpx;
+  overflow: hidden;
+}
+
+.oftenPlayGameNameDark {
+  font-size: 2em;
+  position: relative;
+  color: #ecf0f3;
+}
+
+.oftenPlayGameImgInfoDark{
+  position: relative;
+  top: -40%;
+  color: #ecf0f3;
+}
+
+#playTimeDark{
+  position: relative;
+  color: #ecf0f3;
+  margin-top: 20rpx;
+  left: -25%;
+}
+
+#playTimeInfoDark{
+  color: #ecf0f3;
+  margin-top: 10rpx;
+}
+
+.gameTimeTextColorDark{
+  color: orange;
+  font-size: 1em;
+}
+
+#continueGameButtonDark{
+  width: 84%;
+  height: 80rpx;
+  box-shadow: 4px 4px 4px #333, -3px -3px 3px #777;
+  position: relative;
+  border-radius: 16rpx;
+  left: 8%;
+  top: 7.5%;
+  line-height: 80rpx;
+  font-size: 1.2em;
+  color: #ecf0f3;
+}
+
+#setting{
+  width: 86%;
+  height: 11%;
+  border-radius: 20px;
+  box-shadow:  5px 5px 5px #d1d9e6,  -5px -5px 5px #fff;
+  background: #ecf0f3;
+  color: #3d4050;
+  position: absolute;
+  text-align: center;
+  font-size: 50rpx;
+  z-index: 5;
+  top: 81%;
+  left: 7%;
+}
+
+#settingDark{
+  width: 86%;
+  height: 11%;
+  border-radius: 20px;
+  box-shadow:  3px 3px 3px #333,  -3px -3px 3px #777;
+  background: #3d4050;
+  color: #ecf0f3;
+  text-align: center;
+  font-size: 50rpx;
+  position: absolute;
+  z-index: 5;
+  top: 81%;
+  left: 7%;
+}
+
+.settingBlocks{
+  border-radius: 20px;
+  z-index: 20;
+  position: relative;
+  box-shadow:  3px 3px 3px #d1d9e6,  -3px -3px 3px #fff;
+  border: none;
+  background: #ecf0f3;
+  height: 33vw;
+  width: 33vw;
+  margin-top: 5vh;
+  margin-left: 8vw;
+  overflow: hidden;
+  display:inline-block;
+}
+
+
+.settingBlocksDark{
+  border-radius: 20px;
+  z-index: 20;
+  position: relative;
+  box-shadow:  3px 3px 3px #333,  -3px -3px 3px #777;
+  background: #3d4050;
+  border: none;
+  height: 33vw;
+  width: 33vw;
+  margin-top: 5vh;
+  margin-left: 8vw;
+  overflow: hidden;
+  display:inline-block;
+}
+
+.srcTextContainer{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; 
+}
+
+.settingImg{
+  height: 22vw;
+  width: 22vw;
+  left: 5.5vw;
+  top: 2vw;
+  position: absolute;
+}
+ 
+.settingText{
+  font-size: 30rpx;
+  color: #777;
+  position: relative;
+  top: 12vw;
+}
+
+.settingTextDark{
+  font-size: 30rpx;
+  color: #d1d9e6;
+  position: relative;
+  top: 12vw;
+}
+
+.settingView{
+  height: 80vh;
+  width: 96vw;
+  left: 2vw;
+  position: absolute;
+  top: 100vh;
+  margin-top: 20vh;
+  background-color: #ecf0f3;
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
+  z-index: 1000;
+}
+
+.settingViewDark{
+  height: 80vh;
+  width: 96vw;
+  left: 2vw;
+  position: absolute;
+  top: 100vh;
+  margin-top: 20vh;
+  background-color: #3d4050;
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
+  z-index: 1000;
+}
+
+.settigEmptyView{
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 999;
+  top: 100vh;
+}
+
+.shadowView{
+  height: 100vh;
+  width: 100vw;
+  background: #5e6473;
+  position: absolute;
+  z-index: 998;
+  opacity: 0.4;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; 
+}
+
+.settingScroll{
+  height: 78vh;
+  width: 90vw;
+  left: 3vw;
+  top: 8vh;
+  position: absolute;
+  box-shadow: inset 3px 3px 3px #d1d9e6, inset -3px -3px 3px #fff;
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
+}
+
+.settingScrollDark{
+  height: 78vh;
+  width: 90vw;
+  left: 3vw;
+  top: 8vh;
+  position: absolute;
+  box-shadow: inset 3px 3px 3px #333, inset -3px -3px 3px #777;
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
+}
+
+.shadowViewText{
+  color: #fff;
+  font-size: 28px;
+  position: relative;
+  top: -40vh;
+}
+
+.settingSliderView{
+  width: 100%;
+  height: 100rpx;
+  margin-top: 5vh;
+  text-align: -webkit-center;
+}
+
+.settingSlider{
+  position: relative;
+  width: 70vw;
+}
+
+.settingSliderViewMoon{
+  position: relative;
+  left: -30vw;
+  top: -2vw;
+  width: 10vw;
+  height: 10vw;
+}
+
+.settingSliderViewSun{
+  position: relative;
+  left: 30vw;
+  top: -2vw;
+  width: 10vw;
+  height: 10vw;
+}
+
+.settingSliderViewText{
+  position: absolute;
+  line-height: 10vw;
+  margin-top: -2vw;
+  left: 37vw;
+  font-size: 4vw;
+  color: #53aadd;
+}

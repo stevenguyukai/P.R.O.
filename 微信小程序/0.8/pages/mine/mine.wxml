@@ -1,0 +1,117 @@
+<view class="{{overAll}}">
+
+	<!-- 背景色上其他元素下的整体view -->
+	<view animation="{{wholePageAnimation}}">
+
+		<!-- 用户身份卡片 -->
+		<view class="{{userInfo}}">
+			<image class="{{backgroundImage}}">
+				<view>
+					<image class="avatarBorder">
+						<view class="{{avatar}}">
+							<image style="width:84%;height:84%;position:relative;left:8%;top:8%;border-radius:180px"
+								src="{{userAvatar}}" bindtap="changeAvatar"></image>
+						</view>
+					</image>
+					<view class="{{userInfomation}}">
+						<text>{{userInfomationText}}</text>
+					</view>
+				</view>
+			</image>
+		</view>
+
+		<!-- 登陆按钮 -->
+		<button id="getUserInfoBtn" class="{{mineInfoBtnPush}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"
+			bindtap="showLoading" type="primary">
+			微信授权登陆
+		</button>
+
+		<!-- 经验 + 等级显示条 -->
+		<view id="{{levelAndExp}}" class="{{btnPushed}}">
+			<text class="{{level}}">LV <text class="{{levelNum}}">{{userLevel}}</text></text>
+			<progress class="{{expProgress}}" stroke-width='28' backgroundColor="{{progressBGColor}}" active
+				active-mode="backwards" percent="{{expPercentage}}" activeColor="{{activeColor}}"
+				duration="20"></progress>
+		</view>
+
+		<!-- 常玩游戏 + 进入游戏和游玩时间 -->
+		<view id="{{oftenPlayGameWholeView}}" class="{{btnPushed}}">
+
+			<!-- 常玩游戏 -->
+			<scroll-view class="{{oftenPlayGame}}" scroll-y>
+				<view class="{{oftenPlayGameItem}}" wx:for="{{oftenPlayGames}}" wx:key="id" wx:for-item="games"
+					bindtap="oftenPlayGames_{{games.enName}}" animation="{{games.animations}}">
+					<image src="{{games.img}}" class="oftenPlayGameImg"></image>
+					<text class="{{oftenPlayGameImgInfo}}">{{games.name}}</text>
+				</view>
+			</scroll-view>
+
+			<!-- 常玩游戏的简介 -->
+			<view class="oftenPlayGameInfo">
+				<text class="{{oftenPlayGameName}}">{{oftenPlayGameNameText}}</text>
+				<text id="{{playTime}}" class="{{playTimeInfoPresent}}">游玩时间:</text>
+				<text id="{{playTimeInfo}}" class="{{playTimeInfoPresent}}"><text
+						class="{{gameTimeTextColor}}">{{playHours}}</text> 小时 \n<text
+						class="{{gameTimeTextColor}}">{{playMinutes}}</text> 分钟 <text
+						class="{{gameTimeTextColor}}">{{playSeconds}}</text> 秒</text>
+				<view id="{{continueGameButton}}" class="{{playTimeInfoPresent}}" bindtap="continueOftenPlayGame">继续挑战
+				</view>
+			</view>
+		</view>
+
+		<!-- 设置按钮 -->
+		<button id="{{setting}}" class="{{btnPushed}}" bindtap="intoSetting"><text
+				style="line-height:100%;border: none;">设置</text></button>
+
+		<!-- 设置界面 -->
+		<view class="settigEmptyView" animation="{{settingViewAnimation}}" bindtap="clickOtherPlace"></view>
+		<view class="{{settingView}}" animation="{{settingViewAnimation}}">
+			<scroll-view scroll-y class="{{settingScroll}}">
+				<!-- 同步数据 -->
+				<view class="{{settingBlocks}}" bindtap="updateData">
+					<view class="srcTextContainer">
+						<image src="/assets/mainPage/update.png" class="settingImg"></image>
+						<text class="{{settingText}}">同步数据</text>
+					</view>
+				</view>
+				<!-- 设置震动 -->
+				<view class="{{settingBlocks}}" bindtap="setVibration">
+					<view class="srcTextContainer">
+						<image src="/assets/mainPage/vibrate.png" class="settingImg"></image>
+						<text class="{{settingText}}">{{vibration}}</text>
+					</view>
+				</view>
+				<!-- 永暗模式 / 永亮模式 -->
+				<view class="settingSliderView">
+					<slider bindchange="everDarkLightBtnChange" bindchanging="everDarkLightBtnChanging" step="1" min="1"
+						max="100" activeColor="#f19336" backgroundColor="#8369f6" block-size="18" value="{{sliderValue}}" class="settingSlider">
+					</slider>
+					<image src="/assets/learning/moon.png" class="settingSliderViewMoon"></image>
+					<text class="settingSliderViewText" style="color:{{settingDarkLightModeTextColor}}">{{settingDarkLightModeText}}</text>
+					<image src="/assets/learning/sun.png" class="settingSliderViewSun"></image>
+				</view>
+				<!-- 删除缓存 -->
+				<view class="{{settingBlocks}}" bindtap="clearStorage">
+					<view class="srcTextContainer">
+						<image src="/assets/mainPage/clear.png" class="settingImg"></image>
+						<text class="{{settingText}}">删除缓存</text>
+					</view>
+				</view>
+				<!-- 授权信息 -->
+				<button class="{{settingBlocks}}" open-type="openSetting">
+					<view class="srcTextContainer">
+						<image src="/assets/learning/autorize.png" class="settingImg"></image>
+						<text class="{{settingText}}">授权信息</text>
+					</view>
+				</button>
+			</scroll-view>
+		</view>
+
+		<!-- 灰色底面 -->
+		<view class="shadowView" wx:if="{{shadowView}}" animation="{{shadowViewAnimation}}">
+			<text class="shadowViewText">点击返回</text>
+		</view>
+
+	</view>
+
+</view>

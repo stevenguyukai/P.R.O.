@@ -1,0 +1,256 @@
+.baseView {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.topView {
+    height: 19vh;
+    width: 100vw;
+    position: absolute;
+}
+
+.category {
+    height: 5vh;
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.categoryItem {
+    position: relative;
+    font-size: 2.5vh;
+    padding: 3vh;
+}
+
+.categorySelectLineLeft {
+    height: 3.6vh;
+    width: 0.5vh;
+    position: absolute;
+    margin-left: 2vh;
+    background-color: orange;
+}
+
+.categorySelectLineRight {
+    height: 3.6vh;
+    width: 0.5vh;
+    position: absolute;
+    margin-left: 12.5vh;
+    background-color: orange;
+}
+
+.kind {
+    height: 14vh;
+    width: 94vw;
+    position: absolute;
+    left: 3vw;
+    border-radius: 20rpx;
+    top: 6vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.kindItem {
+    position: relative;
+    display: inline;
+}
+
+.kindItemPic {
+    width: 8vh;
+    height: 8vh;
+    border-radius: 180px;
+    position: relative;
+    top: 1vh;
+    margin-left: 1.5vh;
+    margin-right: 1.5vh;
+}
+
+.kindItemPicInner {
+    width: 60%;
+    height: 60%;
+    position: relative;
+    left: 20%;
+    top: 20%;
+}
+
+.kindItemText {
+    font-size: 2vh;
+    position: relative;
+    margin-left: 1.5vh;
+    top: 1vh;
+}
+
+.bottomView {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 30vh;
+    border-top-right-radius: 120rpx;
+    border-top-left-radius: 120rpx;
+}
+
+.mineRank {
+    height: 16vh;
+    position: absolute;
+    width: 66vw;
+    top: -8vh;
+    left: 17vw;
+    border-radius: 45rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatarPic {
+    border-radius: 180px;
+    width: 20vw;
+    height: 20vw;
+    position: relative;
+}
+
+.mineAvatar {
+    height: 94%;
+    width: 94%;
+    border-radius: 180px;
+    position: relative;
+    top: 3%;
+    left: 3%;
+}
+
+.mineRankAmount {
+    height: 100%;
+    position: relative;
+    width: 23vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mineData {
+    height: 100%;
+    position: relative;
+    width: 23vw;
+    display: flex;
+    align-items: center;
+}
+
+.mineRankTitle {
+    font-size: 30rpx;
+    margin-top: 1vh;
+}
+
+.mineDataTitle {
+    font-size: 30rpx;
+    margin-top: 1vh;
+}
+
+.mineRankNum {
+    font-size: 50rpx;
+    position: relative;
+    color: orange;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+.mineDataNum {
+    font-size: 40rpx;
+    position: relative;
+    font-family: monospace;
+    animation-iteration-count: infinite;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+.mineAmountBox {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+}
+
+.totalRank{
+    position: absolute;
+    width: 90vw;
+    left: 5vw;
+    height: 58vh;
+    top: 10vh;
+    border-radius: 60rpx;
+}
+
+.totalBrainRankArrayItem{
+    width: 80vw;
+    height: 13vh;
+    position: relative;
+    border-radius: 40rpx;
+    left: 5vw;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    display: flex;
+    align-items: center;
+}
+
+.totalRankNum{
+    font-size: 50rpx;
+    position: relative;
+    width: 10vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+.totalUserAvatarBox{
+    border-radius: 180px;
+    width: 11vh;
+    height: 11vh;
+    position: relative;
+}
+
+.totalUserAvatar{
+    height: 90%;
+    width: 90%;
+    border-radius: 180px;
+    position: relative;
+    top: 5%;
+    left: 5%;
+}
+
+.totalUserName{
+    font-size: 40rpx;
+    position: relative;
+    width: 25vw;
+    margin-left: 2vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.totalRankScore{
+    width: 20vw;
+    margin-left: 4vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.totalRankScoreAmount{
+    font-size: 40rpx;
+    width: 100%;
+    font-family: monospace;
+    animation-iteration-count: infinite;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}

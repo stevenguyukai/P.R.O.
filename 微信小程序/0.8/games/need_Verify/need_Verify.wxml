@@ -1,0 +1,128 @@
+<!-- 游戏页面 -->
+<view  style="display: {{gamePage}}">
+
+	<!-- 游戏主内容 -->
+	<view class="overAllView" style="{{isBluring}}">
+
+		<!-- 计时器 -->
+		<view class="timeCount">  
+			<view class="timeCountBox">{{minutes}}</view>
+			<view class="timeCountBox">{{seconds}}</view>
+		</view>
+
+		<!-- 用户主界面 -->
+		<text class="companyName">{{companyName}}</text>
+		<view class="inputView">
+			<!-- 所有要输入的地方 -->
+			<input placeholder="用户名" class="inputItem1" value="{{userName}}" disabled="{{isDisabledUserName}}"></input>
+			<input placeholder="密码 (与验证码一起获得)" class="{{inputItem2}}" value="{{userPassword}}" disabled="{{isDisabledPassword}}" bindblur="inputPasswordDone" bindfocus="inputingPassword"></input>
+
+			<!-- 获取验证码 -->
+			<view class="inputItem3View"> 
+
+				<input placeholder="验证码" class="{{inputItem3}}" animation="{{input3}}" disabled="{{isDisabled}}" bindblur="inputVerifyCodeDone" value="{{userVerifyCodeValue}}" bindfocus="inputingVerifyCode"></input>
+
+				<view class="{{getVerifyCode}}" bindtap="getVerifyCode" animation="{{getVerifyCodeAnimation}}">{{getVerifyCodeText}}</view>
+			</view>
+
+			<!-- 确认按钮 -->
+			<view class="{{confirmBtn}}" bindtap="confirmBtnClick" disabled="{{isDisabled}}">确认</view>
+		</view>
+
+	</view>
+
+	<!-- 没看清返回按钮 -->
+	<view class="failBackButton" animation="{{failBackButton}}" bindtap="failBackButton">没看清</view>
+
+	<!-- 回合数提示框 -->
+	<view class="roundNumHint" animation="{{roundNumHintAnimation}}" bindtap="roundNumHint">{{roundNumCurrent}}/{{roundNum}}</view>
+
+
+	<!-- 提示框 -->
+	<view class="alertView" animation="{{alertBox}}">
+		<image src="/assets/learning/message.svg" class="messageIcon"></image>
+		<text class="messageIconText">信息</text>
+		<text class="justText">刚刚</text>
+		<view class="seperationLine"></view>
+
+		<!-- 验证码提示的主要文字 -->
+		<view class="mainAlertTextView">{{verifyCodeGreet}}您在「{{companyName}}」对应的{{passwardTelling}}验证码是 {{verifyCode}} 请在{{timeLimit}}秒内填写</view>
+
+	</view>
+
+	<!-- 正确或错误 -->
+	<view class="rightOrWrong" animation="{{rightOrWrongAnimation}}">{{rightORwrong}}</view>
+
+	<!-- 总共正确或错误的个数 -->
+	<view class="bottomCorrectBar">
+		<view class="correctCount"> 正确 ✅: <text style="color:#00b700">{{correctNum}}</text></view>
+		<view class="wrongCount"> 错误 ❌: <text style="color:#ee0000">{{errorNum + missNum}}</text></view>
+	</view>
+	
+</view>
+
+<!-- 整个页面的选择难度 -->
+<view class="selectModeView" style="display: {{welcomePage}}">
+ 
+	<!-- 打招呼 -->
+	<text class="selectModeViewGreet">欢迎来到《需要验证》</text>
+
+	<!-- 教程按钮 -->
+	<view class="tourBtn" bindtap="goToTour">教程</view>
+
+	<!-- 难度选择框 -->
+	<view class="selectMode">
+		<view class="{{selectButton1}}" bindtap="easy"> 
+			<text class="buttonText">少量</text>
+		</view>
+		<view class="{{selectButton2}}" bindtap="middle">
+			<text class="buttonText">适中</text>
+		</view>
+		<view class="{{selectButton3}}" bindtap="hard">
+			<text class="buttonText">过度</text>
+		</view>
+		<view class="{{selectButton4}}" bindtap="epic">
+			<text class="buttonText">WTF？</text>
+		</view>
+	</view>
+
+	<!-- 难度选择图片 -->
+	<view class="selectModePic">
+		<image src="{{modePic}}" class="buttonPicStyle"  mode="aspectFill"></image>
+	</view>
+
+	<!-- 进入数独按钮 -->
+	<view class="inGameButton" bindtap="getIntoGame">
+		<text class="inGameText">{{mode}}</text>
+	</view>
+
+	<!-- 开发者 -->
+	<view class="developerPic">
+		<image src="{{developerPic}}" class="developerInnerPic"></image>
+		<view class="developerName">小黑</view>
+	</view>
+ 
+	
+
+</view>
+
+<!-- 总结画面 (做对，做错，没做) -->
+<view class="summaryView" style="display: {{summaryPage}}">
+	<view class="summaryViewCircles">
+		<circle lineColor="#71ab48" lineWidth="6" canvasWidth="{{bigPerSize}}" id="correctCircle" value="{{correctPer}}" />
+		<circle lineColor="#f5ba66" lineWidth="6" id="missingCircle" value="{{missPer}}" />
+		<circle lineColor="#ce3d31" lineWidth="6" canvasWidth="{{bigPerSize}}" id="wrongCircle" value="{{wrongPer}}" />
+	</view>
+	<view class="summaryViewText"> 
+		<text style="color:#71ab48">正确</text>
+		<text style="color:#f5ba66;margin-top:-20px">未填</text>
+		<text style="color:#ce3d31">错误</text>
+	</view>
+	<view class="confirmGameEnd" bindtap="confirmGameEnd">确认</view>
+</view>
+
+<!-- 获得经验显示条 -->
+<view id="levelAndExp" animation="{{EXPandLEVEL}}">
+	<text class="level">LV <text class="levelNum">{{userLevel}}</text></text>
+	<progress class="expProgress" stroke-width='28' backgroundColor="#ecf0f3" active active-mode="forwards" percent="{{expPercentage}}" activeColor="purple" duration="50"></progress>
+</view>  

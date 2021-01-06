@@ -1,0 +1,359 @@
+/* ---------------选择难度界面----------- */
+
+.selectModeView{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #ecf0f3;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .selectModeViewGreet{
+    font-size: 40rpx;
+    color: #5e6473;
+    line-height: 66px;
+    border-radius: 10px;
+    text-shadow: 13px 13px 13px #d1d9e6, -13px -13px 13px #fff;
+  }
+  
+  .selectMode{
+    height: 60vh;
+    width: 40%;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #d1d9e6, -5px -5px 5px #fff;
+    left: 5%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  .selectModePic{
+    height: 44vh;
+    width: 45%;
+    position: absolute;
+    right: 5%;
+    box-shadow: 5px 5px 5px #d1d9e6, -5px -5px 5px #fff;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .inGameButton{
+    height: 12vh;
+    width: 45%;
+    position: absolute;
+    right: 5%;
+    margin-top: 48vh;
+    box-shadow: 5px 5px 5px #d1d9e6, -5px -5px 5px #fff;
+    color: #5e6473;
+    border-radius: 10px;
+  }
+  
+  .developerPic{
+    height: 22%;
+    width: 80%;
+    position: relative;
+    box-shadow: 5px 5px 5px #d1d9e6, -5px -5px 5px #fff;
+    border-radius: 10px;
+    top: 64%;
+    left: 10%;
+    overflow: hidden;
+  }
+  
+  .developerInnerPic{
+    position: relative;
+    top: -20%;
+    left: -13%;
+  }
+  
+  .developerName{
+    height: 36%;
+    width: 25%;
+    position: absolute; 
+    top: 32%;
+    left: 72%;
+    box-shadow: 5px 5px 5px #d1d9e6, -5px -5px 5px #fff;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #5e6473;
+    line-height: 100rpx;
+    background-color: #ecf0f3;
+  }
+  
+  .selectButton1{
+    height: 18%;
+    width: 80%;
+    left: 10%;
+    position: relative;
+    margin-top: 14%;
+    box-shadow: 5px 5px 5px #d1d9e6, -5px -5px 5px #fff;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .selectButton2{
+    height: 18%;
+    width: 80%;
+    left: 10%;
+    position: relative;
+    margin-top: 14%;
+    box-shadow: 5px 5px 5px #d1d9e6, -5px -5px 5px #fff;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .selectButton3{
+    height: 18%;
+    width: 80%;
+    left: 10%;
+    position: relative;
+    margin-top: 14%;
+    box-shadow: 5px 5px 5px #d1d9e6, -5px -5px 5px #fff;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .selectButton4{
+    height: 18%;
+    width: 80%;
+    left: 10%;
+    position: relative;
+    margin-top: 14%;
+    box-shadow: 5px 5px 5px #d1d9e6, -5px -5px 5px #fff;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .selectButton1Select{
+    height: 18%;
+    width: 80%;
+    left: 10%;
+    position: relative;
+    margin-top: 14%;
+    box-shadow: inset 6px 6px 6px #d1d9e6, inset -6px -6px 6px #fff;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .selectButton2Select{
+    height: 18%;
+    width: 80%;
+    left: 10%;
+    position: relative;
+    margin-top: 14%;
+    box-shadow: inset 6px 6px 6px #d1d9e6, inset -6px -6px 6px #fff;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .selectButton3Select{
+    height: 18%;
+    width: 80%;
+    left: 10%;
+    position: relative;
+    margin-top: 14%;
+    box-shadow: inset 6px 6px 6px #d1d9e6, inset -6px -6px 6px #fff;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .selectButton4Select{
+    height: 18%;
+    width: 80%;
+    left: 10%;
+    position: relative;
+    margin-top: 14%;
+    box-shadow: inset 6px 6px 6px #d1d9e6, inset -6px -6px 6px #fff;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .buttonText{
+    font-size: 25px;
+    color: #5e6473;
+    text-shadow: 13px 13px 13px #d1d9e6, -13px -13px 13px #fff;
+    position: relative;
+    top: 25%;
+  }
+  
+  .buttonPicStyle{
+    overflow: hidden;
+    position: absolute;
+    left: -50%;
+    height: 100%;
+    width: 200%;
+  }
+  
+  .inGameText{
+    font-size: 25px;
+    color: #8e939e;
+    text-shadow: 13px 13px 13px #d1d9e6, -13px -13px 13px #fff;
+    position: relative;
+    top: 25%;
+  }
+
+
+/* ---------------游戏界面----------- */
+
+.overAllView {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #ecf0f3;
+    overflow: hidden;
+    text-align: center;
+}
+
+
+.countDownNum{
+  height: 25vh;
+  width: 25vh;
+  position: absolute;
+  font-size: 225rpx;
+  color: #5e6473;
+}
+
+.countDownEffect{
+  margin-top: -10rpx;
+  height: 25vh;
+  width: 25vh;
+  position: absolute;
+  border-radius: 180px;
+  border:  orange 13px solid;
+  opacity: 1;
+  scale: 1;
+}
+
+.countDownWholeView{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blocksView{
+  position: relative;
+}
+
+.blockShowView{
+  width:100vw;
+  height:100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightOrWrong{
+  font-size: 10em;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  display: block;
+  line-height: 100vh;
+  text-align: center;
+  z-index: 101;
+  opacity: 0;
+  pointer-events: none;  
+}
+
+.noteNextRound{
+    background: radial-gradient( #8e939e, #ecf0f3); 
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+.noteNextRoundText{
+  font-size: 30px;
+  color: #ecf0f3;
+  opacity: 0;
+}
+
+/* 总结页面 */
+.summaryView{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 200;
+  background-color: #ecf0f3;
+  overflow: hidden;
+  text-align: center;
+}
+
+.summaryViewCircles{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  position: absolute;
+  top: 7vh;
+}
+
+.summaryViewText{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  position: relative;
+  top: 30vh;
+}
+
+.confirmGameEnd{
+  position: absolute;
+  height: 10vh;
+  width: 70vw;
+  left: 15vw;
+  top: 50vh;
+  border-radius: 20px;
+  box-shadow: 4px 4px 4px #d1d9e6, -4px -4px 4px #fff;
+  font-size: 25px; 
+  line-height: 10vh;
+  color: #5e6473;
+}
+
+/* 经验条 */
+
+#levelAndExp {
+  width: 86%;
+  height: 80rpx;
+  border-radius: 20px;
+  box-shadow: 13px 13px 13px #d1d9e6, -13px -13px 13px #fff;
+  position: absolute;
+  z-index: 400;
+  top: -120rpx;
+  left: 7%;
+  background-color: #ecf0f3;
+}
+
+.level{
+  position: relative;
+  font-size: 1.8em;
+  left: 1rem;
+  color: #5e6473;
+}
+.levelNum{
+  color: purple;
+}
+
+.expProgress{
+  position: relative;
+  box-shadow:   6px 6px 6px #d1d9e6,  -3px -3px 6px #fff; 
+  margin-top: -58rpx;
+  width: 64%;
+  background-color: #ecf0f3;
+  left: 32%;
+  color: #5e6473;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.tourBtn{
+  position: absolute;
+  right: 20px;
+  top: 30rpx;
+  color: #5e6473;
+  font-size: 1.2em;
+  border: #5e6473 1px solid;
+  padding-left: 5px;
+  padding-right: 5px;
+}
