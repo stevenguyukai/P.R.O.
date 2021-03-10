@@ -1,0 +1,351 @@
+body {
+	margin: 0;
+}
+
+
+.background {
+	font-family: "Alliance No.1", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	background-color: black;
+}
+
+#nav {
+	position: fixed;
+	width: 100vw;
+	height: 4rem;
+	background: rgba(0, 0, 0, 0.70);
+	backdrop-filter: blur(10.0px);
+	-webkit-backdrop-filter: blur(10.0px);
+	margin: 0;
+	padding: 0;
+	z-index: 2;
+	display: flex;
+	display: -webkit-flex;
+	/* Safari */
+	align-items: center;
+}
+
+#signUp {
+	border: 1px white solid;
+	border-radius: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.hugeText {
+	font-family: "Alliance No.1", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-size: 4.2rem;
+	color: white;
+	word-spacing: 0rem;
+	line-height: 120%;
+}
+
+.littleText {
+	font-family: "Alliance No.1", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	color: lightgrey;
+	font-size: 1.4rem;
+	word-spacing: 0.3rem;
+}
+
+span {
+	display: inline-block;
+	overflow: hidden;
+}
+
+i {
+	font-style: normal;
+	position: relative;
+	top: 4.5rem;
+	animation: .5s text-swift-up ease-in-out forwards;
+	opacity: 0;
+}
+
+strong {
+	font-weight: normal;
+	font-style: normal;
+	position: relative;
+	left: -4.5rem;
+	animation: .5s text-swift-right ease-in-out forwards;
+	opacity: 0;
+}
+
+
+@keyframes text-swift-up {
+	to {
+		top: 0rem;
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes text-swift-up {
+	to {
+		left: 0rem;
+		opacity: 1;
+	}
+}
+
+@keyframes text-swift-right {
+	to {
+		left: 0rem;
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes text-swift-right {
+	to {
+		top: 0rem;
+		opacity: 1;
+	}
+}
+
+span:nth-of-type(1) i {
+	animation-delay: 0s;
+}
+
+span:nth-of-type(2) i {
+	animation-delay: 0.1s;
+}
+
+span:nth-of-type(3) i {
+	animation-delay: 0.2s;
+}
+
+span:nth-of-type(4) i {
+	animation-delay: 0.3s;
+}
+
+mark {
+	background-color: transparent;
+	color: inherit;
+	font-style: normal;
+	font-weight: normal;
+	background-image: linear-gradient(#FF7818, #FF7818);
+	background-repeat: no-repeat;
+	background-size: 0% 20%;
+	background-position: 0 100%;
+	animation: 0.4s highlight ease-in-out forwards;
+	animation-delay: 0.7s;
+}
+
+@keyframes highlight {
+	to {
+		background-size: 100% 20%;
+	}
+}
+
+@-webkit-keyframes highlight {
+	to {
+		background-size: 100% 20%;
+	}
+}
+
+#navName {
+	color: white;
+	line-height: 4rem;
+	margin-left: 4rem;
+	font-size: 2rem;
+}
+
+#backgroundImage {
+	width: 100vw;
+	position: fixed;
+	top: 6rem;
+}
+
+#mainBox {
+	width: 60vw;
+	position: absolute;
+	height: 60vh;
+	background-color: red;
+	left: 20vw;
+	top: 20vh;
+	background: rgba(255, 255, 255, 0.25);
+	backdrop-filter: blur(20.0px);
+	-webkit-backdrop-filter: blur(20.0px);
+	border-radius: 20px;
+}
+
+#leftBox {
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	backdrop-filter: blur(5.0px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#rightBox {
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+
+#boxTitle {
+	font-size: 3.6rem;
+	color: white;
+	line-height: 5vh;
+	position: absolute;
+	top: 2.5vh;
+}
+
+
+.form {
+	box-sizing: border-box;
+	height: 50vh;
+	width: 100%;
+	padding-left: 10%;
+	padding-right: 10%;
+	position: relative;
+	top: 10vh;
+}
+
+.title {
+	color: #eee;
+	font-family: sans-serif;
+	font-size: 36px;
+	font-weight: 600;
+	margin-top: 30px;
+}
+
+.subtitle {
+	color: #eee;
+	font-family: sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	margin-top: 10px;
+}
+
+.input-container {
+	height: 50px;
+	position: relative;
+	width: 100%;
+}
+
+.ic1 {
+	margin-top: 40px;
+}
+
+.ic2 {
+	margin-top: 30px;
+}
+
+.input {
+	background: rgba(0, 0, 0, 0.25);
+	backdrop-filter: blur(20.0px);
+	-webkit-backdrop-filter: blur(20.0px);
+	border-radius: 12px;
+	border: 0;
+	box-sizing: border-box;
+	color: #eee;
+	font-size: 18px;
+	height: 100%;
+	outline: 0;
+	padding: 4px 20px 0;
+	width: 100%;
+}
+
+.cut {
+	background: rgba(0, 0, 0, 0.6);
+	backdrop-filter: blur(20.0px);
+	-webkit-backdrop-filter: blur(20.0px);
+	border-radius: 10px;
+	height: 20px;
+	left: 20px;
+	position: absolute;
+	top: -20px;
+	opacity: 0;
+	transform: translateY(0);
+	transition: transform 200ms;
+	animation: 0.2s hide ease-in-out forwards;
+	width: 3rem;
+}
+
+.cut-short {
+	width: 50px;
+}
+
+.input:focus~.cut,
+.input:not(:placeholder-shown)~.cut {
+	transform: translateY(8px);
+	animation: 0.2s show ease-in-out forwards;
+	animation-delay: 0.1s;
+}
+
+@keyframes hide {
+	to {
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes hide {
+	to {
+		opacity: 0;
+	}
+}
+
+@keyframes show {
+	to {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes show {
+	to {
+		opacity: 1;
+	}
+}
+
+
+.placeholder {
+	color: white;
+	font-family: sans-serif;
+	left: 20px;
+	line-height: 14px;
+	pointer-events: none;
+	position: absolute;
+	transform-origin: 0 50%;
+	transition: transform 200ms, color 200ms;
+	top: 20px;
+}
+
+.input:focus~.placeholder,
+.input:not(:placeholder-shown)~.placeholder {
+	transform: translateY(-30px) translateX(10px) scale(0.75);
+}
+
+.input:not(:placeholder-shown)~.placeholder {
+	color: #FF7818;
+}
+
+.input:focus~.placeholder {
+	color: #ccc;
+}
+
+.submit {
+	background-color: black;
+	border-radius: 12px;
+	border: 0;
+	box-sizing: border-box;
+	background: rgba(0, 0, 0, 0.8);
+	backdrop-filter: blur(20.0px);
+	-webkit-backdrop-filter: blur(20.0px);
+	color: #FF7818;
+	cursor: pointer;
+	font-size: 18px;
+	height: 50px;
+	margin-top: 38px;
+	// outline: 0;
+	text-align: center;
+	width: 100%;
+}
+
+.submit:active {
+	background-color: #black;
+}

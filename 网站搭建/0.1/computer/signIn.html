@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>先驱者PRO | 登陆</title>
+		<link rel="stylesheet" type="text/css" href="../css/computer_css/signIn.css" />
+		<script type="text/javascript" src="../js/computer_js/signIn.js"></script>
+	</head>
+
+	<body class="background">
+		<!-- 上方导航栏 -->
+		<nav id="nav">
+			<!-- 名字 -->
+			<a href="../index.html" style="text-decoration: none;"><span class="littleText" id="navName">先 驱 者 <b style="color: #FF7818;">P. R. O.</b> | </span>
+				<span class="littleText" id="navName" style="margin-left: 0rem;padding-left: 0.5rem;"><strong>登 陆</strong></span></a>
+		</nav>
+
+
+		<!-- 注册填入信息表Box -->
+		<div id="mainBox">
+			<!-- 左半边 -->
+			<div id="leftBox">
+				<h1 id="boxTitle"><mark style="animation-delay: 0.4s;">登 陆 账 号</mark></h1>
+
+				<!-- 登陆表格 -->
+				<form class="form" id="asd" action="" method="post" onsubmit="return false">
+					<div class="input-container ic1">
+						<input id="firstname" class="input" type="text" placeholder=" " onkeypress="if(event.keyCode==13) focusNextInput(this);"/>
+						<div class="cut"></div>
+						<label for="firstname" class="placeholder">账 号</label>
+					</div>
+					<div class="input-container ic2">
+						<input id="lastname" class="input" type="password" placeholder=" " onkeypress="if(event.keyCode==13) focusNextInput(this);" />
+						<div class="cut"></div>
+						<label for="lastname" class="placeholder">密 码</label>
+					</div>
+					<!-- <div class="input-container ic2">
+						<input id="email" class="input" type="text" placeholder=" " />
+						<div class="cut cut-short"></div>
+						<label for="email" class="placeholder">Email</>
+					</div> -->
+					
+					<!-- 提交按钮 -->
+					<button type="button" class="submit" onclick="form.submit()">登 陆</button>
+					
+				</form>
+				
+			</div>
+			<!-- 右半边 -->
+			<div id="rightBox">
+				<span style="font-size: 3rem;color: white;"><i>先 驱 者 </i></span>
+				<span style="color: #FF7818;font-size: 3.5rem;">&ensp;<i>P. </i></span>
+				<span style="color: #FF7818;font-size: 3.5rem;">&ensp;<i>R. </i></span>
+				<span style="color: #FF7818;font-size: 3.5rem;">&ensp;<i>O. </i></span>
+			</div>
+		</div>
+
+	</body>
+
+</html>

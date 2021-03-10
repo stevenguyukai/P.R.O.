@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>先驱者PRO | 主页</title>
+		<link rel="stylesheet" type="text/css" href="css/computer_MainPage.css" />
+		<script src="js/computer_MainPage.js"></script>
+		<script src="js/jquery-3.5.1.min.js"></script>
+		<link rel="shortcut icon" src="img/Logo.png" type="image/x-icon">
+		<link rel="icon" href="img/Logo.png" type="image/x-icon">
+		<script type="module">
+			import Typed from './util/type_js/typed.js';
+			
+			var typed = new Typed("#typeStyle", {
+				strings: [
+					'<span>&lt;<span style="color:#e6495d;display:inline">html</span>&gt;</span> <br> &nbsp; &nbsp; <span>&lt;<span style="color:#e6495d;display:inline">head</span>&gt;</span> <br> &nbsp; &nbsp; &nbsp; &nbsp; <span>&lt;<span style="color:#e6495d;display:inline">meta</span> <span style="color:#cd854a;display:inline">charset</span> = <span style="color:#7bbd5c;display:inline">&quot;utf-8&quot;</span>&gt;</span> <br>  &nbsp; &nbsp; &nbsp; &nbsp; <span>&lt;<span style="color:#e6495d;display:inline">title</span>&gt; 先驱者PRO &lt;/<span style="color:#e6495d;display:inline">title</span>&gt;</span> <br> &nbsp; &nbsp; <span>&lt;/<span style="color:#e6495d;display:inline">head</span>&gt;</span> <br> &nbsp; &nbsp; <span>&lt;<span style="color:#e6495d;display:inline">body </span><span style="color:#cd854a;display:inline">class</span> = <span style="color:#7bbd5c;display:inline">&quot;background&quot;</span>&gt;</span>  <br> &nbsp; &nbsp; &nbsp; &nbsp; <span>&lt;<span style="color:#e6495d;display:inline">h1</span>&gt; Welcome! &lt;/<span style="color:#e6495d;display:inline">h1</span>&gt;</span>  <br> &nbsp; &nbsp; <span>&lt;/<span style="color:#e6495d;display:inline">body</span>&gt;</span> <br> <span>&lt;/<span style="color:#e6495d;display:inline">html</span>&gt;</span>'
+				],
+				typeSpeed: 60,
+				backSpeed: 40,
+				backDelay: 5000,
+				loop: true,
+				fadeOut: true,
+				cursorChar: '<span style="color:white;display: inline;">_</span>',
+			});
+			
+			var typed = new Typed("#typeStyle2", {
+				strings: [
+					'<span style="color:#e6495d;display:inline">body { </span> <br> &nbsp; &nbsp; margin: <span style="color: #cd854a; display: inline;">0;</span> <br> } <br> <br> . <span style="color:#cd854a;display:inline">background </span>{ <br>  &nbsp; &nbsp; font-family: <span style="color:#7bbd5c;display:inline">&quot;Alliance No.1&quot;</span><span style="color:#c752dc;display:inline">, -apple-system, BlinkMacSystemFont, </span><span style="color:#7bbd5c;display:inline">&quot;Segoe UI&quot;</span><span style="color:#c752dc;display:inline">, Helvetica, Arial, sans-serif, </span></span><span style="color:#7bbd5c;display:inline">&quot;Apple Color Emoji&quot;</span><span style="color:#c752dc;display:inline">, </span><span style="color:#7bbd5c;display:inline">&quot;Segoe UI Emoji&quot;</span><span style="color:#c752dc;display:inline">, </span><span style="color:#7bbd5c;display:inline">&quot;Segoe UI Symbol&quot;</span>; <br> &nbsp; &nbsp; background-color: <span style="color:#c752dc;display:inline"> black</span>;'
+				],
+				typeSpeed: 60,
+				backSpeed: 40,
+				backDelay: 5000,
+				loop: true,
+				fadeOut: true,
+				cursorChar: '<span style="color:white;display: inline;">_</span>',
+			});
+			
+		</script>
+	</head>
+	<body class="background">
+
+		<!-- 上方导航栏 -->
+		<nav id="nav">
+			<!-- 名字 -->
+			<a href="index.html"><span class="littleText" style="color: white;line-height: 4rem;margin-left: 4rem; font-size: 2rem;">先
+					驱 者 <b style="color: #FF7818;">P. R. O.</b></span></a>
+			<div id="navBox">
+				<!-- 关于账号的区域 -->
+				<div id="accountBox">
+					<!-- 登陆 -->
+					<a id="signIn" href="computer/signIn.html"><span class="littleText">登 陆</span></a>
+					<!-- 注册 -->
+					<a id="signUp" href="computer/signUp.html"><span class="littleText" style="border: white 1px solid;border-radius: 10px;padding: 5px 15px 5px 15px;">注
+							册</span></a>
+				</div>
+				<!-- 关于内容选项的区域 -->
+				<div id="itemBox">
+					<!-- 益脑游戏 -->
+					<a id="game" onclick="brainGameBtn()"><span class="littleText" id="gameLink"><b class="brainGameItem">-- </b>益 脑 游 戏<b class="brainGameItem">
+								--</b></span></a>
+					<!-- 新的知识 -->
+					<a id="newKnowledge"  onclick="newKnowledgeBtn()"><span class="littleText"><b class="newKnowledgeItem">-- </b>新 的 知 识<b class="newKnowledgeItem">
+								--</b></span></a>
+					<!-- 开发日志 -->
+					<a id="log" onclick="logBtn()"><span class="littleText"><b class="logItem">-- </b>开 发 日 志<b class="logItem"> --</b></span></a>
+				</div>
+			</div>
+		</nav>
+
+		<!-- 主元素 -->
+		<div class="mainScene">
+			<!-- 介绍 + 快速加入 -->
+			<div class="intro">
+				<span class="hugeText" style="color: #FF7818;"><i>先 驱 者 P. R. O.</i></span>
+				<br>
+				<span class="hugeText">
+					<i style="">一 个 有 <mark class="firstMark">灵 魂</mark> 的</i>
+				</span>
+				<br>
+				<span class="hugeText"><i>社 团</i></span>
+				<br>
+				<br>
+				<p class="littleText">
+					<span><i>我 们 是 一 支 有 决 心 的 团 队</i></span>
+					<br>
+					<span><i>致 力 于 用 代 码 寻 找「 最 佳 的 解 决 方 法 」</i></span>
+					<br>
+					<span class="littleText" style="color: #FF7818;"><i>「 爱 心 美 化 生 活 ， 科 技 改 变 世 界 」</i></span>
+					<br>
+					<span><i>是 我 们 的 座 右 铭</i></span>
+				</p>
+			</div>
+			<!-- 社团标志 -->
+			<img src="img/Logo.png" id="introPic">
+		</div>
+
+		<!-- 益脑游戏元素 -->
+		<div id="secondScene">
+			<video id="brainGameVideo" src="img/brainGame.mp4" autoplay="autoplay" muted="muted" data-video-name="introBrainGame"
+			 onclick="hideQrCode()"></video>
+			<div id="qrCodeBox">
+				<img src="img/qrCode.png" id="qrCode">
+			</div>
+			<div id="gameIntro">
+				<span class="hugeText" style="color: #FF7818;"><a class="secondText">益 脑 游 戏</a></span>
+				<br>
+				<div class="hugeText" style="color: white;"><a class="secondText">一 个 <mark class="secondMark">事 捷 功 倍</mark> 的</a></div>
+				<br>
+				<span class="hugeText" style="color: white;"><a class="secondText">神 器</a></span>
+				<br>
+				<br>
+				<p class="littleText">
+					<span><a class="secondText">我 们 设 计 了 一 款 可 以 随 时 随 地</a></span>
+					<br>
+					<span><a class="secondText">训 练 大 脑 的 软 件 </a></span>
+					<br>
+					<span class="littleText" style="color: #FF7818;"><a class="secondText">「 暂 只 在 微 信 小 程 序 上 线 」</a></span>
+				</p>
+				<br>
+				<button type="button" onclick="startBrainGame()" id="startBrainGame" class="secondText">进 入 训 练</button>
+			</div>
+		</div>
+
+		<!-- 新的知识元素 -->
+		<div id="thirdScene">
+			<span class="hugeText" style="color: white;"><a class="thirdText">稍 微 <mark class="thirdMark">了 解</mark> 一 下 ?</a></span>
+			<div class="newKnowledgeCard" style="z-index: 1;" onclick="directToFirstArticle()">
+				<div class="articleImg">
+					<img src="img/article_img_001.png" style="height: 100%;width: 100%;">
+				</div>
+				<div class="articleDetail">
+					<h1 style="color:white;font-style: normal;font-weight: normal;">解 刨 版 本 号</h1>
+				</div>
+			</div>
+			<div class="newKnowledgeCard" style="z-index: 0; margin-left: 50vw;margin-top: 10vh;" onclick="directToSecondArticle()">
+				<div class="articleImg">
+					<img src="img/article_img_002.png" style="height: 100%;width: 100%;">
+				</div>
+				<div class="articleDetail">
+					<h1 style="color:white;font-style: normal;font-weight: normal;">自 制 输 入 法</h1>
+				</div>
+			</div>
+			<div class="newKnowledgeCard" style="z-index: 0; margin-right: 50vw;margin-top: 10vh;" onclick="directToThirdArticle()">
+				<div class="articleImg">
+					<img src="img/article_img_003.png" style="height: 100%;width: 100%;">
+				</div>
+				<div class="articleDetail">
+					<h1 style="color:white;font-style: normal;font-weight: normal;">了 解 一 下 新 拟 态</h1>
+				</div>
+			</div>
+			<a class="littleText" style="color: white;position: absolute;top: 90vh;">更 多 知 识 ></a>
+		</div>
+
+		<!-- 开发日志元素 -->
+		<div id="forthScene">
+			<div id="codeArea">
+				<div id="codeBackground"></div>
+				<div id="htmlBox">
+					<div class="codeTitle">H T M L</div>
+					<hr color="#888888" width="96%" style="position: relative;top: 4vh;">
+					<div class="codeArea">
+						<div id="typeStyle"></div>
+					</div>
+				</div>
+				<div id="cssBox">
+					<div class="codeTitle">C S S</div>
+					<hr color="#888888" width="96%" style="position: relative;top: 4vh;">
+					<div class="codeArea">
+						<div id="typeStyle2"></div>
+					</div>
+				</div>
+			</div>
+
+			<div id="titleArea">
+				<span class="hugeText" style="color: #FF7818;"><a class="forthText">开 发 日 志</a></span>
+				<br>
+				<span class="hugeText" style="color: white;"><a class="forthText">记 录 <mark class="forthMark">开 发</mark> 过 程</a></span>
+				<br>
+				<span class="hugeText" style="color: white;"><a class="forthText">理 解 <mark class="forthMark">B U G</mark> 原 因</a></span>
+				<br>
+				<p class="littleText">
+					<span><a class="forthText">我 们 将 每 一 天 的 编 写、学 习 代 码</a></span>
+					<br>
+					<span><a class="forthText">集 合 成 了《 开 发 日 志 》</a></span>
+					<br>
+					<span class="littleText" style="color: #FF7818;"><a class="forthText">「 这 些 内 容 将 会 持 续 更 新 」</a></span>
+				</p>
+			</div>
+
+			<div id="logArticles">
+				<div id="miniprogramLog" onclick="miniprogramLog()">
+					<img src="img/miniprogram_log.png" class="logCover">
+					<div class="logName">
+						<span class="hugeText" style="font-size: 3rem;">微信小程序</span>
+					</div>
+				</div>
+				
+				<div id="htmlLog" onclick="htmlLog()">
+					<img src="img/html_log.png" class="logCover">
+					<div class="logName">
+						<span class="hugeText" style="font-size: 3rem;">社团网页开发</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 底部元素 -->
+		<div id="bottomScene">
+			<div id="slogan">
+				<h1 id="sloganText">「 爱 心 美 化 生 活 ， <br>&emsp;&nbsp;科 技 改 变 世 界 。」</h1>
+			</div>
+			<div id="bottomLinks">
+				<div id="subLinks">
+					<span style="color: #888888;position: absolute;top: -2vh;left: -10%;">友情链接：</span>
+					<a href="https://github.com/stevenguyukai/P.R.O." class="subLinksItem">Github 代码分享</a>
+					<a href="https://mattboldt.com" class="subLinksItem">Mattboldt</a>
+					<a href="https://glassmorphism.com" class="subLinksItem">Glassmorphism</a>
+					<a href="https://neumorphism.io/" class="subLinksItem">Neumorphism</a>
+					<a href="https://www.iconfont.cn" class="subLinksItem">Iconfont</a>
+				</div>
+				<div id="iconLinks">
+					<img src="img/github.svg"  class="subIconLinksItem" onclick="gotoGithub()">
+					<img src="img/wechat.svg"  class="subIconLinksItem" onclick="showAlert()">
+				</div>
+			</div>
+			<img src="img/WhiteLogo.png" id="bottomLogo">
+		</div>
+		
+		<!-- 提示框 -->
+		<div id="alertBox" style="opacity: 0;z-index: -5;" onclick="hideAlert()">
+			<div id="alertContent">
+				<p id="alertTitle">「先驱者PRO」微信官方账号</p>
+				<img src="img/qrCode.png" id="alertImg1">
+				<img src="img/qrCode2.png"  id="alertImg2">
+			</div>
+		</div>
+
+	</body>
+</html>

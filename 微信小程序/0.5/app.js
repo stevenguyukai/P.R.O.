@@ -95,7 +95,7 @@ App({
 
             // 发送 res.code 到后台换取 openId, sessionKey, unionId
             wx.request({
-              url: 'https://gy.hugonglaila.cn/miniprogramServer/fetchServlet',
+              url: '*****************',
 
               method: 'GET',
               data: {
@@ -156,7 +156,7 @@ App({
   updateInfo() {
      var app = getApp()
     wx.request({
-      url: 'https://gy.hugonglaila.cn/miniprogramServer/updateServlet',
+      url: '*****************',
 
       method: 'GET',
       data: {

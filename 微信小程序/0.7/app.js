@@ -1,8 +1,8 @@
 App({
 
   globalData: {
-    appid: "wx43cdb1bcc40005a2",
-    secret: "dc0d05de5404b7cbc43835b09f92fee6",
+    appid: "*****************",
+    secret: "*****************",
 
     isGettedInfo: false, //有没有获取用户信息
     avatar: "/assets/Avatar/noAvatar/mineNoAvatar.png",
@@ -51,7 +51,7 @@ App({
 
             // 发送 res.code 到后台换取 openId, sessionKey, unionId
             wx.request({
-              url: 'https://gy.hugonglaila.cn/miniprogramServer/fetchServlet',
+              url: '*****************',
 
               method: 'GET',
               data: {
@@ -125,7 +125,7 @@ App({
   updateInfo() {
      var app = getApp()
     wx.request({
-      url: 'https://gy.hugonglaila.cn/miniprogramServer/updateServlet',
+      url: '*****************',
 
       method: 'GET', 
       data: {
@@ -165,7 +165,7 @@ App({
 
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
         wx.request({
-          url: 'https://gy.hugonglaila.cn/miniprogramServer/fetchServlet',
+          url: '*****************',
 
           method: 'GET',
           data: {
