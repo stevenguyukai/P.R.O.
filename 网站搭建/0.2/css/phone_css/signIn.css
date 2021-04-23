@@ -1,0 +1,395 @@
+body {
+	margin: 0;
+}
+
+
+.background {
+	font-family: "Alliance No.1", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	background-color: black;
+}
+
+#nav {
+	position: fixed;
+	width: 100vw;
+	height: 8rem;
+	background: rgba(0, 0, 0, 0.70);
+	backdrop-filter: blur(10.0px);
+	-webkit-backdrop-filter: blur(10.0px);
+	margin: 0;
+	padding: 0;
+	z-index: 4;
+	display: flex;
+	display: -webkit-flex;
+	/* Safari */
+	align-items: center;
+}
+
+#signUp {
+	border: 1px white solid;
+	border-radius: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.hugeText {
+	font-family: "Alliance No.1", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-size: 4.2rem;
+	color: white;
+	word-spacing: 0rem;
+	line-height: 120%;
+}
+
+.littleText {
+	font-family: "Alliance No.1", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	color: lightgrey;
+	font-size: 1.4rem;
+	word-spacing: 0.3rem;
+}
+
+span {
+	display: inline-block;
+	overflow: hidden;
+}
+
+i {
+	font-style: normal;
+	position: relative;
+	top: 4.5rem;
+	animation: .5s text-swift-up ease-in-out forwards;
+	opacity: 0;
+}
+
+strong {
+	font-style: normal;
+	font-weight: normal;
+	position: relative;
+	left: -4.5rem;
+	animation: .5s text-swift-right ease-in-out forwards;
+	opacity: 0;
+}
+
+
+@keyframes text-swift-up {
+	to {
+		top: 0rem;
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes text-swift-up {
+	to {
+		top: 0rem;
+		opacity: 1;
+	}
+}
+
+@keyframes text-swift-right {
+	to {
+		left: 0rem;
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes text-swift-right {
+	to {
+		left: 0rem;
+		opacity: 1;
+	}
+}
+
+span:nth-of-type(1) i {
+	animation-delay: 0s;
+}
+
+span:nth-of-type(2) i {
+	animation-delay: 0.1s;
+}
+
+span:nth-of-type(3) i {
+	animation-delay: 0.2s;
+}
+
+span:nth-of-type(4) i {
+	animation-delay: 0.3s;
+}
+
+
+mark {
+	background-color: transparent;
+	color: inherit;
+	font-style: normal;
+	font-weight: normal;
+	background-image: linear-gradient(#FF7818, #FF7818);
+	background-repeat: no-repeat;
+	background-size: 0% 20%;
+	background-position: 0 100%;
+	animation: 0.4s highlight ease-in-out forwards;
+	animation-delay: 0.7s;
+}
+
+@keyframes highlight {
+	to {
+		background-size: 100% 20%;
+	}
+}
+
+@-webkit-keyframes highlight {
+	to {
+		background-size: 100% 20%;
+	}
+}
+
+.navName {
+	color: white;
+	line-height: 4rem;
+	margin-left: 4rem;
+	font-size: 2rem;
+	margin-left: 0rem;
+	line-height: 4rem;
+	font-size: 4rem;
+}
+
+#backgroundImage {
+	width: 100vw;
+	position: fixed;
+	top: 6rem;
+}
+
+#mainBox {
+	width: 90vw;
+	position: absolute;
+	height: 60vh;
+	background-color: red;
+	left: 5vw;
+	top: 20vh;
+	background: rgba(255, 255, 255, 0.25);
+	backdrop-filter: blur(20.0px);
+	-webkit-backdrop-filter: blur(20.0px);
+	border-radius: 20px;
+}
+
+#topBox {
+	width: 100%;
+	height: 70%;
+	position: absolute;
+	background-color: #707070;
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#bottomBox {
+	width: 100%;
+	height: 30%;
+	position: absolute;
+	top: 70%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+
+#boxTitle {
+	font-size: 4rem;
+	color: white;
+	line-height: 2rem;
+	position: absolute;
+	top: 2rem;
+}
+
+
+.form {
+	box-sizing: border-box;
+	height: 60%;
+	width: 100%;
+	position: relative;
+	top: 10%;
+}
+
+.title {
+	color: #eee;
+	font-family: sans-serif;
+	font-size: 36px;
+	font-weight: 600;
+	margin-top: 30px;
+}
+
+.subtitle {
+	color: #eee;
+	font-family: sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	margin-top: 10px;
+}
+
+.input-container {
+	height: 5rem;
+	position: relative;
+	width: 80%;
+	left: 10%;
+}
+
+.ic1 {
+	margin-top: 40px;
+}
+
+.ic2 {
+	margin-top: 30px;
+}
+
+.input {
+	background: rgba(0, 0, 0, 0.25);
+	backdrop-filter: blur(20.0px);
+	-webkit-backdrop-filter: blur(20.0px);
+	border-radius: 12px;
+	border: 0;
+	box-sizing: border-box;
+	color: #eee;
+	font-size: 18px;
+	height: 100%;
+	outline: 0;
+	padding: 4px 20px 0;
+	width: 100%;
+}
+
+.cut {
+	background: rgba(0, 0, 0, 0.6);
+	backdrop-filter: blur(20.0px);
+	-webkit-backdrop-filter: blur(20.0px);
+	border-radius: 10px;
+	height: 2rem;
+	left: 20px;
+	position: absolute;
+	top: -1.5rem;
+	opacity: 0;
+	transform: translateY(0);
+	transition: transform 200ms;
+	animation: 0.2s hide ease-in-out forwards;
+	width: 4rem;
+}
+
+.cut-short {
+	width: 50px;
+}
+
+.input:focus~.cut,
+.input:not(:placeholder-shown)~.cut {
+	transform: translateY(8px);
+	animation: 0.2s show ease-in-out forwards;
+	animation-delay: 0.1s;
+}
+
+@keyframes hide {
+	to {
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes hide {
+	to {
+		opacity: 0;
+	}
+}
+
+@keyframes show {
+	to {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes show {
+	to {
+		opacity: 1;
+	}
+}
+
+
+.placeholder {
+	color: white;
+	font-family: sans-serif;
+	left: 20px;
+	font-size: 1.5rem;
+	line-height: 5rem;
+	pointer-events: none;
+	position: absolute;
+	transform-origin: 0 50%;
+	transition: transform 200ms, color 200ms;
+}
+
+.input:focus~.placeholder,
+.input:not(:placeholder-shown)~.placeholder {
+	transform: translateY(-2.5rem) translateX(10px) scale(0.8);
+}
+
+.input:not(:placeholder-shown)~.placeholder {
+	color: #FF7818;
+}
+
+.input:focus~.placeholder {
+	color: #ccc;
+}
+
+.submit {
+	background-color: black;
+	border-radius: 12px;
+	border: 0; 
+	box-sizing: border-box;
+	background: rgba(0, 0, 0, 0.8);
+	backdrop-filter: blur(20.0px);
+	-webkit-backdrop-filter: blur(20.0px);
+	color: #FF7818;
+	cursor: pointer;
+	padding: 1px;
+	font-size: 2rem;
+	height: 5rem;
+	margin-top: 38px;
+	text-align: center;
+	position: relative;
+	width: 80%;
+	left: 10%;
+}
+
+.submit:active {
+	background-color: #black;
+}
+
+#backSign{
+	color: #404040;
+	position: absolute;
+	left: 1rem;
+	top: 10px;
+	margin: 0;
+	z-index: 2;
+}
+
+#littleBox{
+	position: relative;
+	top: 1rem;
+	height: 4rem;
+	width: 60%;
+	left: 20%;
+	
+	display: flex;
+	display: -webkit-flex;
+	/* Safari */
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: normal;
+}
+
+.littleLink{
+	height: 100%;
+	width: 50%;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	line-height: 4rem;
+	font-size: 1.5rem;
+	text-decoration: none;
+	color: white;
+	border-bottom: 3px solid #FF7818;
+}

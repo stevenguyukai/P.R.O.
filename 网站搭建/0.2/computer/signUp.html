@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>先驱者PRO | 注册</title>
+		<link rel="stylesheet" type="text/css" href="../css/computer_css/signUp.css" />
+		<script type="text/javascript" src="../js/computer_js/signUp.js"></script>
+	</head>
+
+	<body class="background"> 
+		<!-- 上方导航栏 -->
+		<nav id="nav">
+			<!-- 名字 -->
+			<a href="../computer_MainPage.html" style="text-decoration: none;"><span class="littleText" id="navName">先 驱 者 <b style="color: #FF7818;">P. R. O.</b> | </span>
+			<span  class="littleText" id="navName" style="margin-left: 0rem;padding-left: 0.5rem;"><strong>注 册</strong></span></a> 
+		</nav>
+
+		<!-- 注册填入信息表Box -->
+		<div id="mainBox">
+			<h1 id="backSign" onclick="javascript:history.go(-1)">&lt;</h1>
+			<!-- 左半边 -->
+			<div id="leftBox">
+				<span style="font-size: 2.5rem;"><i>欢 迎 </i></span>
+				<span style="color: #FF7818;font-size: 3.5rem;">&ensp;<i>加 入</i>&ensp;</span>
+				<span style="font-size: 2.5rem;"><i>我 们</i></span>
+			</div>
+			<!-- 右半边 -->
+			<div id="rightBox">
+				<h1 id="boxTitle"><mark style="animation-delay: 0.4s;">注 册 账 号</mark></h1>
+				
+				<!-- 登陆表格 -->
+				<form class="form" id="asd" action="" method="post" onsubmit="return false">
+					<div class="input-container ic1">
+						<input id="firstname" class="input" type="email" placeholder=" " onkeypress="if(event.keyCode==13) focusNextInput(this);"/>
+						<div class="cut"></div>
+						<label for="firstname" class="placeholder">邮 箱</label>
+					</div>
+					<div class="input-container ic2">
+						<input id="lastname" class="input" type="password" placeholder=" " onkeypress="if(event.keyCode==13) focusNextInput(this);" />
+						<div class="cut"></div>
+						<label for="lastname" class="placeholder">密 码</label>
+					</div>
+					<div class="input-container ic2">
+						<input id="email" class="input" type="password" placeholder=" " onkeypress="if(event.keyCode==13) focusNextInput(this);" />
+						<div class="cut cut-short" style="width: 5rem;"></div>
+						<label for="email" class="placeholder">确 认 密 码</>
+					</div>
+					
+					<!-- 提交按钮 -->
+					<button type="button" class="submit" onclick="form.submit()">登 陆</button>
+					
+				</form>
+			</div>
+		</div>
+
+	</body>
+
+</html>

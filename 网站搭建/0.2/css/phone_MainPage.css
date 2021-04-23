@@ -1,0 +1,801 @@
+body {
+	margin: 0;
+}
+
+
+.background {
+	font-family: "Alliance No.1", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	background-color: black;
+	position: absolute;
+	width: 100vw;
+	overflow-x: hidden;
+}
+
+.mainScene {
+	position: absolute;
+	width: 95%;
+	overflow: hidden;
+	left: 5%;
+	height: 60vh;
+	top: 20vh;
+}
+
+#clubActivityShow {
+	width: 100vw;
+	height: 10vh;
+	position: absolute;
+	top: 120vh;
+	background-color: red;
+	overflow: hidden;
+	opacity: 0.5;
+	--progress: -1;
+	margin-top: calc(-15vh * (1 - var(--progress)));
+}
+
+#secondScene {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	top: 100vh;
+	overflow: hidden;
+}
+
+#thirdScene {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	top: 200vh;
+	display: flex;
+	overflow: hidden;
+	justify-content: center;
+	background: linear-gradient(top, rgb(000, 000, 000), #0f1012);
+	background: -webkit-linear-gradient(top, rgb(000, 000, 000), #0f1012);
+}
+
+#forthScene {
+	position: absolute;
+	width: 100%;
+	height: 110vh;
+	top: 300vh;
+	background-color: #0f1012;
+}
+
+#bottomScene {
+	position: absolute;
+	width: 100%;
+	height: 20vh;
+	top: 410vh;
+	overflow: hidden;
+	background-color: #0f1012;
+	background: rgba(0, 0, 0, 0.70);
+	backdrop-filter: blur(10.0px);
+	-webkit-backdrop-filter: blur(10.0px);
+	-moz-backdrop-filter: blur(10.0px);
+	-ms-backdrop-filter: blur(10.0px);
+	-o-backdrop-filter: blur(10.0px);
+}
+
+#introPic {
+	position: absolute;
+	width: 120vw;
+	height: 120vw;
+	top: 6vh;
+	left: 10vw;
+	opacity: 0;
+	--progress: 0;
+	-webkit-animation: 0.5s img-show ease-in-out forwards;
+	animation: 0.5s img-show ease-in-out forwards;
+}
+
+#clubActivityPic {
+	--progress: -1;
+	margin-left: -35vw;
+	margin-top: calc(-90px * (1 - var(--progress)));
+}
+
+@-webkit-keyframes img-show {
+	to {
+		opacity: calc(0.3 - var(--progress));
+	}
+}
+
+@keyframes img-show {
+	to {
+		opacity: calc(0.3 - var(--progress));
+	}
+}
+
+@-webkit-keyframes text-img-show-up {
+	to {
+		opacity: calc(1 - var(--progress));
+		height: calc(32rem * (1 - var(--progress)));
+		width: calc(32rem * (1 - var(--progress)));
+		right: calc(32rem * (var(--progress)) / 2);
+		top: calc(32rem * (var(--progress)) / 2);
+	}
+}
+
+.intro {
+	position: absolute;
+	width: 85%;
+	height: 32rem;
+	z-index: 1;
+}
+
+.hugeText {
+	font-family: "Alliance No.1", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-size: 6rem;
+	color: white;
+	word-spacing: 0rem;
+	line-height: 120%;
+}
+
+.littleText {
+	font-family: "Alliance No.1", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	color: lightgrey;
+	font-size: 2rem;
+	word-spacing: 0.3rem;
+}
+
+span {
+	display: inline-block;
+	overflow: hidden;
+	font-family: "Alliance No.1", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+span i {
+	font-style: normal;
+	position: relative;
+	top: 4.5rem;
+	line-height: 5rem;
+	--progress: 0;
+	-webkit-animation: .5s text-swift-up ease-in-out forwards;
+	animation: .5s text-swift-up ease-in-out forwards;
+}
+
+span a {
+	line-height: 5rem;
+}
+
+
+@keyframes text-swift-up {
+	to {
+		top: calc(4.5rem - 4.5rem * (1 - var(--progress)/2));
+		opacity: calc(1 - var(--progress));
+	}
+}
+
+@-webkit-keyframes text-swift-up {
+	to {
+		top: calc(4.5rem - 4.5rem * (1 - var(--progress)/2));
+		opacity: calc(1 - var(--progress));
+	}
+}
+
+span:nth-of-type(1) i {
+	-webkit-animation-delay: 0s;
+	animation-delay: 0s;
+}
+
+span:nth-of-type(2) i {
+	-webkit-animation-delay: 0.1s;
+	animation-delay: 0.1s;
+}
+
+span:nth-of-type(3) i {
+	-webkit-animation-delay: 0.2s;
+	animation-delay: 0.2s;
+}
+
+span:nth-of-type(4) i {
+	-webkit-animation-delay: 0.3s;
+	animation-delay: 0.3s;
+}
+
+span:nth-of-type(5) i {
+	-webkit-animation-delay: 0.4s;
+	animation-delay: 0.4s;
+}
+
+span:nth-of-type(6) i {
+	-webkit-animation-delay: 0.5s;
+	animation-delay: 0.5s;
+}
+
+span:nth-of-type(7) i {
+	-webkit-animation-delay: 0.6s;
+	animation-delay: 0.6s;
+}
+
+.firstMark {
+	background-color: transparent;
+	color: inherit;
+	background-image: linear-gradient(#FF7818, #FF7818);
+	background-repeat: no-repeat;
+	background-size: 0% 20%;
+	background-position: 0% 100%;
+	-webkit-animation: 0.4s highlight ease-in-out forwards;
+	animation: 0.4s highlight ease-in-out forwards;
+	-webkit-animation-delay: 0.7s;
+	animation-delay: 0.7s;
+}
+
+.secondMark {
+	background-color: transparent;
+	color: inherit;
+	background-image: linear-gradient(#FF7818, #FF7818);
+	background-repeat: no-repeat;
+	background-size: calc(100% * var(--progress)) 20%;
+	background-position: 0% 100%;
+}
+
+.thirdMark {
+	background-color: transparent;
+	color: inherit;
+	background-image: linear-gradient(#FF7818, #FF7818);
+	background-repeat: no-repeat;
+	background-size: calc(100% * var(--progress) * 1.5) 20%;
+	background-position: 0% 100%;
+}
+
+.forthMark {
+	background-color: transparent;
+	color: inherit;
+	background-image: linear-gradient(#FF7818, #FF7818);
+	background-repeat: no-repeat;
+	background-size: 0% 20%;
+	background-position: 0% 100%;
+}
+
+@keyframes highlight {
+	to {
+		background-size: calc(100% - 100% * var(--progress)) 20%;
+	}
+}
+
+@-webkit-keyframes highlight {
+	to {
+		background-size: calc(100% - 100% * var(--progress)) 20%;
+	}
+}
+
+#nav {
+	position: fixed;
+	width: 100vw;
+	height: 8rem;
+	background: rgba(0, 0, 0, 0.70);
+	backdrop-filter: blur(10.0px);
+	-webkit-backdrop-filter: blur(10.0px);
+	margin: 0;
+	padding: 0;
+	z-index: 4;
+	display: flex;
+	display: -webkit-flex;
+	/* Safari */
+	align-items: center;
+}
+
+
+#accountBox {
+	position: fixed;
+	width: 100%;
+	height: 8rem;
+	bottom: 0px;
+	display: flex;
+	display: -webkit-flex;
+	/* Safari */
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+}
+
+#itemBox {
+	position: absolute;
+	width: 90%;
+	left: 5%;
+	height: 30%;
+	top: 20%;
+	display: flex;
+	display: -webkit-flex;
+	/* Safari */
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+}
+
+
+#brainGamePic {
+	/* width: 142.16 vh    (1.777倍的高) */
+	height: 80vh;
+	position: absolute;
+	top: 20vh;
+	/* Left 是总宽度的十分之一 , 当是十分之八的时候隐藏 */
+	left:  calc(80vw * ((1 - var(--progress))));
+	opacity: calc(0.4 * var(--progress));
+	transition: left 2s;
+	-webkit-transition: left 2s;
+	z-index: 0;
+}
+
+#gameIntro {
+	width: 95vw;
+	height: 70vh;
+	position: absolute;
+	top: 15vh;
+	left: 5vw;
+	display: flex;
+	align-items: center;
+	z-index: 1;
+	transition: left 2s;
+	-webkit-transition: left 2s;
+}
+
+.secondText {
+	font-style: normal;
+	position: relative;
+	--progress: 0;
+	top: calc(4.5rem * (1 - var(--progress)));
+	opacity: var(--progress);
+}
+
+.forthText {
+	font-style: normal;
+	position: relative;
+	--progress: 0;
+	opacity: var(--progress);
+}
+
+#startBrainGame {
+	position: relative;
+	width: 40vw;
+	width: calc(40vw * var(--progress));
+	opacity: var(--progress);
+	height: 10vw;
+	color: white;
+	background: rgba(0, 0, 0, 0.70);
+	backdrop-filter: blur(10.0px);
+	-webkit-backdrop-filter: blur(10.0px);
+	/* border: solid 1px greenyellow; */
+	border-radius: 20px;
+	font-size: 2rem;
+	color: white;
+}
+
+#qrCodeBox {
+	height: 80vw;
+	width: 80vw;
+	background-color: white;
+	position: absolute;
+	top: calc((110vh - 80vw)/2);
+	/* Left 是总宽度的十分之一 , 当是十分之八的时候隐藏 */
+	right: 10vw;
+	opacity: 0;
+	transition: opacity 0.5s;
+	-webkit-transition: opacity 0.5s;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 360vh;
+}
+
+#qrCode {
+	width: 70%;
+	height: 70%;
+}
+
+#qrCodeDescribe{
+	position: absolute;
+	margin-top: 100vw;
+}
+
+.brainGameItem {
+	color: white;
+	transition: color 1s;
+	-webkit-transition: color 1s;
+}
+
+.newKnowledgeItem {
+	color: white;
+	transition: color 1s;
+	-webkit-transition: color 1s;
+}
+
+.logItem {
+	color: white;
+	transition: color 1s;
+	-webkit-transition: color 1s;
+}
+
+ 
+.thirdText {
+	position: relative;
+	top: calc(10vh * var(--progress));
+	--progress: 0;
+	opacity: var(--progress);
+}
+
+.newKnowledgeCard {
+	position: absolute;
+	top: calc(10vh + 4.2rem + 10vh);
+	height: 25vh;
+	width: 80vw;
+	left: calc(50vw * ( 1 - var(--progress)) + 10vw);
+	border-radius: 20px;
+	border: 1px solid white;
+	background: rgba(0, 0, 0, calc(0.8 * var(--progress)));
+	backdrop-filter: blur(10.0px);
+	-webkit-backdrop-filter: blur(10.0px);
+	overflow: hidden;
+	--progress: 0;
+	opacity: calc(var(--progress));
+}
+
+.articleImg {
+	width: 100%;
+	height: 70%;
+}
+
+.articleDetail {
+	width: 100%;
+	height: 30%;
+	top: 70%;
+	font-family: "Alliance No.1", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#codeArea {
+	color: white;
+	display: inline;
+	width: 90vw;
+	position: absolute;
+	left: 0vw;
+	height: 40vh;
+	top: 30vh;
+	opacity: 0.3;
+}
+
+#htmlBox {
+	color: white;
+	display: inline;
+	width: 60vw;
+	position: absolute;
+	left: 5vw;
+	height: 25vh;
+
+	border-radius: 15px;
+	background: #0f1012;
+	box-shadow: 20px 20px 100px #060607,
+		-20px -20px 100px #181a1d;
+	z-index: 1;
+	background: rgba(15, 16, 18, 0.80);
+	backdrop-filter: blur(2px);
+	-webkit-backdrop-filter: blur(2px);
+	border-radius: 10px;
+
+
+}
+
+#typeStyle {
+	color: white;
+	display: inline;
+	font-size: 1.5rem;
+}
+
+.codeTitle {
+	position: absolute;
+	width: 100%;
+	height: 5vh;
+	line-height: 2rem;
+	font-size: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #888888;
+}
+
+.codeArea {
+	position: absolute;
+	top: 7vh;
+	width: 96%;
+	left: 2%;
+	height: 23vh;
+}
+
+#codeBackground {
+	background-color: #4a4d57;
+	position: absolute;
+	width: 100%;
+	left: -5vw;
+	height: 100%;
+	top: -10%;
+	border-radius: 20px;
+}
+
+#cssBox {
+	color: white;
+	display: inline;
+	width: 60vw;
+	position: absolute;
+	top: 20vh;
+	left: 18vw;
+	height: 20vh;
+
+	border-radius: 15px;
+	background: #0f1012;
+	box-shadow: 20px 20px 100px #060607,
+		-20px -20px 100px #181a1d;
+	z-index: 0;
+}
+
+#typeStyle2 {
+	color: white;
+	display: inline;
+	font-size: 1.3rem;
+}
+
+#titleArea {
+	color: white;
+	width: 75vw;
+	position: absolute;
+	right: 2.5vw;
+	height: 50vh;
+	top: 5vh;
+	z-index: 1;
+	font-family: "Alliance No.1", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-size: 4vw;
+	color: #FF7818;
+	transition: left 2s;
+	-webkit-transition: left 2s;
+}
+
+#logArticles {
+	position: absolute;
+	width: 90vw;
+	height: 35vh;
+	top: 65vh;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	
+	--progress: 0;
+	left: calc( 90vw * var(--progress) - 80vw);
+}
+
+#miniprogramLog {
+	height: 80%;
+	position: relative;
+	top: 10%;
+	display: flex;
+	display: -webkit-flex;
+	width: 70vw;
+	align-items: center;
+}
+
+#htmlLog {
+	height: 80%;
+	position: relative;
+	top: 10%;
+	display: flex;
+	display: -webkit-flex;
+	width: 70vw;
+	align-items: center;
+}
+
+.logCover {
+	position: absolute;
+	width: 80%;
+	background-color: blue;
+	border-top-right-radius: 45px;
+	border-bottom-right-radius: 45px;
+}
+
+.logName {
+	width: 16%;
+	position: absolute;
+	left: 90%;
+	height: auto;
+	padding-right: 5vw;
+	border-right: #FF7818 10px solid;
+}
+
+#bottomLogoBox{
+	width: 25%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	right: 0;
+	border-left: 2px white solid;
+	border-image: -webkit-linear-gradient(#000, #000, #000, #888888, #000, #000, #000) 40 40;
+	z-index: -1;
+}
+
+#bottomLogo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#slogan {
+	position: absolute;
+	height: 25%;
+	width: 100vw;
+	border-right: 2px white solid;
+	border-image: -webkit-linear-gradient(#000, #000, #000, #888888, #000, #000, #000) 40 40;
+	padding-left: 3vw;
+	padding-right: 3vw;
+	display: flex;
+	align-items: center;
+	justify-content: left;
+}
+
+#sloganText {
+	color: #888888;
+	font-style: normal;
+	font-family: "Alliance No.1", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-weight: normal;
+	border-bottom: 3px #FF7818 solid;
+}
+
+#bottomLinks {
+	position: absolute;
+	height: 75%;
+	top: 25%;
+	width: 75vw;
+	left: 0vw;
+}
+
+#subLinks {
+	position: absolute;
+	height: 60%;
+	width: 60%;
+	left: 10%;
+	top: 20%;
+	display: flex;
+	display: -webkit-flex;
+	/* Safari */
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: normal;
+}
+
+#iconLinks {
+	position: absolute;
+	height: 100%;
+	left: 70%;
+	width: 30%;
+	display: flex;
+	display: -webkit-flex;
+	/* Safari */
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: normal;
+}
+
+.subLinksItem {
+	height: 33%;
+	font-size: 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	color: #888888;
+}
+
+.subIconLinksItem {
+	height: 20%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+}
+
+#alertBox {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.60);
+	backdrop-filter: blur(8.0px);
+	-webkit-backdrop-filter: blur(8.0px);
+	z-index: 5;
+	transition: opacity 0.4s;
+}
+
+#alertContent {
+	width: 90vw;
+	height: 60vh;
+	position: absolute;
+	top: 20vh;
+	left: 5vw;
+	background-color: white;
+	border-radius: 20px;
+	display: flex;
+	display: -webkit-flex;
+	/* Safari */
+	justify-content: center;
+}
+
+#alertTitle {
+	color: black;
+	font-size: 3rem;
+	display: flex;
+}
+
+#alertImg1 {
+	width: 45vw;
+	height: 45vw;
+	position: absolute;
+	top: 7.5vh;
+	left: 22.5vw;
+}
+
+#alertImg2 {
+	width: 45vw;
+	height: 45vw;
+	position: absolute;
+	top: calc(10vh + 45vw);
+	right: 22.5vw;
+}
+
+#extentButton{
+	height: 6rem;
+	width: 6rem;
+	position: absolute;
+	right: 1rem;
+	top: 1rem;
+}
+
+#extentButtonPic1{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	opacity: 1;
+	z-index: 3;
+}
+
+#extentButtonPic2{
+	width: 60%; 
+	height: 60%; 
+	top: 20%; 
+	left: 20%;
+	position: absolute;
+	opacity: 0;
+	z-index: 2;
+}
+
+#extentBox{
+	width: 60vw;
+	height: 70vh;
+	position: fixed;
+	overflow: hidden;
+	right: -60vw;
+	top: 0vh;
+	z-index: 2;
+	border-bottom-left-radius: 45px;
+	background: rgba(15, 15, 15, 0.70);
+	backdrop-filter: blur(40.0px);
+	-webkit-backdrop-filter: blur(40.0px);
+	transition: right 0.5s;
+}
+
+#relativeLinkBox{
+	height: 20%;
+	top: 55%;
+	position: relative;
+	display: flex;
+	display: -webkit-flex;
+	/* Safari */
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: normal;
+}
