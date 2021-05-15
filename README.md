@@ -1,5 +1,7 @@
 # 先驱者 P.R.O.  社团
-Pioneer Runners of Observation
+Pioneer Runners of Observation🥳
+- 【先驱者PRO】社团致力于帮助患有认知、交流等障碍的人群；用有趣的游戏互动方式缓解并改善此类症状（阿尔兹海默症，孤独性障碍）
+- 【先驱者PRO】是由许多优秀的在校生组成，我们在一起共同达成我们所向往的目标
     
 ### [微信小程序 包](https://github.com/stevenguyukai/P.R.O./tree/master/微信小程序)
     - 先驱者PRO社团制作的益脑游戏
