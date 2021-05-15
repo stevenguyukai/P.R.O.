@@ -42,6 +42,6 @@ Pioneer Runners of Observation🥳
 >    2. 用HTML做井字棋
 >    3. 对于社团网站的一些设想
   
-### 【学术公社 包】(https://github.com/stevenguyukai/P.R.O./tree/master/学术公社)
+### [学术公社 包](https://github.com/stevenguyukai/P.R.O./tree/master/学术公社)
     - 包含帮助「学术公社」开发的官方页面
 >    1. 各个交替版本 
