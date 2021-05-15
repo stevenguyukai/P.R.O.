@@ -1,0 +1,150 @@
+/* 由【顾育恺】制作，由【先驱者PRO】社团提供技术支持，【先驱者PRO】微信公众号：先驱者PRO */
+
+#main{
+	position: absolute;
+	width: 80vw;
+	height: 80vh;
+	top: 10vh;
+	left: 10vw;
+}
+
+#head{
+	position: absolute;
+	width: 100%;
+	height: 15%;
+}
+
+#logoPic{
+	height: 100%;
+	position: absolute;
+}
+
+#searchBox{
+	position: absolute;
+	height: 35%;
+	top: 60%;
+	width: 30%;
+	right: 6vh;
+	border: #92C8C7 solid 1px;
+}
+
+#searchIcon{
+	position: absolute;
+	height: 30%;
+	top: 64%;
+	right: 0%;
+}
+
+#profileBox{
+	position: absolute;
+	height: 40%;
+	top: 10%;
+	width: 30%;
+	right: 6vh;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: row;
+	color: black;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.profileItem{
+	text-decoration: none;
+	color: black;
+}
+
+#mainContent{
+	height: 80%;
+	position: absolute;
+	width: 100%;
+	top: 20%;
+}
+
+#selectBox{
+	height: 100%;
+	width: 10%;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	align-items: space-around;
+	justify-content: space-around;
+	position: absolute;
+}
+
+.selectItem{
+	width: 100%;
+	height: 1.4rem;
+	background-color: #92C8C7;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	text-decoration: none;
+	color: white;
+	font-size: 1rem;
+}
+
+#articleBox{
+	position: absolute;
+	width: 85%;
+	height: 80%;
+	left: 15%;
+}
+
+#something{
+	position: absolute;
+	width: 85%;
+	height: 15%;
+	top: 85%;
+	left: 15%;
+	background-color: #92C8C7;
+}
+
+#articleItem1{
+	position: absolute;
+	width: 75%;
+	left: 0%;
+	top: 0%;
+	height: 100%;
+	border: #92C8C7 solid 1.5px;
+}
+
+#smallArticles{
+	position: absolute;
+	width: 22%;
+	height: 100%;
+	right: 0%;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: row;
+	align-items: space-around;
+	justify-content: space-around;
+	position: absolute;
+	 flex-wrap: wrap
+}
+
+.articleItem{
+	position: relative;
+	width: 100%;
+	height: 30%;
+	margin-bottom: 7%;
+	border: #92C8C7 solid 1.5px;
+}
+
+.articlePic{
+	width: 82%;
+	position: relative;
+	left: 9%;
+	top: 5%;
+}
+
+.articleText{
+	position: relative;
+	margin-top: 2rem;
+	color: #333333;
+	left: 1rem;
+}
+
+/* 由【顾育恺】制作，由【先驱者PRO】社团提供技术支持，【先驱者PRO】微信公众号：先驱者PRO */
